@@ -1,0 +1,655 @@
+2021-12-01T07:28:16.573Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-01T07:28:16.629Z - normal: Initializing Asset Database
+2021-12-01T07:28:16.632Z - normal: checking language setting...
+2021-12-01T07:28:16.632Z - normal: Language: en
+2021-12-01T07:28:17.319Z - success: preview server running at http://localhost:7456
+2021-12-01T07:28:17.334Z - success: protocol editor-framework registered
+2021-12-01T07:28:17.334Z - success: protocol app registered
+2021-12-01T07:28:17.334Z - success: protocol theme registered
+2021-12-01T07:28:17.334Z - success: protocol packages registered
+2021-12-01T07:28:17.334Z - success: protocol uuid registerred
+2021-12-01T07:28:17.335Z - success: protocol db registerred
+2021-12-01T07:28:17.335Z - success: protocol thumbnail registerred
+2021-12-01T07:28:17.335Z - success: protocol unpack registerred
+2021-12-01T07:28:17.335Z - success: protocol disable-commonjs registerred
+2021-12-01T07:28:18.644Z - normal: connected!
+2021-12-01T07:28:18.645Z - normal: Check project /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:28:18.647Z - normal: Initializing project /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:28:18.973Z - normal: Initializing Cocos2d
+2021-12-01T07:28:19.504Z - normal: Initializing engine extends
+2021-12-01T07:28:19.527Z - success: alipay-adapter loaded
+2021-12-01T07:28:19.535Z - success: asset-db-debugger loaded
+2021-12-01T07:28:19.538Z - success: baidu-adapter loaded
+2021-12-01T07:28:19.543Z - success: color-picker loaded
+2021-12-01T07:28:19.698Z - success: fb-audience-network loaded
+2021-12-01T07:28:19.743Z - success: fb-live-stream loaded
+2021-12-01T07:28:19.746Z - success: google-play-instant loaded
+2021-12-01T07:28:19.753Z - success: huawei-runtime loaded
+2021-12-01T07:28:19.975Z - success: cpk-publish loaded
+2021-12-01T07:28:19.977Z - success: jsb-adapter loaded
+2021-12-01T07:28:19.983Z - success: oppo-runtime loaded
+2021-12-01T07:28:19.990Z - success: package-manager loaded
+2021-12-01T07:28:20.114Z - success: qqplay-adapter loaded
+2021-12-01T07:28:20.115Z - success: runtime-dev-tools loaded
+2021-12-01T07:28:20.144Z - success: sdkbox loaded
+2021-12-01T07:28:20.150Z - success: tester loaded
+2021-12-01T07:28:20.153Z - success: ui-kit-preview-extra loaded
+2021-12-01T07:28:20.156Z - success: ui-kit-preview loaded
+2021-12-01T07:28:20.160Z - success: ui-kit loaded
+2021-12-01T07:28:20.165Z - success: vivo-runtime loaded
+2021-12-01T07:28:20.166Z - success: weapp-adapter loaded
+2021-12-01T07:28:20.167Z - success: xiaomi-adapter loaded
+2021-12-01T07:28:20.170Z - success: alipay-minigame loaded
+2021-12-01T07:28:20.208Z - success: assets loaded
+2021-12-01T07:28:20.211Z - success: builder loaded
+2021-12-01T07:28:20.423Z - success: cocos-services loaded
+2021-12-01T07:28:20.428Z - success: console loaded
+2021-12-01T07:28:20.457Z - success: fb-instant-games loaded
+2021-12-01T07:28:20.459Z - success: game-window loaded
+2021-12-01T07:28:20.461Z - success: google-instant-games loaded
+2021-12-01T07:28:20.465Z - success: hierarchy loaded
+2021-12-01T07:28:20.470Z - success: inspector loaded
+2021-12-01T07:28:20.472Z - success: keystore loaded
+2021-12-01T07:28:20.476Z - success: node-library loaded
+2021-12-01T07:28:20.478Z - success: package-asset loaded
+2021-12-01T07:28:20.479Z - success: preferences loaded
+2021-12-01T07:28:20.481Z - success: project-exporter loaded
+2021-12-01T07:28:20.486Z - success: project-importer loaded
+2021-12-01T07:28:20.489Z - success: project-settings loaded
+2021-12-01T07:28:20.493Z - success: scene loaded
+2021-12-01T07:28:20.495Z - success: simulator-debugger loaded
+2021-12-01T07:28:20.499Z - success: sprite-editor loaded
+2021-12-01T07:28:20.506Z - success: store loaded
+2021-12-01T07:28:20.512Z - success: timeline loaded
+2021-12-01T07:28:20.516Z - success: xiaomi-runtime loaded
+2021-12-01T07:28:21.276Z - normal: Loading packages
+2021-12-01T07:28:21.283Z - normal: Watching packages
+2021-12-01T07:28:21.366Z - normal: Run Application
+2021-12-01T07:28:22.668Z - info: Cocos Services load base data!
+2021-12-01T07:28:44.570Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/HelloWorld/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/HelloWorld/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "04e1e896-e966-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/HelloWorld",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-01T07:28:44.573Z - normal: Building /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:28:44.573Z - normal: Destination /Users/fe-thienchi-fresher/HelloWorld/build/web-desktop
+2021-12-01T07:28:44.687Z - normal: Delete /Users/fe-thienchi-fresher/HelloWorld/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/web-desktop/**/*
+2021-12-01T07:28:46.132Z - normal: Start building assets
+2021-12-01T07:28:46.132Z - normal: Start spawn build-worker
+2021-12-01T07:28:46.677Z - normal: Finish spawn build-worker
+2021-12-01T07:28:46.678Z - normal: Start init build-worker
+2021-12-01T07:28:48.810Z - normal: Finish init build-worker
+2021-12-01T07:28:48.810Z - normal: Start build-assets in worker
+2021-12-01T07:28:49.048Z - normal: Finish build-assets in worker
+2021-12-01T07:28:49.050Z - normal: Finish building assets
+2021-12-01T07:28:49.055Z - normal: Start building plugin scripts
+2021-12-01T07:28:49.107Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-01T07:28:49.115Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-01T07:28:49.128Z - normal: Built to "/Users/fe-thienchi-fresher/HelloWorld/build/web-desktop" successfully
+2021-12-01T07:29:08.722Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:29:10.039Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:29:10.039Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:29:15.605Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-01T07:38:37.662Z - normal: Compile engine finished
+2021-12-01T07:38:53.232Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:38:54.448Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:38:54.448Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:38:55.803Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-01T07:38:57.893Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/HelloWorld/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "04e1e896-e966-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/HelloWorld",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-01T07:38:57.896Z - normal: Building /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:38:57.896Z - normal: Destination /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link
+2021-12-01T07:38:57.898Z - normal: Delete /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/subpackages/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/res/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/src/**/*
+2021-12-01T07:38:57.973Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:39:01.421Z - normal: Start building assets
+2021-12-01T07:39:01.422Z - normal: Start spawn build-worker
+2021-12-01T07:39:01.959Z - normal: Finish spawn build-worker
+2021-12-01T07:39:01.959Z - normal: Start init build-worker
+2021-12-01T07:39:04.050Z - normal: Finish init build-worker
+2021-12-01T07:39:04.050Z - normal: Start build-assets in worker
+2021-12-01T07:39:04.165Z - info: Enable "Inline all SpriteFrames" in native platform will increase the package size used in hot update.
+2021-12-01T07:39:04.254Z - normal: Finish build-assets in worker
+2021-12-01T07:39:04.256Z - normal: Finish building assets
+2021-12-01T07:39:04.261Z - normal: Start building plugin scripts
+2021-12-01T07:39:04.300Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-01T07:39:04.373Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:39:05.655Z - normal: Built to "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link" successfully
+2021-12-01T07:39:47.342Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:39:48.518Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:39:48.518Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:39:49.674Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-01T07:40:30.491Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:40:31.672Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:40:31.673Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:40:32.862Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-01T07:42:14.419Z - failed: Error: Can't find [NDK Root] path: /Users/fe-thienchi-fresher/Downloads/android-ndk-r23b-darwin.dmg
+    at s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2394)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2709
+    at K (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2969)
+    at Object.compile (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:17576)
+    at r.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/builder/index.js:1:4860)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+2021-12-01T07:42:16.852Z - failed: Error: Can't find [NDK Root] path: /Users/fe-thienchi-fresher/Downloads/android-ndk-r23b-darwin.dmg
+    at s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2394)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2709
+    at K (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2969)
+    at Object.compile (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:17576)
+    at r.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/builder/index.js:1:4860)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+2021-12-01T07:42:20.207Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/HelloWorld/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "04e1e896-e966-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/HelloWorld",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-01T07:42:20.209Z - normal: Building /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:42:20.209Z - normal: Destination /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link
+2021-12-01T07:42:20.211Z - normal: Delete /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/subpackages/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/res/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/src/**/*
+2021-12-01T07:42:20.242Z - error: Build Failed: Error: Can't find [NDK Root] path: /Users/fe-thienchi-fresher/Downloads/android-ndk-r23b-darwin.dmg
+    at s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2394)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2709
+    at K (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2969)
+    at Object.build (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:14231)
+    at Gulp.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/gulp-build.js:1:28791)
+    at module.exports (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/lib/runTask.js:34:7)
+    at Gulp.Orchestrator._runTask (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:273:3)
+    at Gulp.Orchestrator._runStep (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:214:10)
+    at Gulp.Orchestrator.start (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:134:8)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/gulp-sequence/index.js:63:12
+    at r.waterfall.r (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/builder/index.js:1:3393)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:52:16
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:696:30
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:167:37
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:1209:30
+    at Gulp.doneCallback (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/gulp-build.js:1:29866)
+    at Gulp.Orchestrator.stop (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:150:9)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/index.js:277:22
+    at finish (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/orchestrator/lib/runTask.js:21:8)
+2021-12-01T07:43:25.918Z - failed: Error: Can't find [NDK Root] path: /Users/fe-thienchi-fresher/Library/Application Support/Oracle/Java/Deployment/cache
+    at s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2394)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2709
+    at K (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2969)
+    at Object.compile (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:17576)
+    at r.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/builder/index.js:1:4860)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+2021-12-01T07:43:43.202Z - failed: Error: Can't find [NDK Root] path: /Users/fe-thienchi-fresher/Library/Application Support/Oracle/Java/Deployment/cache
+    at s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2394)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2709
+    at K (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:2969)
+    at Object.compile (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:17576)
+    at r.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/builder/index.js:1:4860)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+2021-12-01T07:43:54.536Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/HelloWorld/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "04e1e896-e966-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/HelloWorld",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-01T07:43:54.537Z - normal: Building /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:43:54.537Z - normal: Destination /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link
+2021-12-01T07:43:54.538Z - normal: Delete /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/subpackages/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/res/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/src/**/*
+2021-12-01T07:43:54.605Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:43:57.921Z - normal: Start building assets
+2021-12-01T07:43:57.921Z - normal: Start spawn build-worker
+2021-12-01T07:43:58.488Z - normal: Finish spawn build-worker
+2021-12-01T07:43:58.488Z - normal: Start init build-worker
+2021-12-01T07:44:00.459Z - normal: Finish init build-worker
+2021-12-01T07:44:00.459Z - normal: Start build-assets in worker
+2021-12-01T07:44:00.569Z - info: Enable "Inline all SpriteFrames" in native platform will increase the package size used in hot update.
+2021-12-01T07:44:00.667Z - normal: Finish build-assets in worker
+2021-12-01T07:44:00.670Z - normal: Finish building assets
+2021-12-01T07:44:00.675Z - normal: Start building plugin scripts
+2021-12-01T07:44:00.713Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-01T07:44:00.788Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:44:02.058Z - normal: Built to "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link" successfully
+2021-12-01T07:44:04.067Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:44:05.239Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:44:05.239Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:44:06.488Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-01T07:45:32.370Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/HelloWorld/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "04e1e896-e966-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/HelloWorld",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-01T07:45:32.373Z - normal: Building /Users/fe-thienchi-fresher/HelloWorld
+2021-12-01T07:45:32.373Z - normal: Destination /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link
+2021-12-01T07:45:32.374Z - normal: Delete /Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/subpackages/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/res/**/*,/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link/src/**/*
+2021-12-01T07:45:32.461Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:45:35.849Z - normal: Start building assets
+2021-12-01T07:45:35.849Z - normal: Start spawn build-worker
+2021-12-01T07:45:36.417Z - normal: Finish spawn build-worker
+2021-12-01T07:45:36.417Z - normal: Start init build-worker
+2021-12-01T07:45:38.567Z - normal: Finish init build-worker
+2021-12-01T07:45:38.567Z - normal: Start build-assets in worker
+2021-12-01T07:45:38.688Z - info: Enable "Inline all SpriteFrames" in native platform will increase the package size used in hot update.
+2021-12-01T07:45:38.779Z - normal: Finish build-assets in worker
+2021-12-01T07:45:38.789Z - normal: Finish building assets
+2021-12-01T07:45:38.794Z - normal: Start building plugin scripts
+2021-12-01T07:45:38.833Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-01T07:45:38.915Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:45:40.189Z - normal: Built to "/Users/fe-thienchi-fresher/HelloWorld/build/jsb-link" successfully
+2021-12-01T07:45:42.599Z - normal: Checked Python Version [2.7.18]
+2021-12-01T07:45:43.773Z - normal: Start to compile native project. Please wait...
+2021-12-01T07:45:43.773Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-01T07:45:45.013Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
