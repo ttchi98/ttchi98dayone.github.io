@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "pkm.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "pokemon-0": {
+      "__uuid__": "061a6016-6313-43b4-8b32-3f5593659a90"
+    },
+    "pokemon-1": {
+      "__uuid__": "4c6aa6ad-d751-4144-b064-6951f7e41aa0"
+    },
+    "pokemon-2": {
+      "__uuid__": "f5e33961-8f84-4384-8d70-1aa8202c07b0"
+    },
+    "pokemon-3": {
+      "__uuid__": "a5fb48cf-cbb8-40ca-9485-e2984e0d40ed"
+    },
+    "pokemon-4": {
+      "__uuid__": "b682870f-4f02-4235-865b-6ac33e7372ce"
+    }
+  }
+}

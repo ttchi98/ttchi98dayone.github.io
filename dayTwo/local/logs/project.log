@@ -1,0 +1,347 @@
+2021-12-02T06:29:36.300Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-02T06:29:36.400Z - normal: Initializing Asset Database
+2021-12-02T06:29:36.403Z - normal: checking language setting...
+2021-12-02T06:29:36.403Z - normal: Language: en
+2021-12-02T06:29:37.329Z - success: preview server running at http://localhost:7456
+2021-12-02T06:29:37.349Z - success: protocol editor-framework registered
+2021-12-02T06:29:37.349Z - success: protocol app registered
+2021-12-02T06:29:37.349Z - success: protocol theme registered
+2021-12-02T06:29:37.349Z - success: protocol packages registered
+2021-12-02T06:29:37.349Z - success: protocol uuid registerred
+2021-12-02T06:29:37.349Z - success: protocol db registerred
+2021-12-02T06:29:37.349Z - success: protocol thumbnail registerred
+2021-12-02T06:29:37.349Z - success: protocol unpack registerred
+2021-12-02T06:29:37.350Z - success: protocol disable-commonjs registerred
+2021-12-02T06:29:38.359Z - normal: connected!
+2021-12-02T06:29:38.360Z - normal: Check project /Users/fe-thienchi-fresher/dayTwoTest
+2021-12-02T06:29:38.362Z - normal: Initializing project /Users/fe-thienchi-fresher/dayTwoTest
+2021-12-02T06:29:38.693Z - normal: Initializing Cocos2d
+2021-12-02T06:29:39.441Z - normal: Initializing engine extends
+2021-12-02T06:29:39.466Z - success: alipay-adapter loaded
+2021-12-02T06:29:39.473Z - success: asset-db-debugger loaded
+2021-12-02T06:29:39.474Z - success: baidu-adapter loaded
+2021-12-02T06:29:39.475Z - success: color-picker loaded
+2021-12-02T06:29:39.596Z - success: fb-audience-network loaded
+2021-12-02T06:29:39.647Z - success: fb-live-stream loaded
+2021-12-02T06:29:39.650Z - success: google-play-instant loaded
+2021-12-02T06:29:39.659Z - success: huawei-runtime loaded
+2021-12-02T06:29:39.865Z - success: cpk-publish loaded
+2021-12-02T06:29:39.867Z - success: jsb-adapter loaded
+2021-12-02T06:29:39.872Z - success: oppo-runtime loaded
+2021-12-02T06:29:39.876Z - success: package-manager loaded
+2021-12-02T06:29:39.995Z - success: qqplay-adapter loaded
+2021-12-02T06:29:39.997Z - success: runtime-dev-tools loaded
+2021-12-02T06:29:40.021Z - success: sdkbox loaded
+2021-12-02T06:29:40.027Z - success: tester loaded
+2021-12-02T06:29:40.032Z - success: ui-kit-preview-extra loaded
+2021-12-02T06:29:40.035Z - success: ui-kit-preview loaded
+2021-12-02T06:29:40.039Z - success: ui-kit loaded
+2021-12-02T06:29:40.046Z - success: vivo-runtime loaded
+2021-12-02T06:29:40.047Z - success: weapp-adapter loaded
+2021-12-02T06:29:40.049Z - success: xiaomi-adapter loaded
+2021-12-02T06:29:40.052Z - success: alipay-minigame loaded
+2021-12-02T06:29:40.089Z - success: assets loaded
+2021-12-02T06:29:40.092Z - success: builder loaded
+2021-12-02T06:29:40.324Z - success: cocos-services loaded
+2021-12-02T06:29:40.330Z - success: console loaded
+2021-12-02T06:29:40.359Z - success: fb-instant-games loaded
+2021-12-02T06:29:40.363Z - success: game-window loaded
+2021-12-02T06:29:40.364Z - success: google-instant-games loaded
+2021-12-02T06:29:40.368Z - success: hierarchy loaded
+2021-12-02T06:29:40.372Z - success: inspector loaded
+2021-12-02T06:29:40.373Z - success: keystore loaded
+2021-12-02T06:29:40.377Z - success: node-library loaded
+2021-12-02T06:29:40.379Z - success: package-asset loaded
+2021-12-02T06:29:40.380Z - success: preferences loaded
+2021-12-02T06:29:40.383Z - success: project-exporter loaded
+2021-12-02T06:29:40.387Z - success: project-importer loaded
+2021-12-02T06:29:40.391Z - success: project-settings loaded
+2021-12-02T06:29:40.395Z - success: scene loaded
+2021-12-02T06:29:40.396Z - success: simulator-debugger loaded
+2021-12-02T06:29:40.397Z - success: sprite-editor loaded
+2021-12-02T06:29:40.401Z - success: store loaded
+2021-12-02T06:29:40.408Z - success: timeline loaded
+2021-12-02T06:29:40.412Z - success: xiaomi-runtime loaded
+2021-12-02T06:29:45.306Z - normal: Loading packages
+2021-12-02T06:29:45.311Z - normal: Watching packages
+2021-12-02T06:29:45.402Z - normal: Run Application
+2021-12-02T06:29:48.848Z - info: Cocos Services load base data!
+2021-12-02T06:47:08.136Z - error: Parse Error: Unable to find file Texture, the path: /Users/fe-thienchi-fresher/dayTwoTest/assets/Downloads\flip-export.png
+    at module.exports.getRealFntTexturePath (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:596)
+    at module.exports.import (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:827)
+    at i.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4462)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+    at g (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4396)
+2021-12-02T07:28:34.304Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:28:36.569Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:29:11.358Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:29:20.485Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:29:34.719Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:29:49.218Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:30:11.119Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:30:32.577Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:30:33.621Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:30:52.418Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:31:02.217Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:31:12.451Z - info: Only the prefab node "logo" and its child nodes are saved.
+2021-12-02T07:33:49.528Z - error: Parse Error: Unable to find file Texture, the path: /Users/fe-thienchi-fresher/dayTwoTest/assets/Font/grandChase\Gelasio_Yellow_White-export.png
+    at module.exports.getRealFntTexturePath (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:596)
+    at module.exports.import (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:827)
+    at i.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4462)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+    at g (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4396)
+2021-12-02T07:34:14.375Z - error: TypeError: Cannot read property 'addLetterDefinitions' of null
+    at cc_BitmapFont.onLoad (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/assets/CCBitmapFont.js:100:44)
+    at Loader.loadUuid (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/uuid-loader.js:238:27)
+    at Loader.handle (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/loader.js:185:29)
+    at flow (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/pipeline.js:33:35)
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/pipeline.js:44:29
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/downloader.js:182:33
+    at XMLHttpRequest.xhr.onload (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/text-downloader.js:26:25)
+2021-12-02T07:38:22.059Z - error: Parse Error: Unable to find file Texture, the path: /Users/fe-thienchi-fresher/dayTwoTest/assets/Gelasio_Yellow_White-export.png
+    at module.exports.getRealFntTexturePath (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:596)
+    at module.exports.import (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:827)
+    at i.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4462)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+    at g (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4396)
+2021-12-02T07:38:50.054Z - error: TypeError: Cannot read property 'addLetterDefinitions' of null
+    at cc_BitmapFont.onLoad (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/assets/CCBitmapFont.js:100:44)
+    at Loader.loadUuid (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/uuid-loader.js:238:27)
+    at Loader.handle (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/loader.js:185:29)
+    at flow (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/pipeline.js:33:35)
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/pipeline.js:44:29
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/downloader.js:182:33
+    at XMLHttpRequest.xhr.onload (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/text-downloader.js:26:25)
+2021-12-02T07:40:39.582Z - error: Parse Error: Unable to find file Texture, the path: /Users/fe-thienchi-fresher/dayTwoTest/assets/grandChase\Gelasio_Yellow_White-export.png
+    at module.exports.getRealFntTexturePath (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:596)
+    at module.exports.import (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/share/assets/meta/bitmap-font.js:1:827)
+    at i.series.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4462)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
+    at iterate (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
+    at async.forEachOfSeries.async.eachOfSeries (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:281:9)
+    at _parallel (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:717:9)
+    at Object.async.series (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:739:9)
+    at g (/Applications/CocosCreator.app/Contents/Resources/app.asar/asset-db/lib/tasks.js:1:4396)
+2021-12-02T07:41:52.251Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "grandChaseLogo"
+Missing uuid: "a80f1032-0d44-4f7b-88a7-3d5412d47a0d"
+
+2021-12-02T09:46:24.642Z - warn: The type of "test.score" must be cc.Float or cc.Integer, not Number.
+2021-12-02T09:46:24.644Z - warn: The type of "test.time" must be cc.Float or cc.Integer, not Number.
+2021-12-02T10:18:38.152Z - info: Only the prefab node "cocos" and its child nodes are saved.
+2021-12-02T10:18:40.447Z - info: Only the prefab node "cocos" and its child nodes are saved.
+2021-12-02T10:19:02.731Z - info: Only the prefab node "cocos" and its child nodes are saved.
+2021-12-02T10:42:50.504Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/dayTwoTest/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "d2865c1c-412f-42",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/dayTwoTest",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-02T10:42:50.507Z - normal: Building /Users/fe-thienchi-fresher/dayTwoTest
+2021-12-02T10:42:50.508Z - normal: Destination /Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link
+2021-12-02T10:42:50.628Z - normal: Delete /Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link/subpackages/**/*,/Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link/res/**/*,/Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link/src/**/*
+2021-12-02T10:42:50.717Z - normal: Checked Python Version [2.7.18]
+2021-12-02T10:42:52.044Z - normal: Creating native cocos project to  /Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link
+2021-12-02T10:42:55.421Z - normal: Start building assets
+2021-12-02T10:42:55.421Z - normal: Start spawn build-worker
+2021-12-02T10:42:56.041Z - normal: Finish spawn build-worker
+2021-12-02T10:42:56.041Z - normal: Start init build-worker
+2021-12-02T10:42:58.755Z - normal: Finish init build-worker
+2021-12-02T10:42:58.755Z - normal: Start build-assets in worker
+2021-12-02T10:42:58.879Z - info: Enable "Inline all SpriteFrames" in native platform will increase the package size used in hot update.
+2021-12-02T10:42:59.105Z - normal: Finish build-assets in worker
+2021-12-02T10:42:59.107Z - normal: Finish building assets
+2021-12-02T10:42:59.115Z - normal: Start building plugin scripts
+2021-12-02T10:42:59.156Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-02T10:42:59.247Z - normal: Checked Python Version [2.7.18]
+2021-12-02T10:43:00.577Z - normal: Built to "/Users/fe-thienchi-fresher/dayTwoTest/build/jsb-link" successfully
+2021-12-02T10:43:03.807Z - normal: Checked Python Version [2.7.18]
+2021-12-02T10:43:05.003Z - normal: Start to compile native project. Please wait...
+2021-12-02T10:43:05.004Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-02T10:43:11.256Z - failed: Error: Compile failed. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:18946)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-02T10:43:13.123Z - normal: Start to run project
+2021-12-02T10:43:13.180Z - normal: Checked Python Version [2.7.18]
+2021-12-02T10:43:14.401Z - normal: Start to run project. Please wait...
+2021-12-02T10:43:14.401Z - normal: The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+2021-12-02T10:43:15.747Z - failed: Error: Failed to run project. The log file path [ /Users/fe-thienchi-fresher/.CocosCreator/logs/native.log ]
+    at ChildProcess.q (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:21321)
+    at ChildProcess.r.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/native-utils.js:1:6589)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2021-12-02T10:43:41.555Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "android-31",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/dayTwoTest/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/dayTwoTest/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "d2865c1c-412f-42",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/dayTwoTest",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2021-12-02T10:43:41.560Z - normal: Building /Users/fe-thienchi-fresher/dayTwoTest
+2021-12-02T10:43:41.560Z - normal: Destination /Users/fe-thienchi-fresher/dayTwoTest/build/web-desktop
+2021-12-02T10:43:41.562Z - normal: Delete /Users/fe-thienchi-fresher/dayTwoTest/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/dayTwoTest/build/web-desktop/**/*
+2021-12-02T10:43:43.156Z - normal: Start building assets
+2021-12-02T10:43:43.156Z - normal: Start spawn build-worker
+2021-12-02T10:43:43.812Z - normal: Finish spawn build-worker
+2021-12-02T10:43:43.813Z - normal: Start init build-worker
+2021-12-02T10:43:46.338Z - normal: Finish init build-worker
+2021-12-02T10:43:46.338Z - normal: Start build-assets in worker
+2021-12-02T10:43:46.734Z - normal: Finish build-assets in worker
+2021-12-02T10:43:46.737Z - normal: Finish building assets
+2021-12-02T10:43:46.750Z - normal: Start building plugin scripts
+2021-12-02T10:43:46.793Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-02T10:43:46.801Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-02T10:43:46.817Z - normal: Built to "/Users/fe-thienchi-fresher/dayTwoTest/build/web-desktop" successfully
