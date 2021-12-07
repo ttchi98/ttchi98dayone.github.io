@@ -1,0 +1,300 @@
+2021-12-07T06:48:32.409Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-07T06:48:32.483Z - normal: Initializing Asset Database
+2021-12-07T06:48:32.487Z - normal: checking language setting...
+2021-12-07T06:48:32.487Z - normal: Language: en
+2021-12-07T06:48:33.490Z - success: preview server running at http://localhost:7456
+2021-12-07T06:48:33.523Z - success: protocol editor-framework registered
+2021-12-07T06:48:33.523Z - success: protocol app registered
+2021-12-07T06:48:33.523Z - success: protocol theme registered
+2021-12-07T06:48:33.523Z - success: protocol packages registered
+2021-12-07T06:48:33.523Z - success: protocol uuid registerred
+2021-12-07T06:48:33.523Z - success: protocol db registerred
+2021-12-07T06:48:33.524Z - success: protocol thumbnail registerred
+2021-12-07T06:48:33.524Z - success: protocol unpack registerred
+2021-12-07T06:48:33.524Z - success: protocol disable-commonjs registerred
+2021-12-07T06:48:34.628Z - normal: connected!
+2021-12-07T06:48:34.629Z - normal: Check project /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2
+2021-12-07T06:48:34.631Z - normal: Initializing project /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2
+2021-12-07T06:48:35.047Z - normal: Initializing Cocos2d
+2021-12-07T06:48:35.674Z - normal: Initializing engine extends
+2021-12-07T06:48:35.693Z - success: alipay-adapter loaded
+2021-12-07T06:48:35.698Z - success: asset-db-debugger loaded
+2021-12-07T06:48:35.700Z - success: baidu-adapter loaded
+2021-12-07T06:48:35.701Z - success: color-picker loaded
+2021-12-07T06:48:35.835Z - success: fb-audience-network loaded
+2021-12-07T06:48:35.879Z - success: fb-live-stream loaded
+2021-12-07T06:48:35.882Z - success: google-play-instant loaded
+2021-12-07T06:48:35.893Z - success: huawei-runtime loaded
+2021-12-07T06:48:36.146Z - success: cpk-publish loaded
+2021-12-07T06:48:36.149Z - success: jsb-adapter loaded
+2021-12-07T06:48:36.155Z - success: oppo-runtime loaded
+2021-12-07T06:48:36.162Z - success: package-manager loaded
+2021-12-07T06:48:36.295Z - success: qqplay-adapter loaded
+2021-12-07T06:48:36.297Z - success: runtime-dev-tools loaded
+2021-12-07T06:48:36.329Z - success: sdkbox loaded
+2021-12-07T06:48:36.335Z - success: tester loaded
+2021-12-07T06:48:36.339Z - success: ui-kit-preview-extra loaded
+2021-12-07T06:48:36.342Z - success: ui-kit-preview loaded
+2021-12-07T06:48:36.346Z - success: ui-kit loaded
+2021-12-07T06:48:36.353Z - success: vivo-runtime loaded
+2021-12-07T06:48:36.354Z - success: weapp-adapter loaded
+2021-12-07T06:48:36.356Z - success: xiaomi-adapter loaded
+2021-12-07T06:48:36.358Z - success: alipay-minigame loaded
+2021-12-07T06:48:36.406Z - success: assets loaded
+2021-12-07T06:48:36.412Z - success: builder loaded
+2021-12-07T06:48:36.670Z - success: cocos-services loaded
+2021-12-07T06:48:36.677Z - success: console loaded
+2021-12-07T06:48:36.711Z - success: fb-instant-games loaded
+2021-12-07T06:48:36.715Z - success: game-window loaded
+2021-12-07T06:48:36.717Z - success: google-instant-games loaded
+2021-12-07T06:48:36.722Z - success: hierarchy loaded
+2021-12-07T06:48:36.726Z - success: inspector loaded
+2021-12-07T06:48:36.727Z - success: keystore loaded
+2021-12-07T06:48:36.733Z - success: node-library loaded
+2021-12-07T06:48:36.735Z - success: package-asset loaded
+2021-12-07T06:48:36.736Z - success: preferences loaded
+2021-12-07T06:48:36.741Z - success: project-exporter loaded
+2021-12-07T06:48:36.746Z - success: project-importer loaded
+2021-12-07T06:48:36.750Z - success: project-settings loaded
+2021-12-07T06:48:36.755Z - success: scene loaded
+2021-12-07T06:48:36.757Z - success: simulator-debugger loaded
+2021-12-07T06:48:36.758Z - success: sprite-editor loaded
+2021-12-07T06:48:36.764Z - success: store loaded
+2021-12-07T06:48:36.771Z - success: timeline loaded
+2021-12-07T06:48:36.776Z - success: xiaomi-runtime loaded
+2021-12-07T06:48:42.989Z - normal: Loading packages
+2021-12-07T06:48:42.995Z - normal: Watching packages
+2021-12-07T06:48:43.078Z - normal: Run Application
+2021-12-07T06:48:45.121Z - info: Cocos Services load base data!
+2021-12-07T06:50:24.702Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.703Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.703Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.704Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.704Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.705Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.705Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.705Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.706Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.708Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.708Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.709Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.709Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.710Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.711Z - warn: The Asset used by component "cc.Widget" is missing. Detailed information:
+Node path: "mainLayOut/formInfo"
+Missing uuid: "730e1ae1-f527-42b5-a3ba-bff220de308e"
+
+2021-12-07T06:50:24.737Z - warn: The Asset used by node "BaiTapMot" is missing. Detailed information:
+Node path: "BaiTapMot"
+Missing uuid: "b928f1e8-a873-4f97-8246-2c688692d4b6"
+
+2021-12-07T07:34:02.209Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "2a954d27-849c-44e4-9a09-d383d675ed87"
+
+2021-12-07T07:41:26.750Z - warn: Should not set alpha via 'color', set 'opacity' please.
+2021-12-07T07:45:55.498Z - warn: The Prefab used by component "main" is missing. Detailed information:
+Node path: "Canvas/main"
+Missing uuid: "e3f826ca-e972-4f5b-b364-8d20ee056711"
+
+2021-12-07T07:58:55.288Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "e3f826ca-e972-4f5b-b364-8d20ee056711"
+
+2021-12-07T07:58:55.293Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "e3f826ca-e972-4f5b-b364-8d20ee056711"
+
+2021-12-07T08:05:33.046Z - warn: The Asset used by node "New RichText" is missing. Detailed information:
+Node path: "New RichText"
+Missing uuid: "82dfa1f8-94e6-410e-87e3-5b0427ac23e4"
+
+2021-12-07T08:05:33.065Z - warn: The Asset used is missing. Detailed information:
+Missing uuid: "82dfa1f8-94e6-410e-87e3-5b0427ac23e4"
+
+2021-12-07T08:05:33.092Z - warn: The Asset used by node "border" is missing. Detailed information:
+Node path: "border"
+Missing uuid: "82dfa1f8-94e6-410e-87e3-5b0427ac23e4"
+
+2021-12-07T08:30:25.148Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/assets/Script/main.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/assets/Script/main.js: Unexpected token (232:7)
+  230 |   },
+  231 |   signInAccountCheck() {
+> 232 |     if()
+      |        ^
+  233 |     if (this.flag) {
+  234 |       this.formMain.active = true;
+  235 |     } else {
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
+    at Parser.pp$3.parseParenExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3789:18)
+2021-12-07T08:35:30.776Z - error: Can not declare main.signInUserNameCheck method, it is already defined in the properties of main.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.doValidateMethodWithProps_DEV (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:248:24)
+    at Object.exports.validateMethodWithProps (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:263:26)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:695:33)
+    at __define (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:7:4)
+    at /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:233:13
+    at Object.<anonymous> (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:240:11)
+    at Object.<anonymous> (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:243:3)
+    at Module._compile (module.js:571:32)
+2021-12-07T08:35:30.778Z - error: Can not declare main.signInPassWordCheck method, it is already defined in the properties of main.
+    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/CCDebug.js:167:16)
+    at Object.exports.doValidateMethodWithProps_DEV (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:248:24)
+    at Object.exports.validateMethodWithProps (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/preprocess-class.js:263:26)
+    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCClass.js:695:33)
+    at __define (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:7:4)
+    at /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:233:13
+    at Object.<anonymous> (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:240:11)
+    at Object.<anonymous> (/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/temp/quick-scripts/assets/Script/main.js:243:3)
+    at Module._compile (module.js:571:32)
+2021-12-07T09:22:15.832Z - error: scene not saved. Please build project after saveing project.
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:7875)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3757)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2021-12-07T09:22:18.822Z - error: scene not saved. Please build project after saveing project.
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:7875)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3757)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2021-12-07T09:22:31.152Z - error: scene not saved. Please build project after saveing project.
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:7875)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3757)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2021-12-07T09:22:38.696Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "BaiTapMot",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "cdededb7-0df3-42",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2",
+  "projectName": "BaiTapMot",
+  "debugBuildWorker": false
+}
+2021-12-07T09:22:38.699Z - normal: Building /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2
+2021-12-07T09:22:38.700Z - normal: Destination /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build/web-desktop
+2021-12-07T09:22:38.807Z - normal: Delete /Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build/web-desktop/**/*
+2021-12-07T09:22:40.472Z - normal: Start building assets
+2021-12-07T09:22:40.472Z - normal: Start spawn build-worker
+2021-12-07T09:22:41.103Z - normal: Finish spawn build-worker
+2021-12-07T09:22:41.103Z - normal: Start init build-worker
+2021-12-07T09:22:43.654Z - normal: Finish init build-worker
+2021-12-07T09:22:43.654Z - normal: Start build-assets in worker
+2021-12-07T09:22:44.046Z - normal: Finish build-assets in worker
+2021-12-07T09:22:44.049Z - normal: Finish building assets
+2021-12-07T09:22:44.058Z - normal: Start building plugin scripts
+2021-12-07T09:22:44.100Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-07T09:22:44.109Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-07T09:22:44.121Z - normal: Built to "/Users/fe-thienchi-fresher/Desktop/BaiTapMot-v2/build/web-desktop" successfully
