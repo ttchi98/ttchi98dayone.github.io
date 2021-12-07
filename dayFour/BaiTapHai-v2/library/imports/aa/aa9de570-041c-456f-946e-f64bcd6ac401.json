@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "150Mewtwo",
+    "texture": "9634cf75-6978-4c73-9a7a-fd7300ac5d0a",
+    "atlas": "",
+    "rect": [
+      61,
+      22,
+      353,
+      431
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      475,
+      475
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
