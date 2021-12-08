@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "music-button-01",
+    "texture": "812086ea-9db8-42eb-a116-c7fcb8059bfa",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      92,
+      96
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      92,
+      96
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
