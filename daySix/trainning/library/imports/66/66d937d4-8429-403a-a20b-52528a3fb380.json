@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pokemon-4",
+    "texture": "df6beae6-30dc-4263-ae8c-1b8315c63d57",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      248,
+      250
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      250,
+      250
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

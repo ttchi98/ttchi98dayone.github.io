@@ -1,0 +1,68 @@
+2021-12-10T10:22:07.160Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-10T10:22:07.220Z - normal: Initializing Asset Database
+2021-12-10T10:22:07.223Z - normal: checking language setting...
+2021-12-10T10:22:07.223Z - normal: Language: en
+2021-12-10T10:22:07.930Z - success: preview server running at http://localhost:7456
+2021-12-10T10:22:07.947Z - success: protocol editor-framework registered
+2021-12-10T10:22:07.948Z - success: protocol app registered
+2021-12-10T10:22:07.948Z - success: protocol theme registered
+2021-12-10T10:22:07.948Z - success: protocol packages registered
+2021-12-10T10:22:07.948Z - success: protocol uuid registerred
+2021-12-10T10:22:07.948Z - success: protocol db registerred
+2021-12-10T10:22:07.948Z - success: protocol thumbnail registerred
+2021-12-10T10:22:07.948Z - success: protocol unpack registerred
+2021-12-10T10:22:07.948Z - success: protocol disable-commonjs registerred
+2021-12-10T10:22:09.597Z - normal: connected!
+2021-12-10T10:22:09.599Z - normal: Check project /Users/fe-thienchi-fresher/daySix
+2021-12-10T10:22:09.601Z - normal: Initializing project /Users/fe-thienchi-fresher/daySix
+2021-12-10T10:22:10.025Z - normal: Initializing Cocos2d
+2021-12-10T10:22:10.855Z - normal: Initializing engine extends
+2021-12-10T10:22:10.875Z - success: alipay-adapter loaded
+2021-12-10T10:22:10.881Z - success: asset-db-debugger loaded
+2021-12-10T10:22:10.883Z - success: baidu-adapter loaded
+2021-12-10T10:22:10.884Z - success: color-picker loaded
+2021-12-10T10:22:11.005Z - success: fb-audience-network loaded
+2021-12-10T10:22:11.056Z - success: fb-live-stream loaded
+2021-12-10T10:22:11.059Z - success: google-play-instant loaded
+2021-12-10T10:22:11.065Z - success: huawei-runtime loaded
+2021-12-10T10:22:11.305Z - success: cpk-publish loaded
+2021-12-10T10:22:11.307Z - success: jsb-adapter loaded
+2021-12-10T10:22:11.314Z - success: oppo-runtime loaded
+2021-12-10T10:22:11.320Z - success: package-manager loaded
+2021-12-10T10:22:11.448Z - success: qqplay-adapter loaded
+2021-12-10T10:22:11.451Z - success: runtime-dev-tools loaded
+2021-12-10T10:22:11.485Z - success: sdkbox loaded
+2021-12-10T10:22:11.491Z - success: tester loaded
+2021-12-10T10:22:11.496Z - success: ui-kit-preview-extra loaded
+2021-12-10T10:22:11.499Z - success: ui-kit-preview loaded
+2021-12-10T10:22:11.504Z - success: ui-kit loaded
+2021-12-10T10:22:11.511Z - success: vivo-runtime loaded
+2021-12-10T10:22:11.512Z - success: weapp-adapter loaded
+2021-12-10T10:22:11.514Z - success: xiaomi-adapter loaded
+2021-12-10T10:22:11.516Z - success: alipay-minigame loaded
+2021-12-10T10:22:11.558Z - success: assets loaded
+2021-12-10T10:22:11.561Z - success: builder loaded
+2021-12-10T10:22:11.819Z - success: cocos-services loaded
+2021-12-10T10:22:11.827Z - success: console loaded
+2021-12-10T10:22:11.865Z - success: fb-instant-games loaded
+2021-12-10T10:22:11.870Z - success: game-window loaded
+2021-12-10T10:22:11.872Z - success: google-instant-games loaded
+2021-12-10T10:22:11.876Z - success: hierarchy loaded
+2021-12-10T10:22:11.880Z - success: inspector loaded
+2021-12-10T10:22:11.882Z - success: keystore loaded
+2021-12-10T10:22:11.889Z - success: node-library loaded
+2021-12-10T10:22:11.891Z - success: package-asset loaded
+2021-12-10T10:22:11.893Z - success: preferences loaded
+2021-12-10T10:22:11.895Z - success: project-exporter loaded
+2021-12-10T10:22:11.901Z - success: project-importer loaded
+2021-12-10T10:22:11.906Z - success: project-settings loaded
+2021-12-10T10:22:11.912Z - success: scene loaded
+2021-12-10T10:22:11.913Z - success: simulator-debugger loaded
+2021-12-10T10:22:11.915Z - success: sprite-editor loaded
+2021-12-10T10:22:11.920Z - success: store loaded
+2021-12-10T10:22:11.929Z - success: timeline loaded
+2021-12-10T10:22:11.934Z - success: xiaomi-runtime loaded
+2021-12-10T10:22:12.925Z - normal: Loading packages
+2021-12-10T10:22:12.931Z - normal: Watching packages
+2021-12-10T10:22:13.038Z - normal: Run Application
+2021-12-10T10:22:20.038Z - info: Cocos Services load base data!
