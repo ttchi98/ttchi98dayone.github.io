@@ -430,8 +430,8 @@
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1639045418615,
-    "meta": 1639045418625,
+    "asset": 1639107396912,
+    "meta": 1639107396926,
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -510,18 +510,18 @@
     "relativePath": "Texture/empty-button (2).png"
   },
   "a35bce16-f76e-406d-973a-53a525637060": {
-    "asset": 1639044798956,
-    "meta": 1639045217627,
+    "asset": 1639107954832,
+    "meta": 1639108017752,
     "relativePath": "Script/buttonController.js"
   },
-  "c68158dd-183a-4e61-b195-290279e482af": {
-    "asset": 1639045355333,
-    "meta": 1639045401796,
-    "relativePath": "Script/keyController.js"
-  },
   "9dffe80c-4db7-4503-badf-96d2454d0e52": {
-    "asset": 1639045469559,
-    "meta": 1639045470837,
+    "asset": 1639108292293,
+    "meta": 1639108324940,
     "relativePath": "Script/mainController.js"
+  },
+  "c68158dd-183a-4e61-b195-290279e482af": {
+    "asset": 1639108718618,
+    "meta": 1639108721907,
+    "relativePath": "Script/keyController.js"
   }
 }

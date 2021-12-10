@@ -152,3 +152,89 @@
 2021-12-09T10:58:05.144Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
 2021-12-09T10:58:05.176Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
 2021-12-09T10:58:05.206Z - normal: Built to "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop" successfully
+2021-12-10T03:59:08.045Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "BaiTapHaiEmit",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "e3037107-a37f-43",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/BaiTapHaiEmit",
+  "projectName": "BaiTapHaiEmit",
+  "debugBuildWorker": false
+}
+2021-12-10T03:59:08.050Z - normal: Building /Users/fe-thienchi-fresher/BaiTapHaiEmit
+2021-12-10T03:59:08.050Z - normal: Destination /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop
+2021-12-10T03:59:08.051Z - normal: Delete /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/**/*
+2021-12-10T03:59:09.907Z - normal: Start building assets
+2021-12-10T03:59:09.907Z - normal: Start spawn build-worker
+2021-12-10T03:59:10.576Z - normal: Finish spawn build-worker
+2021-12-10T03:59:10.576Z - normal: Start init build-worker
+2021-12-10T03:59:13.207Z - normal: Finish init build-worker
+2021-12-10T03:59:13.207Z - normal: Start build-assets in worker
+2021-12-10T03:59:13.533Z - normal: Finish build-assets in worker
+2021-12-10T03:59:13.536Z - normal: Finish building assets
+2021-12-10T03:59:13.544Z - normal: Start building plugin scripts
+2021-12-10T03:59:13.592Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-10T03:59:13.607Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-10T03:59:13.630Z - normal: Built to "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop" successfully

@@ -13,7 +13,10 @@ cc.Class({
     this.rightBtn.node.on("click", this.goRight, this);
     this.jumpBtn.node.on("click", this.goJump, this);
     this.resetBtn.node.on("click", this.resetPos, this);
-    Emitter.instance.registerEvent("DISABLE", this.disableBtn.bind(this));
+    Emitter.instance.registerEvent(
+      "DISABLE BUTTON",
+      this.disableBtn.bind(this)
+    );
   },
   start() {},
   update(dt) {},

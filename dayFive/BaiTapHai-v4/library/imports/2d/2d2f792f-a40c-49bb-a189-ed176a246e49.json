@@ -157,7 +157,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 345.7877057548054
+      "z": 345.54413610999103
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -2034,6 +2034,10 @@
       "__id__": 5
     },
     "_enabled": true,
+    "canMove": true,
+    "goLeftFlag": false,
+    "goRightFlag": false,
+    "goJumpFlag": false,
     "_id": "b97+jtyAVMnb/Y8y26edP0"
   },
   {

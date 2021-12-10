@@ -8,7 +8,6 @@ var Emitter = require("mEmitter");
 cc.Class({
   extends: cc.Component,
   properties: {
-    canMove: true,
     goLeftFlag: false,
     goRightFlag: false,
     goJumpFlag: false,
@@ -34,6 +33,7 @@ cc.Class({
     if (this.goLeftFlag || this.goRightFlag || this.goJumpFlag) {
       if (this.counter >= this.frames) {
         this.disableButton(true);
+        this.disableKey(true);
         this.resetMove();
         return;
       }
@@ -55,6 +55,7 @@ cc.Class({
         }
       }
       this.disableButton(false);
+      this.disableKey(false);
       this.counter++;
     }
   },
@@ -82,7 +83,10 @@ cc.Class({
     this.goJumpFlag = false;
   },
   disableButton: function disableButton(value) {
-    Emitter.instance.emit("DISABLE", value);
+    Emitter.instance.emit("DISABLE BUTTON", value);
+  },
+  disableKey: function disableKey(value) {
+    Emitter.instance.emit("DISABLE KEY", value);
   },
   limitPos: function limitPos() {
     if (this.mainItem.x <= -this.limitX) {
