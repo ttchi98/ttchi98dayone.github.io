@@ -1,0 +1,240 @@
+2021-12-10T04:10:19.458Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-10T04:10:19.509Z - normal: Initializing Asset Database
+2021-12-10T04:10:19.511Z - normal: checking language setting...
+2021-12-10T04:10:19.511Z - normal: Language: en
+2021-12-10T04:10:20.012Z - success: preview server running at http://localhost:7456
+2021-12-10T04:10:20.025Z - success: protocol editor-framework registered
+2021-12-10T04:10:20.025Z - success: protocol app registered
+2021-12-10T04:10:20.025Z - success: protocol theme registered
+2021-12-10T04:10:20.025Z - success: protocol packages registered
+2021-12-10T04:10:20.025Z - success: protocol uuid registerred
+2021-12-10T04:10:20.025Z - success: protocol db registerred
+2021-12-10T04:10:20.025Z - success: protocol thumbnail registerred
+2021-12-10T04:10:20.025Z - success: protocol unpack registerred
+2021-12-10T04:10:20.025Z - success: protocol disable-commonjs registerred
+2021-12-10T04:10:21.626Z - normal: connected!
+2021-12-10T04:10:21.627Z - normal: Check project /Users/fe-thienchi-fresher/BaiTapHaiEmit
+2021-12-10T04:10:21.628Z - normal: Initializing project /Users/fe-thienchi-fresher/BaiTapHaiEmit
+2021-12-10T04:10:21.893Z - normal: Initializing Cocos2d
+2021-12-10T04:10:22.408Z - normal: Initializing engine extends
+2021-12-10T04:10:22.428Z - success: alipay-adapter loaded
+2021-12-10T04:10:22.437Z - success: asset-db-debugger loaded
+2021-12-10T04:10:22.445Z - success: baidu-adapter loaded
+2021-12-10T04:10:22.446Z - success: color-picker loaded
+2021-12-10T04:10:22.540Z - success: fb-audience-network loaded
+2021-12-10T04:10:22.572Z - success: fb-live-stream loaded
+2021-12-10T04:10:22.574Z - success: google-play-instant loaded
+2021-12-10T04:10:22.577Z - success: huawei-runtime loaded
+2021-12-10T04:10:22.736Z - success: cpk-publish loaded
+2021-12-10T04:10:22.737Z - success: jsb-adapter loaded
+2021-12-10T04:10:22.740Z - success: oppo-runtime loaded
+2021-12-10T04:10:22.744Z - success: package-manager loaded
+2021-12-10T04:10:22.846Z - success: qqplay-adapter loaded
+2021-12-10T04:10:22.847Z - success: runtime-dev-tools loaded
+2021-12-10T04:10:22.876Z - success: sdkbox loaded
+2021-12-10T04:10:22.880Z - success: tester loaded
+2021-12-10T04:10:22.882Z - success: ui-kit-preview-extra loaded
+2021-12-10T04:10:22.885Z - success: ui-kit-preview loaded
+2021-12-10T04:10:22.888Z - success: ui-kit loaded
+2021-12-10T04:10:22.893Z - success: vivo-runtime loaded
+2021-12-10T04:10:22.899Z - success: weapp-adapter loaded
+2021-12-10T04:10:22.900Z - success: xiaomi-adapter loaded
+2021-12-10T04:10:22.902Z - success: alipay-minigame loaded
+2021-12-10T04:10:22.941Z - success: assets loaded
+2021-12-10T04:10:22.944Z - success: builder loaded
+2021-12-10T04:10:23.153Z - success: cocos-services loaded
+2021-12-10T04:10:23.159Z - success: console loaded
+2021-12-10T04:10:23.191Z - success: fb-instant-games loaded
+2021-12-10T04:10:23.194Z - success: game-window loaded
+2021-12-10T04:10:23.195Z - success: google-instant-games loaded
+2021-12-10T04:10:23.200Z - success: hierarchy loaded
+2021-12-10T04:10:23.204Z - success: inspector loaded
+2021-12-10T04:10:23.205Z - success: keystore loaded
+2021-12-10T04:10:23.210Z - success: node-library loaded
+2021-12-10T04:10:23.211Z - success: package-asset loaded
+2021-12-10T04:10:23.211Z - success: preferences loaded
+2021-12-10T04:10:23.214Z - success: project-exporter loaded
+2021-12-10T04:10:23.218Z - success: project-importer loaded
+2021-12-10T04:10:23.222Z - success: project-settings loaded
+2021-12-10T04:10:23.227Z - success: scene loaded
+2021-12-10T04:10:23.228Z - success: simulator-debugger loaded
+2021-12-10T04:10:23.229Z - success: sprite-editor loaded
+2021-12-10T04:10:23.234Z - success: store loaded
+2021-12-10T04:10:23.241Z - success: timeline loaded
+2021-12-10T04:10:23.245Z - success: xiaomi-runtime loaded
+2021-12-10T04:10:25.118Z - info: Cocos Services load base data!
+2021-12-10T04:10:27.713Z - normal: Loading packages
+2021-12-10T04:10:27.722Z - normal: Watching packages
+2021-12-10T04:10:27.806Z - normal: Run Application
+2021-12-10T04:11:08.188Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "BaiTapHaiEmit",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "e3037107-a37f-43",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/BaiTapHaiEmit",
+  "projectName": "BaiTapHaiEmit",
+  "debugBuildWorker": false
+}
+2021-12-10T04:11:08.190Z - normal: Building /Users/fe-thienchi-fresher/BaiTapHaiEmit
+2021-12-10T04:11:08.191Z - normal: Destination /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop
+2021-12-10T04:11:08.298Z - normal: Delete /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/**/*
+2021-12-10T04:11:09.911Z - normal: Start building assets
+2021-12-10T04:11:09.911Z - normal: Start spawn build-worker
+2021-12-10T04:11:10.562Z - normal: Finish spawn build-worker
+2021-12-10T04:11:10.562Z - normal: Start init build-worker
+2021-12-10T04:11:12.937Z - normal: Finish init build-worker
+2021-12-10T04:11:12.937Z - normal: Start build-assets in worker
+2021-12-10T04:11:13.191Z - normal: Finish build-assets in worker
+2021-12-10T04:11:13.196Z - normal: Finish building assets
+2021-12-10T04:11:13.206Z - normal: Start building plugin scripts
+2021-12-10T04:11:13.272Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-10T04:11:13.279Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-10T04:11:13.292Z - normal: Built to "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop" successfully
+2021-12-10T04:11:29.968Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "BaiTapHaiEmitter",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "e3037107-a37f-43",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/BaiTapHaiEmit",
+  "projectName": "BaiTapHaiEmitter",
+  "debugBuildWorker": false
+}
+2021-12-10T04:11:29.972Z - normal: Building /Users/fe-thienchi-fresher/BaiTapHaiEmit
+2021-12-10T04:11:29.972Z - normal: Destination /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop
+2021-12-10T04:11:29.973Z - normal: Delete /Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop/**/*
+2021-12-10T04:11:31.661Z - normal: Start building assets
+2021-12-10T04:11:31.662Z - normal: Start spawn build-worker
+2021-12-10T04:11:32.284Z - normal: Finish spawn build-worker
+2021-12-10T04:11:32.284Z - normal: Start init build-worker
+2021-12-10T04:11:34.624Z - normal: Finish init build-worker
+2021-12-10T04:11:34.624Z - normal: Start build-assets in worker
+2021-12-10T04:11:34.868Z - normal: Finish build-assets in worker
+2021-12-10T04:11:34.870Z - normal: Finish building assets
+2021-12-10T04:11:34.876Z - normal: Start building plugin scripts
+2021-12-10T04:11:34.915Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-10T04:11:34.920Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-10T04:11:34.933Z - normal: Built to "/Users/fe-thienchi-fresher/BaiTapHaiEmit/build/web-desktop" successfully
