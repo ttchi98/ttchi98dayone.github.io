@@ -8,7 +8,7 @@
       "x": 0,
       "y": 25,
       "width": 1680,
-      "height": 942,
+      "height": 940,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 405,
+                "height": 404.046875,
                 "type": "panel",
                 "width": 268
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 447,
+                "height": 445.953125,
                 "type": "panel",
                 "width": 268
               }
             ],
-            "height": 854,
+            "height": 852,
             "type": "dock-v",
             "width": 268
           },
@@ -45,7 +45,7 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 447.984375,
+                    "height": 446.9375,
                     "type": "panel",
                     "width": 507
                   },
@@ -54,12 +54,12 @@
                     "children": [
                       "node-library"
                     ],
-                    "height": 447.984375,
+                    "height": 446.9375,
                     "type": "panel",
                     "width": 265
                   }
                 ],
-                "height": 447.984375,
+                "height": 446.9375,
                 "type": "dock-h",
                 "width": 774
               },
@@ -70,12 +70,12 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 404,
+                "height": 403.046875,
                 "type": "panel",
                 "width": 774
               }
             ],
-            "height": 854,
+            "height": 852,
             "type": "dock-v",
             "width": 774
           },
@@ -85,7 +85,7 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 854,
+            "height": 852,
             "type": "panel",
             "width": 634
           }
@@ -104,7 +104,7 @@
         "scene"
       ]
     },
-    "window-1639197003080": {}
+    "window-1639197674646": {}
   },
   "panels": {
     "builder": {

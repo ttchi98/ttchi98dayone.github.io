@@ -99,157 +99,188 @@ cc.Class({
     this.sprite.runAction(action);
   },
   easeInShine() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutShine() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutShine() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeInOut(3.0));
     this.sprite.runAction(action);
   },
   easeInQuad() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuadraticActionIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutQuad() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuadraticActionOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutQuad() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuadraticActionInOut(3.0));
     this.sprite.runAction(action);
   },
   easeInCubic() {
-    let action = cc.moveBy(3.0, 200, 0);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCubicActionIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutCubic() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCubicActionOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutCubic() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCubicActionInOut(3.0));
     this.sprite.runAction(action);
   },
   easeInQuart() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuarticActionIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutQuart() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuarticActionOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutQuart() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuarticActionInOut(3.0));
     this.sprite.runAction(action);
   },
 
   easeInQuint() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuinticActionIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutQuint() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuinticActionOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutQuint() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeQuinticActionInOut(3.0));
     this.sprite.runAction(action);
   },
 
   easeInExpo() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeExponentialIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutExpo() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeExponentialOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutExpo() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeExponentialInOut(3.0));
     this.sprite.runAction(action);
   },
 
   easeInCirc() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCircleActionIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutCirc() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCircleActionOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutCirc() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeCircleActionInOut(3.0));
     this.sprite.runAction(action);
     3.0;
   },
   easeInBack() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBackIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutBack() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBackOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutBack() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBackInOut(3.0));
     this.sprite.runAction(action);
   },
-  Elastic() {
-    let action = cc.moveBy(3.0, 200, 0);
+  easeInElastic() {
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeElasticIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutElastic() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeElasticOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutElastic() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeElasticInOut(3.0));
     this.sprite.runAction(action);
   },
 
   easeInBounce() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBounceIn(3.0));
     this.sprite.runAction(action);
   },
   easeOutBounce() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBounceOut(3.0));
     this.sprite.runAction(action);
   },
   easeInOutBounce() {
-    let action = cc.moveBy(3.0, 200, 0);
+    this.sprite.position = cc.v2(-300, 40);
+    let action = cc.moveBy(3.0, 600, 0);
     action.easing(cc.easeBounceInOut(3.0));
     this.sprite.runAction(action);
   },

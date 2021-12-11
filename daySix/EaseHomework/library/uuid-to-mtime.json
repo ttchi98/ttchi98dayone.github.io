@@ -425,13 +425,13 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1639193168110,
+    "asset": 1639194726948,
     "meta": 1639189322371,
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1639196991679,
-    "meta": 1639196991693,
+    "asset": 1639197607685,
+    "meta": 1639197607702,
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -470,8 +470,8 @@
     "relativePath": "Texture/export_37/spineboy-pro_3.7_output.png"
   },
   "00b00616-2acf-427a-9feb-67db2e30c5e9": {
-    "asset": 1639196989573,
-    "meta": 1639196991435,
+    "asset": 1639197541410,
+    "meta": 1639197544924,
     "relativePath": "Script/main.js.js"
   }
 }

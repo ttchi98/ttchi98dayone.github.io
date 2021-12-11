@@ -1,72 +1,72 @@
-2021-12-11T03:41:05.634Z - normal: Load ~/.CocosCreator/settings.json
-2021-12-11T03:41:05.699Z - normal: Initializing Asset Database
-2021-12-11T03:41:05.702Z - normal: checking language setting...
-2021-12-11T03:41:05.702Z - normal: Language: en
-2021-12-11T03:41:06.502Z - success: preview server running at http://localhost:7456
-2021-12-11T03:41:06.524Z - success: protocol editor-framework registered
-2021-12-11T03:41:06.524Z - success: protocol app registered
-2021-12-11T03:41:06.524Z - success: protocol theme registered
-2021-12-11T03:41:06.525Z - success: protocol packages registered
-2021-12-11T03:41:06.525Z - success: protocol uuid registerred
-2021-12-11T03:41:06.525Z - success: protocol db registerred
-2021-12-11T03:41:06.525Z - success: protocol thumbnail registerred
-2021-12-11T03:41:06.525Z - success: protocol unpack registerred
-2021-12-11T03:41:06.525Z - success: protocol disable-commonjs registerred
-2021-12-11T03:41:06.917Z - normal: connected!
-2021-12-11T03:41:06.918Z - normal: Check project /Users/fe-thienchi-fresher/EasingHomework
-2021-12-11T03:41:06.919Z - normal: Initializing project /Users/fe-thienchi-fresher/EasingHomework
-2021-12-11T03:41:07.506Z - normal: Initializing Cocos2d
-2021-12-11T03:41:08.465Z - normal: Initializing engine extends
-2021-12-11T03:41:08.518Z - success: alipay-adapter loaded
-2021-12-11T03:41:08.526Z - success: asset-db-debugger loaded
-2021-12-11T03:41:08.530Z - success: baidu-adapter loaded
-2021-12-11T03:41:08.532Z - success: color-picker loaded
-2021-12-11T03:41:08.740Z - success: fb-audience-network loaded
-2021-12-11T03:41:08.781Z - success: fb-live-stream loaded
-2021-12-11T03:41:08.784Z - success: google-play-instant loaded
-2021-12-11T03:41:08.788Z - success: huawei-runtime loaded
-2021-12-11T03:41:09.002Z - success: cpk-publish loaded
-2021-12-11T03:41:09.005Z - success: jsb-adapter loaded
-2021-12-11T03:41:09.010Z - success: oppo-runtime loaded
-2021-12-11T03:41:09.014Z - success: package-manager loaded
-2021-12-11T03:41:09.142Z - success: qqplay-adapter loaded
-2021-12-11T03:41:09.144Z - success: runtime-dev-tools loaded
-2021-12-11T03:41:09.178Z - success: sdkbox loaded
-2021-12-11T03:41:09.184Z - success: tester loaded
-2021-12-11T03:41:09.188Z - success: ui-kit-preview-extra loaded
-2021-12-11T03:41:09.191Z - success: ui-kit-preview loaded
-2021-12-11T03:41:09.195Z - success: ui-kit loaded
-2021-12-11T03:41:09.200Z - success: vivo-runtime loaded
-2021-12-11T03:41:09.201Z - success: weapp-adapter loaded
-2021-12-11T03:41:09.201Z - success: xiaomi-adapter loaded
-2021-12-11T03:41:09.204Z - success: alipay-minigame loaded
-2021-12-11T03:41:09.247Z - success: assets loaded
-2021-12-11T03:41:09.254Z - success: builder loaded
-2021-12-11T03:41:09.501Z - success: cocos-services loaded
-2021-12-11T03:41:09.506Z - success: console loaded
-2021-12-11T03:41:09.539Z - success: fb-instant-games loaded
-2021-12-11T03:41:09.543Z - success: game-window loaded
-2021-12-11T03:41:09.545Z - success: google-instant-games loaded
-2021-12-11T03:41:09.551Z - success: hierarchy loaded
-2021-12-11T03:41:09.555Z - success: inspector loaded
-2021-12-11T03:41:09.557Z - success: keystore loaded
-2021-12-11T03:41:09.562Z - success: node-library loaded
-2021-12-11T03:41:09.565Z - success: package-asset loaded
-2021-12-11T03:41:09.566Z - success: preferences loaded
-2021-12-11T03:41:09.571Z - success: project-exporter loaded
-2021-12-11T03:41:09.576Z - success: project-importer loaded
-2021-12-11T03:41:09.580Z - success: project-settings loaded
-2021-12-11T03:41:09.586Z - success: scene loaded
-2021-12-11T03:41:09.587Z - success: simulator-debugger loaded
-2021-12-11T03:41:09.589Z - success: sprite-editor loaded
-2021-12-11T03:41:09.594Z - success: store loaded
-2021-12-11T03:41:09.601Z - success: timeline loaded
-2021-12-11T03:41:09.606Z - success: xiaomi-runtime loaded
-2021-12-11T03:41:10.539Z - normal: Loading packages
-2021-12-11T03:41:10.545Z - normal: Watching packages
-2021-12-11T03:41:10.646Z - normal: Run Application
-2021-12-11T03:41:11.708Z - info: Cocos Services load base data!
-2021-12-11T04:30:15.763Z - normal: Start building with options : {
+2021-12-11T04:34:25.357Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-11T04:34:25.420Z - normal: Initializing Asset Database
+2021-12-11T04:34:25.423Z - normal: checking language setting...
+2021-12-11T04:34:25.424Z - normal: Language: en
+2021-12-11T04:34:26.053Z - success: preview server running at http://localhost:7456
+2021-12-11T04:34:26.070Z - success: protocol editor-framework registered
+2021-12-11T04:34:26.070Z - success: protocol app registered
+2021-12-11T04:34:26.071Z - success: protocol theme registered
+2021-12-11T04:34:26.071Z - success: protocol packages registered
+2021-12-11T04:34:26.071Z - success: protocol uuid registerred
+2021-12-11T04:34:26.071Z - success: protocol db registerred
+2021-12-11T04:34:26.071Z - success: protocol thumbnail registerred
+2021-12-11T04:34:26.071Z - success: protocol unpack registerred
+2021-12-11T04:34:26.071Z - success: protocol disable-commonjs registerred
+2021-12-11T04:34:27.217Z - normal: connected!
+2021-12-11T04:34:27.218Z - normal: Check project /Users/fe-thienchi-fresher/EasingHomework
+2021-12-11T04:34:27.219Z - normal: Initializing project /Users/fe-thienchi-fresher/EasingHomework
+2021-12-11T04:34:27.579Z - normal: Initializing Cocos2d
+2021-12-11T04:34:28.248Z - normal: Initializing engine extends
+2021-12-11T04:34:28.285Z - success: alipay-adapter loaded
+2021-12-11T04:34:28.297Z - success: asset-db-debugger loaded
+2021-12-11T04:34:28.298Z - success: baidu-adapter loaded
+2021-12-11T04:34:28.303Z - success: color-picker loaded
+2021-12-11T04:34:28.417Z - success: fb-audience-network loaded
+2021-12-11T04:34:28.464Z - success: fb-live-stream loaded
+2021-12-11T04:34:28.466Z - success: google-play-instant loaded
+2021-12-11T04:34:28.470Z - success: huawei-runtime loaded
+2021-12-11T04:34:28.679Z - success: cpk-publish loaded
+2021-12-11T04:34:28.679Z - success: jsb-adapter loaded
+2021-12-11T04:34:28.683Z - success: oppo-runtime loaded
+2021-12-11T04:34:28.687Z - success: package-manager loaded
+2021-12-11T04:34:28.792Z - success: qqplay-adapter loaded
+2021-12-11T04:34:28.794Z - success: runtime-dev-tools loaded
+2021-12-11T04:34:28.832Z - success: sdkbox loaded
+2021-12-11T04:34:28.838Z - success: tester loaded
+2021-12-11T04:34:28.841Z - success: ui-kit-preview-extra loaded
+2021-12-11T04:34:28.845Z - success: ui-kit-preview loaded
+2021-12-11T04:34:28.848Z - success: ui-kit loaded
+2021-12-11T04:34:28.853Z - success: vivo-runtime loaded
+2021-12-11T04:34:28.853Z - success: weapp-adapter loaded
+2021-12-11T04:34:28.854Z - success: xiaomi-adapter loaded
+2021-12-11T04:34:28.857Z - success: alipay-minigame loaded
+2021-12-11T04:34:28.900Z - success: assets loaded
+2021-12-11T04:34:28.903Z - success: builder loaded
+2021-12-11T04:34:29.145Z - success: cocos-services loaded
+2021-12-11T04:34:29.151Z - success: console loaded
+2021-12-11T04:34:29.187Z - success: fb-instant-games loaded
+2021-12-11T04:34:29.193Z - success: game-window loaded
+2021-12-11T04:34:29.194Z - success: google-instant-games loaded
+2021-12-11T04:34:29.199Z - success: hierarchy loaded
+2021-12-11T04:34:29.203Z - success: inspector loaded
+2021-12-11T04:34:29.205Z - success: keystore loaded
+2021-12-11T04:34:29.213Z - success: node-library loaded
+2021-12-11T04:34:29.214Z - success: package-asset loaded
+2021-12-11T04:34:29.215Z - success: preferences loaded
+2021-12-11T04:34:29.219Z - success: project-exporter loaded
+2021-12-11T04:34:29.225Z - success: project-importer loaded
+2021-12-11T04:34:29.230Z - success: project-settings loaded
+2021-12-11T04:34:29.235Z - success: scene loaded
+2021-12-11T04:34:29.236Z - success: simulator-debugger loaded
+2021-12-11T04:34:29.238Z - success: sprite-editor loaded
+2021-12-11T04:34:29.244Z - success: store loaded
+2021-12-11T04:34:29.251Z - success: timeline loaded
+2021-12-11T04:34:29.256Z - success: xiaomi-runtime loaded
+2021-12-11T04:34:30.213Z - normal: Loading packages
+2021-12-11T04:34:30.218Z - normal: Watching packages
+2021-12-11T04:34:30.328Z - normal: Run Application
+2021-12-11T04:34:31.375Z - info: Cocos Services load base data!
+2021-12-11T04:41:22.030Z - normal: Start building with options : {
   "actualPlatform": "web-desktop",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -137,18 +137,18 @@
   "projectName": "EaseHomeWork",
   "debugBuildWorker": false
 }
-2021-12-11T04:30:15.767Z - normal: Building /Users/fe-thienchi-fresher/EasingHomework
-2021-12-11T04:30:15.767Z - normal: Destination /Users/fe-thienchi-fresher/EasingHomework/build/web-desktop
-2021-12-11T04:30:15.889Z - normal: Delete /Users/fe-thienchi-fresher/EasingHomework/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/EasingHomework/build/web-desktop/**/*
-2021-12-11T04:30:17.664Z - normal: Start building assets
-2021-12-11T04:30:17.664Z - normal: Start spawn build-worker
-2021-12-11T04:30:18.335Z - normal: Finish spawn build-worker
-2021-12-11T04:30:18.335Z - normal: Start init build-worker
-2021-12-11T04:30:20.969Z - normal: Finish init build-worker
-2021-12-11T04:30:20.969Z - normal: Start build-assets in worker
-2021-12-11T04:30:21.327Z - normal: Finish build-assets in worker
-2021-12-11T04:30:21.329Z - normal: Finish building assets
-2021-12-11T04:30:21.334Z - normal: Start building plugin scripts
-2021-12-11T04:30:21.372Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2021-12-11T04:30:21.381Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
-2021-12-11T04:30:21.396Z - normal: Built to "/Users/fe-thienchi-fresher/EasingHomework/build/web-desktop" successfully
+2021-12-11T04:41:22.034Z - normal: Building /Users/fe-thienchi-fresher/EasingHomework
+2021-12-11T04:41:22.034Z - normal: Destination /Users/fe-thienchi-fresher/EasingHomework/build/web-desktop
+2021-12-11T04:41:22.133Z - normal: Delete /Users/fe-thienchi-fresher/EasingHomework/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/EasingHomework/build/web-desktop/**/*
+2021-12-11T04:41:23.724Z - normal: Start building assets
+2021-12-11T04:41:23.724Z - normal: Start spawn build-worker
+2021-12-11T04:41:24.391Z - normal: Finish spawn build-worker
+2021-12-11T04:41:24.391Z - normal: Start init build-worker
+2021-12-11T04:41:27.038Z - normal: Finish init build-worker
+2021-12-11T04:41:27.038Z - normal: Start build-assets in worker
+2021-12-11T04:41:27.399Z - normal: Finish build-assets in worker
+2021-12-11T04:41:27.402Z - normal: Finish building assets
+2021-12-11T04:41:27.410Z - normal: Start building plugin scripts
+2021-12-11T04:41:27.470Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-11T04:41:27.480Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
+2021-12-11T04:41:27.497Z - normal: Built to "/Users/fe-thienchi-fresher/EasingHomework/build/web-desktop" successfully
