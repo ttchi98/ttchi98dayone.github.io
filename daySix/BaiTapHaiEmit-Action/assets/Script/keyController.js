@@ -15,6 +15,9 @@ cc.Class({
   onKeyDown(event) {
     if (!this.keyMove) return;
     switch (event.keyCode) {
+      case cc.macro.KEY.a:
+        this.goAttack();
+        break;
       case cc.macro.KEY.left:
         this.goLeft();
         break;
@@ -28,6 +31,9 @@ cc.Class({
         this.resetPos();
         break;
     }
+  },
+  goAttack() {
+    Emitter.instance.emit("ATTACK");
   },
   goLeft() {
     Emitter.instance.emit("LEFT");
