@@ -1,0 +1,208 @@
+2021-12-14T06:41:14.331Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-14T06:41:14.384Z - normal: Initializing Asset Database
+2021-12-14T06:41:14.386Z - normal: checking language setting...
+2021-12-14T06:41:14.386Z - normal: Language: en
+2021-12-14T06:41:14.903Z - success: preview server running at http://localhost:7456
+2021-12-14T06:41:14.918Z - success: protocol editor-framework registered
+2021-12-14T06:41:14.918Z - success: protocol app registered
+2021-12-14T06:41:14.918Z - success: protocol theme registered
+2021-12-14T06:41:14.918Z - success: protocol packages registered
+2021-12-14T06:41:14.919Z - success: protocol uuid registerred
+2021-12-14T06:41:14.919Z - success: protocol db registerred
+2021-12-14T06:41:14.919Z - success: protocol thumbnail registerred
+2021-12-14T06:41:14.919Z - success: protocol unpack registerred
+2021-12-14T06:41:14.919Z - success: protocol disable-commonjs registerred
+2021-12-14T06:41:15.306Z - normal: connected!
+2021-12-14T06:41:15.307Z - normal: Check project /Users/fe-thienchi-fresher/daySeven
+2021-12-14T06:41:15.308Z - normal: Initializing project /Users/fe-thienchi-fresher/daySeven
+2021-12-14T06:41:15.577Z - normal: Initializing Cocos2d
+2021-12-14T06:41:16.113Z - normal: Initializing engine extends
+2021-12-14T06:41:16.150Z - success: alipay-adapter loaded
+2021-12-14T06:41:16.167Z - success: asset-db-debugger loaded
+2021-12-14T06:41:16.169Z - success: baidu-adapter loaded
+2021-12-14T06:41:16.169Z - success: color-picker loaded
+2021-12-14T06:41:16.264Z - success: fb-audience-network loaded
+2021-12-14T06:41:16.300Z - success: fb-live-stream loaded
+2021-12-14T06:41:16.304Z - success: google-play-instant loaded
+2021-12-14T06:41:16.307Z - success: huawei-runtime loaded
+2021-12-14T06:41:16.473Z - success: cpk-publish loaded
+2021-12-14T06:41:16.474Z - success: jsb-adapter loaded
+2021-12-14T06:41:16.477Z - success: oppo-runtime loaded
+2021-12-14T06:41:16.480Z - success: package-manager loaded
+2021-12-14T06:41:16.564Z - success: qqplay-adapter loaded
+2021-12-14T06:41:16.565Z - success: runtime-dev-tools loaded
+2021-12-14T06:41:16.591Z - success: sdkbox loaded
+2021-12-14T06:41:16.594Z - success: tester loaded
+2021-12-14T06:41:16.597Z - success: ui-kit-preview-extra loaded
+2021-12-14T06:41:16.599Z - success: ui-kit-preview loaded
+2021-12-14T06:41:16.602Z - success: ui-kit loaded
+2021-12-14T06:41:16.606Z - success: vivo-runtime loaded
+2021-12-14T06:41:16.612Z - success: weapp-adapter loaded
+2021-12-14T06:41:16.613Z - success: xiaomi-adapter loaded
+2021-12-14T06:41:16.615Z - success: alipay-minigame loaded
+2021-12-14T06:41:16.650Z - success: assets loaded
+2021-12-14T06:41:16.653Z - success: builder loaded
+2021-12-14T06:41:16.830Z - success: cocos-services loaded
+2021-12-14T06:41:16.835Z - success: console loaded
+2021-12-14T06:41:16.864Z - success: fb-instant-games loaded
+2021-12-14T06:41:16.867Z - success: game-window loaded
+2021-12-14T06:41:16.868Z - success: google-instant-games loaded
+2021-12-14T06:41:16.873Z - success: hierarchy loaded
+2021-12-14T06:41:16.876Z - success: inspector loaded
+2021-12-14T06:41:16.877Z - success: keystore loaded
+2021-12-14T06:41:16.881Z - success: node-library loaded
+2021-12-14T06:41:16.882Z - success: package-asset loaded
+2021-12-14T06:41:16.883Z - success: preferences loaded
+2021-12-14T06:41:16.886Z - success: project-exporter loaded
+2021-12-14T06:41:16.890Z - success: project-importer loaded
+2021-12-14T06:41:16.893Z - success: project-settings loaded
+2021-12-14T06:41:16.898Z - success: scene loaded
+2021-12-14T06:41:16.899Z - success: simulator-debugger loaded
+2021-12-14T06:41:16.900Z - success: sprite-editor loaded
+2021-12-14T06:41:16.904Z - success: store loaded
+2021-12-14T06:41:16.911Z - success: timeline loaded
+2021-12-14T06:41:16.914Z - success: xiaomi-runtime loaded
+2021-12-14T06:41:19.297Z - info: Cocos Services load base data!
+2021-12-14T06:41:21.094Z - normal: Loading packages
+2021-12-14T06:41:21.099Z - normal: Watching packages
+2021-12-14T06:41:21.185Z - normal: Run Application
+2021-12-14T09:20:44.173Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js: Unexpected token (22:51)
+  20 |     manager.enabled = true;
+  21 |     this.mainObjectTag = this.mainCharacter.getComponent(cc.PolygonCollider);
+> 22 |     this.enemy01Tag = this.enemy01.getComponent(cc.)
+     |                                                    ^
+  23 |     this.cc.log(this.mainObjectTag.tag);
+  24 |   },
+  25 | 
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4332:10)
+    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3517:30)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExprListItem (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4312:16)
+2021-12-14T09:21:11.038Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js: Unexpected token (22:51)
+  20 |     manager.enabled = true;
+  21 |     this.mainObjectTag = this.mainCharacter.getComponent(cc.PolygonCollider);
+> 22 |     this.enemy01Tag = this.enemy01.getComponent(cc.)
+     |                                                    ^
+  23 |     this.cc.log(this.mainObjectTag.tag);
+  24 |   },
+  25 | 
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4332:10)
+    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3517:30)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExprListItem (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4312:16)
+2021-12-14T09:31:24.150Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/daySeven/assets/Script/objectB.js: Unexpected token (29:2)
+  27 |     console.log("on collision enter");
+  28 |     if(other.tag  === 0 ) 
+> 29 |   },
+     |   ^
+  30 |   goJump() {
+  31 |     let sequence = cc.sequence(
+  32 |       cc.moveBy(0.5, cc.v2(100, 150)),
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
+    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1906:19)
+2021-12-14T10:41:11.688Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/daySeven/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/daySeven/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "Collider",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "9442fe60-bf4e-4a",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/daySeven",
+  "projectName": "Collider",
+  "debugBuildWorker": false
+}
+2021-12-14T10:41:11.692Z - normal: Building /Users/fe-thienchi-fresher/daySeven
+2021-12-14T10:41:11.692Z - normal: Destination /Users/fe-thienchi-fresher/daySeven/build/web-mobile
+2021-12-14T10:41:11.816Z - normal: Delete /Users/fe-thienchi-fresher/daySeven/build/web-mobile/subpackages/**/*,/Users/fe-thienchi-fresher/daySeven/build/web-mobile/**/*
+2021-12-14T10:41:13.835Z - normal: Start building assets
+2021-12-14T10:41:13.836Z - normal: Start spawn build-worker
+2021-12-14T10:41:14.645Z - normal: Finish spawn build-worker
+2021-12-14T10:41:14.645Z - normal: Start init build-worker
+2021-12-14T10:41:17.431Z - normal: Finish init build-worker
+2021-12-14T10:41:17.431Z - normal: Start build-assets in worker
+2021-12-14T10:41:17.770Z - normal: Finish build-assets in worker
+2021-12-14T10:41:17.779Z - normal: Finish building assets
+2021-12-14T10:41:17.785Z - normal: Start building plugin scripts
+2021-12-14T10:41:17.827Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-14T10:41:17.837Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2021-12-14T10:41:17.852Z - normal: Built to "/Users/fe-thienchi-fresher/daySeven/build/web-mobile" successfully
