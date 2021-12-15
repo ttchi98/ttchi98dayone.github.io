@@ -430,8 +430,8 @@
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1639478442045,
-    "meta": 1639478442052,
+    "asset": 1639550429813,
+    "meta": 1639550429820,
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -509,9 +509,49 @@
     "meta": 1639478124993,
     "relativePath": "Script/keyController.js"
   },
+  "80765385-6591-483d-9d0d-acaaf7efb3e3": {
+    "asset": 1639534923240,
+    "meta": 1639534928355,
+    "relativePath": "Texture/bullet.png"
+  },
+  "6ae95250-1ac3-4472-a33f-7be492284cd4": {
+    "asset": 1639536482896,
+    "meta": 1639536482898,
+    "relativePath": "Audio"
+  },
+  "8806293a-4f98-4102-bb8a-c73cd17a0071": {
+    "asset": 1639536501981,
+    "meta": 1639536501993,
+    "relativePath": "Audio/ES_Boots Walk - SFX Producer (mp3cut.net) (1).mp3"
+  },
+  "cbf1b441-cb53-410f-a8db-de9ae97c83ca": {
+    "asset": 1639536501981,
+    "meta": 1639536501995,
+    "relativePath": "Audio/star-wars-blaster-sound-effect (mp3cut.net).mp3"
+  },
+  "d0dd7619-9f0f-441b-b7f8-4b453877d6c4": {
+    "asset": 1639536745205,
+    "meta": 1639536745206,
+    "relativePath": "Prefab"
+  },
+  "0cc7ce33-7ca5-4c46-8b99-d7526a0d1d0e": {
+    "asset": 1639550244623,
+    "meta": 1639550244627,
+    "relativePath": "Prefab/bullet.prefab"
+  },
+  "1df356a3-7c5f-4667-9ba4-c7c992286da3": {
+    "asset": 1639543467039,
+    "meta": 1639543467220,
+    "relativePath": "Texture/anime-scenery-sunset-4k-xp.jpeg"
+  },
+  "41b575e9-fa90-4c67-8d35-28a0314f6872": {
+    "asset": 1639549944505,
+    "meta": 1639549944535,
+    "relativePath": "Texture/14.png"
+  },
   "d6ea2339-78da-4bfe-87c9-8a138de4571a": {
-    "asset": 1639478400104,
-    "meta": 1639478401382,
+    "asset": 1639550025686,
+    "meta": 1639550028016,
     "relativePath": "Script/objectB.js"
   }
 }

@@ -4,20 +4,26 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
+    timer: 0,
     canMove: false,
     canJump: false,
-    objectSb: sp.Skeleton,
+    currentDirection: null,
+    mainCharacterSp: sp.Skeleton,
     mainCharacter: cc.Node,
+    mainBackground: cc.Node,
+    bulletPrefab: cc.Prefab,
+    attackSound: cc.AudioSource,
+    footstepSound: cc.AudioSource,
   },
 
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
+    this.mainCharacterSp.addAnimation(0, "run", true);
+
     let manager = cc.director.getCollisionManager();
     manager.enabled = true;
-    manager.enabledDebugDraw = true;
-    // let move = cc.moveBy(100, 10000, 0);
-    // this.node.runAction(move);
+    // manager.enabledDebugDraw = true;
     Emitter.instance = new Emitter();
 
     Emitter.instance.registerEvent(
@@ -40,50 +46,65 @@ cc.Class({
       "RESET_ACTION",
       this.resetPos_Action.bind(this)
     );
+    this.mainCharacterSp.setEventListener((entry, event) => {
+      const { data } = event;
+      if ((data.name = "footstep")) {
+        this.footstepSound.play();
+      }
+    });
   },
 
   start() {},
 
   update(dt) {
-    // this.node.x += dt * 100;
     if (this.node.y <= 270) {
       this.node.y = 170;
     }
   },
   goAttack_Action() {
-    this.objectSb.setAnimation(0, "shoot", false);
-    this.objectSb.addAnimation(0, "run", false);
-    this.objectSb.addAnimation(0, "run", false);
-    // this.attackSound.play();
+    cc.log("shoot");
+    this.mainCharacterSp.setAnimation(0, "shoot", false);
+    this.attackSound.play();
+    let newBullet = cc.instantiate(this.bulletPrefab);
+    this.mainBackground.addChild(newBullet);
+    newBullet.position = this.mainCharacter.getPosition();
+    newBullet.y += 50;
+    if (this.mainCharacter.scaleX > 0) {
+      newBullet.scaleX = 0.12;
+      let fireBullet = cc.moveBy(5, 10000, 0);
+      newBullet.runAction(fireBullet);
+    } else {
+      newBullet.scaleX = -0.12;
+      let fireBullet = cc.moveBy(5, -10000, 0);
+      newBullet.runAction(fireBullet);
+    }
+    this.mainCharacterSp.addAnimation(0, "run", true);
   },
   goLeft_Action() {
-    let goLeft = cc.spawn(cc.moveBy(0.5, -80, 0), cc.scaleTo(0, -0.4, 0.4));
+    let goLeft = cc.spawn(cc.moveBy(0.5, -150, 0), cc.scaleTo(0, -0.4, 0.4));
     this.mainCharacter.runAction(goLeft);
-    this.objectSb.setAnimation(0, "run", false);
-    this.objectSb.addAnimation(0, "idle", false);
   },
   goRight_Action() {
-    let goRight = cc.spawn(cc.moveBy(0.5, +80, 0), cc.scaleTo(0, 0.4, 0.4));
+    let goRight = cc.spawn(cc.moveBy(0.5, +150, 0), cc.scaleTo(0, 0.4, 0.4));
     this.mainCharacter.runAction(goRight);
-    this.objectSb.setAnimation(0, "run", false);
-    this.objectSb.addAnimation(0, "idle", false);
   },
   goJump_Action() {
     if (this.mainCharacter.scaleX == -0.4) {
-      this.currentDirection = -80;
-    } else this.currentDirection = +80;
-    let goJump = cc.sequence(
+      this.currentDirection = -250;
+    } else this.currentDirection = +250;
+    let goJump = cc.spawn(
       cc.callFunc(() => {
-        this.objectSb.setAnimation(0, "jump", false);
-        this.objectSb.addAnimation(0, "idle", false);
+        this.mainCharacterSp.setAnimation(0, "jump", false);
       }),
-      cc.moveBy(0.4, 0, +120),
-      cc.moveBy(0.4, this.currentDirection, 0),
-      cc.moveBy(0.4, 0, -120)
+      cc.moveBy(1, this.currentDirection, +150),
+      cc.moveBy(1.5, 0, -150),
+      cc.callFunc(() => {
+        this.mainCharacterSp.addAnimation(0, "idle", false);
+      })
     );
-    goJump.easing(cc.easeExponentialIn(3.0));
     this.mainCharacter.runAction(goJump);
   },
+
   resetPos_Action() {
     let resetPos = cc.spawn(
       cc.moveTo(0, -700, 170),
@@ -92,34 +113,11 @@ cc.Class({
     );
     this.mainCharacter.runAction(resetPos);
 
-    this.objectSb.setAnimation(0, "idle", false);
-  },
-  goShoot() {
-    // let stop = cc.moveBy(0.5, 0, 0);
-    // let stop = cc.sequence(
-    //   cc.delayTime(0.5),
-    //   cc.callFunc(() => {
-    //     this.objectSb.setAnimation(0, "shoot", false);
-    //   })
-    // );
-    // this.node.runAction(stop);
-    cc.log("shoot");
-    this.objectSb.setAnimation(0, "shoot", false);
-    this.objectSb.addAnimation(0, "run", false);
-    this.objectSb.addAnimation(0, "run", false);
-  },
-  goJump() {
-    let sequence = cc.sequence(
-      cc.moveBy(0.5, cc.v2(120, 150)),
-      cc.moveBy(0.5, cc.v2(0, -150))
-    );
-    this.node.runAction(sequence);
-
-    this.objectSb.setAnimation(0, "jump", false);
+    this.mainCharacterSp.setAnimation(0, "idle", false);
   },
   onCollisionEnter(other, self) {
     console.log("on collision enter");
-    if (self.tag === 0) this.goJump();
+    if (self.tag === 0) this.goJump_Action();
     if (other.tag === 0) this.goAttack_Action();
   },
 
@@ -128,6 +126,6 @@ cc.Class({
   },
   onCollisionExit(other, self) {
     console.log("on collision exit");
-    this.objectSb.setAnimation(0, "run", true);
+    this.mainCharacterSp.setAnimation(0, "run", true);
   },
 });

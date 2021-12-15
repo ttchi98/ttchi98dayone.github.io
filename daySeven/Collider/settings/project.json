@@ -8,10 +8,6 @@
       false,
       false,
       true,
-      true
-    ],
-    [
-      false,
       true,
       false
     ],
@@ -19,6 +15,21 @@
       false,
       true,
       false,
+      null,
+      true
+    ],
+    [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
       false
     ]
   ],
@@ -41,7 +52,8 @@
     "default",
     "object",
     "ground",
-    "enemy"
+    "enemy",
+    "bullet"
   ],
   "last-module-event-record-time": 1639478471836,
   "simulator-orientation": false,
