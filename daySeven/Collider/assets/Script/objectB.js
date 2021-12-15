@@ -71,22 +71,26 @@ cc.Class({
     newBullet.y += 50;
     if (this.mainCharacter.scaleX > 0) {
       newBullet.scaleX = 0.12;
-      let fireBullet = cc.moveBy(5, 10000, 0);
+      newBullet.x += 75;
+      let fireBullet = cc.moveBy(5, 3000, 0);
       newBullet.runAction(fireBullet);
     } else {
+      newBullet.x -= 75;
       newBullet.scaleX = -0.12;
-      let fireBullet = cc.moveBy(5, -10000, 0);
+      let fireBullet = cc.moveBy(5, -3000, 0);
       newBullet.runAction(fireBullet);
     }
-    this.mainCharacterSp.addAnimation(0, "run", true);
+    this.mainCharacterSp.addAnimation(0, "idle", true);
   },
   goLeft_Action() {
     let goLeft = cc.spawn(cc.moveBy(0.5, -150, 0), cc.scaleTo(0, -0.4, 0.4));
     this.mainCharacter.runAction(goLeft);
+    this.mainCharacterSp.setAnimation(0, "run", true);
   },
   goRight_Action() {
     let goRight = cc.spawn(cc.moveBy(0.5, +150, 0), cc.scaleTo(0, 0.4, 0.4));
     this.mainCharacter.runAction(goRight);
+    this.mainCharacterSp.setAnimation(0, "run", true);
   },
   goJump_Action() {
     if (this.mainCharacter.scaleX == -0.4) {
@@ -126,6 +130,6 @@ cc.Class({
   },
   onCollisionExit(other, self) {
     console.log("on collision exit");
-    this.mainCharacterSp.setAnimation(0, "run", true);
+    this.mainCharacterSp.setAnimation(0, "idle", false);
   },
 });

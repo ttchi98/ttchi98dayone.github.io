@@ -63,22 +63,26 @@ cc.Class({
     newBullet.y += 50;
     if (this.mainCharacter.scaleX > 0) {
       newBullet.scaleX = 0.12;
-      var fireBullet = cc.moveBy(5, 10000, 0);
+      newBullet.x += 75;
+      var fireBullet = cc.moveBy(5, 3000, 0);
       newBullet.runAction(fireBullet);
     } else {
+      newBullet.x -= 75;
       newBullet.scaleX = -0.12;
-      var _fireBullet = cc.moveBy(5, -10000, 0);
+      var _fireBullet = cc.moveBy(5, -3000, 0);
       newBullet.runAction(_fireBullet);
     }
-    this.mainCharacterSp.addAnimation(0, "run", true);
+    this.mainCharacterSp.addAnimation(0, "idle", true);
   },
   goLeft_Action: function goLeft_Action() {
     var goLeft = cc.spawn(cc.moveBy(0.5, -150, 0), cc.scaleTo(0, -0.4, 0.4));
     this.mainCharacter.runAction(goLeft);
+    this.mainCharacterSp.setAnimation(0, "run", true);
   },
   goRight_Action: function goRight_Action() {
     var goRight = cc.spawn(cc.moveBy(0.5, +150, 0), cc.scaleTo(0, 0.4, 0.4));
     this.mainCharacter.runAction(goRight);
+    this.mainCharacterSp.setAnimation(0, "run", true);
   },
   goJump_Action: function goJump_Action() {
     var _this2 = this;
@@ -109,7 +113,7 @@ cc.Class({
   },
   onCollisionExit: function onCollisionExit(other, self) {
     console.log("on collision exit");
-    this.mainCharacterSp.setAnimation(0, "run", true);
+    this.mainCharacterSp.setAnimation(0, "idle", false);
   }
 });
 
