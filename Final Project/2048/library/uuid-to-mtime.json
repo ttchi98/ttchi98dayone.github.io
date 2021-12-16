@@ -525,23 +525,73 @@
     "relativePath": "model/primitives.fbx"
   },
   "399b9048-13c0-45a3-9f90-55d26af0d06a": {
-    "asset": 1639641207553,
-    "meta": 1639641207559,
+    "asset": 1639649473518,
+    "meta": 1639649473529,
     "relativePath": "Prefab/Item.prefab"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1639641264572,
-    "meta": 1639641264579,
+    "asset": 1639649475392,
+    "meta": 1639649475399,
     "relativePath": "Scene/helloworld.fire"
   },
-  "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
-    "asset": 1639640769799,
-    "meta": 1639640892966,
-    "relativePath": "Script/mainController.js"
-  },
   "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
-    "asset": 1639641210746,
-    "meta": 1639641211248,
+    "asset": 1639645250154,
+    "meta": 1639645252046,
     "relativePath": "Script/keyController.js"
+  },
+  "815802bf-31d7-4723-a5dd-4207ec114dfa": {
+    "asset": 1639646160419,
+    "meta": 1639646160416,
+    "relativePath": "Font/clear-sans"
+  },
+  "8127a076-be3f-4310-a0bb-3e5f73023e3b": {
+    "asset": 1639646160410,
+    "meta": 1639646160428,
+    "relativePath": "Font/clear-sans/ClearSans-Bold.ttf"
+  },
+  "f994fa8a-7dc5-4a27-83a6-1256b58679d4": {
+    "asset": 1639646160406,
+    "meta": 1639646160433,
+    "relativePath": "Font/clear-sans/Apache License.txt"
+  },
+  "e8d15212-85d1-490f-bd1c-40561767f03e": {
+    "asset": 1639646160410,
+    "meta": 1639646160434,
+    "relativePath": "Font/clear-sans/ClearSans-BoldItalic.ttf"
+  },
+  "63e6d76e-97bc-4e50-8e2f-b7a0025f62ce": {
+    "asset": 1639646160410,
+    "meta": 1639646160437,
+    "relativePath": "Font/clear-sans/ClearSans-Italic.ttf"
+  },
+  "148332f7-47b8-4710-8fd7-0f2a193a11b0": {
+    "asset": 1639646160410,
+    "meta": 1639646160439,
+    "relativePath": "Font/clear-sans/ClearSans-Light.ttf"
+  },
+  "1fc76a17-3069-46b7-9c23-4ccf261d45b9": {
+    "asset": 1639646160410,
+    "meta": 1639646160442,
+    "relativePath": "Font/clear-sans/ClearSans-Medium.ttf"
+  },
+  "34bb6847-56a7-444b-a0f7-e976cc0781fb": {
+    "asset": 1639646160410,
+    "meta": 1639646160443,
+    "relativePath": "Font/clear-sans/ClearSans-MediumItalic.ttf"
+  },
+  "c5fda563-9df5-44ba-9b83-72ce5319ae86": {
+    "asset": 1639646160410,
+    "meta": 1639646160445,
+    "relativePath": "Font/clear-sans/ClearSans-Regular.ttf"
+  },
+  "15f9bf10-5d6a-461f-8472-d0fa6a69cc32": {
+    "asset": 1639646160410,
+    "meta": 1639646160445,
+    "relativePath": "Font/clear-sans/ClearSans-Thin.ttf"
+  },
+  "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
+    "asset": 1639649664844,
+    "meta": 1639649666804,
+    "relativePath": "Script/mainController.js"
   }
 }

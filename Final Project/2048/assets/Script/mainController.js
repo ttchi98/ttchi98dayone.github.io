@@ -5,13 +5,16 @@ cc.Class({
   properties: {
     canMove: false,
     limit: 165,
+    score: 0,
     newItem: null,
+
+    scoreLabel: cc.Label,
+    bestLabel: cc.Label,
     item: cc.Node,
     table: cc.Node,
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
-    newItemLevel: null,
 
     posArr: [],
     indexArr: [],
@@ -26,7 +29,8 @@ cc.Class({
     Emitter.instance.registerEvent("RIGHT", this.goRight.bind(this));
     Emitter.instance.registerEvent("LEFT", this.goLeft.bind(this));
     Emitter.instance.registerEvent("CREATE RANDOM ITEM", this.createRandomItem.bind(this));
-    Emitter.instance.registerEvent("MATCH", this.matchItem.bind(this));
+    Emitter.instance.registerEvent("MATCH ROW", this.matchItemRow.bind(this));
+    Emitter.instance.registerEvent("MATCH COL", this.matchItemCol.bind(this));
 
     this.posArr = [
       cc.v2(-165, 65),
@@ -48,6 +52,9 @@ cc.Class({
     ];
     this.createTable();
     this.createPreFab();
+    // if (this.newItemLevel.string == 0) {
+    //   this.newItem.color = "#8D8D8C";
+    // }
   },
 
   start() {},
@@ -74,27 +81,26 @@ cc.Class({
     // let itemPos = this.posArr[Math.floor(Math.random() * this.posArr.length)];
     // cc.log(itemPos);
     // this.newItem.position = itemPos;
-    for (let i = 0; i <= 15; i++) {
+    for (let i = 0; i < 16; i++) {
       this.newItem = cc.instantiate(this.itemPrefab);
       this.deckItem.addChild(this.newItem);
-      this.newItemLevel = this.newItem.children[0].getComponent(cc.Label);
-      this.newItemLevel.string = 0;
+      this.newItem.children[0].getComponent(cc.Label).string = 0;
       this.indexArr.push(this.newItem);
       this.newItem.position = this.posArr[i];
     }
+    // cc.log(this.deckItem.children);
     cc.log(this.indexArr);
-    cc.log(this.newItemLevel);
     this.createRandomItem();
     this.createRandomItem();
-    this.goLeft();
   },
   createRandomItem() {
     let randomNumber = Math.floor(Math.random() * this.indexArr.length);
     if (this.indexArr[randomNumber].children[0].getComponent(cc.Label).string == 0) {
       this.indexArr[randomNumber].children[0].getComponent(cc.Label).string = 2;
+      this.checkForLose();
     } else this.createRandomItem();
   },
-  matchItem() {
+  matchItemRow() {
     for (let i = 0; i < 15; i++) {
       if (
         this.indexArr[i].children[0].getComponent(cc.Label).string ===
@@ -105,8 +111,28 @@ cc.Class({
           parseInt(this.indexArr[i + 1].children[0].getComponent(cc.Label).string);
         this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
         this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
+        this.score += matchTotal;
+        this.scoreLabel.string = `Score:\n${this.score}`;
       }
     }
+    this.checkForWin();
+  },
+  matchItemCol() {
+    for (let i = 0; i < 12; i++) {
+      if (
+        this.indexArr[i].children[0].getComponent(cc.Label).string ===
+        this.indexArr[i + 4].children[0].getComponent(cc.Label).string
+      ) {
+        let matchTotal =
+          parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) +
+          parseInt(this.indexArr[i + 4].children[0].getComponent(cc.Label).string);
+        this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
+        this.indexArr[i + 4].children[0].getComponent(cc.Label).string = 0;
+        this.score += matchTotal;
+        this.scoreLabel.string = `Score:\n${this.score}`;
+      }
+    }
+    this.checkForWin();
   },
   positionCheck() {
     if (this.item.y <= -(this.limit + 100)) {
@@ -121,19 +147,18 @@ cc.Class({
       this.item.x = this.limit;
     }
   },
-  moveController() {},
   goRight() {
     // let goRight = cc.moveBy(0.2, -this.limit * 2, 0);
     // this.item.runAction(goRight);
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        let totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        let totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        let totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        let totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
-        let row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+        let rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        let rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        let rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        let rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        let rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
-        let filteredRow = row.filter((num) => num);
+        let filteredRow = rows.filter((num) => num);
 
         let missingRow = 4 - filteredRow.length;
         let zeros = Array(missingRow).fill(0);
@@ -150,16 +175,15 @@ cc.Class({
   goLeft() {
     // let goLeft = cc.moveBy(0.2, this.limit * -2, 0);
     // this.item.runAction(goLeft);
-
     for (let i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        let totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        let totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        let totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        let totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
-        let row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+        let rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        let rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        let rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        let rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        let rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
-        let filteredRow = row.filter((num) => num);
+        let filteredRow = rows.filter((num) => num);
 
         let missingRow = 4 - filteredRow.length;
         let zeros = Array(missingRow).fill(0);
@@ -174,11 +198,69 @@ cc.Class({
     }
   },
   goUp() {
-    let goUp = cc.moveBy(0.2, 0, 330);
-    this.item.runAction(goUp);
+    // let goUp = cc.moveBy(0.2, 0, 330);
+    // this.item.runAction(goUp);
+    for (let i = 0; i < 4; i++) {
+      let colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+      let colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      let colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      let colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      let cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
+
+      let filteredCol = cols.filter((num) => num);
+
+      let missingCol = 4 - filteredCol.length;
+      let zeros = Array(missingCol).fill(0);
+
+      let newCol = filteredCol.concat(zeros);
+
+      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+    }
   },
   goDown() {
-    let goDown = cc.moveBy(0.2, 0, -330);
-    this.item.runAction(goDown);
+    // let goDown = cc.moveBy(0.2, 0, -330);
+    // this.item.runAction(goDown);
+
+    for (let i = 0; i < 4; i++) {
+      let colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+      let colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      let colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      let colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      let cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
+
+      let filteredCol = cols.filter((num) => num);
+
+      let missingCol = 4 - filteredCol.length;
+      let zeros = Array(missingCol).fill(0);
+
+      let newCol = zeros.concat(filteredCol);
+
+      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+    }
+  },
+
+  checkForWin() {
+    for (let i = 0; i < this.indexArr.length; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2048) {
+        cc.log("You Win!");
+      }
+    }
+  },
+  checkForLose() {
+    let zeros = 0;
+    for (let i = 0; i < this.indexArr.length; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 0) {
+        zeros++;
+      }
+    }
+    if (zeros === 0) {
+      cc.log("You Lose!");
+    }
   },
 });

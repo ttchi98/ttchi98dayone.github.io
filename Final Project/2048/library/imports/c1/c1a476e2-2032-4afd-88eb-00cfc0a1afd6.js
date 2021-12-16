@@ -20,27 +20,48 @@ cc.Class({
   onKeyDown: function onKeyDown(event) {
     switch (event.keyCode) {
       case cc.macro.KEY.down:
-        this.goDown();
+        this.keyDown();
         break;
       case cc.macro.KEY.up:
-        this.goUp();
+        this.keyUp();
         break;
       case cc.macro.KEY.right:
-        this.goRight();
-        this.matchItem();
-        this.goRight();
-        this.createRandomItem();
+        this.keyRight();
         break;
       case cc.macro.KEY.left:
-        this.goLeft();
-        this.matchItem();
-        this.goLeft();
-        this.createRandomItem();
+        this.keyLeft();
         break;
     }
   },
-  matchItem: function matchItem() {
-    Emitter.instance.emit("MATCH");
+  keyDown: function keyDown() {
+    this.goDown();
+    this.matchItemCol();
+    this.goDown();
+    this.createRandomItem();
+  },
+  keyUp: function keyUp() {
+    this.goUp();
+    this.matchItemCol();
+    this.goUp();
+    this.createRandomItem();
+  },
+  keyRight: function keyRight() {
+    this.goRight();
+    this.matchItemRow();
+    this.goRight();
+    this.createRandomItem();
+  },
+  keyLeft: function keyLeft() {
+    this.goLeft();
+    this.matchItemRow();
+    this.goLeft();
+    this.createRandomItem();
+  },
+  matchItemRow: function matchItemRow() {
+    Emitter.instance.emit("MATCH ROW");
+  },
+  matchItemCol: function matchItemCol() {
+    Emitter.instance.emit("MATCH COL");
   },
   createRandomItem: function createRandomItem() {
     Emitter.instance.emit("CREATE RANDOM ITEM");

@@ -11,13 +11,16 @@ cc.Class({
   properties: {
     canMove: false,
     limit: 165,
+    score: 0,
     newItem: null,
+
+    scoreLabel: cc.Label,
+    bestLabel: cc.Label,
     item: cc.Node,
     table: cc.Node,
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
-    newItemLevel: null,
 
     posArr: [],
     indexArr: []
@@ -32,11 +35,15 @@ cc.Class({
     Emitter.instance.registerEvent("RIGHT", this.goRight.bind(this));
     Emitter.instance.registerEvent("LEFT", this.goLeft.bind(this));
     Emitter.instance.registerEvent("CREATE RANDOM ITEM", this.createRandomItem.bind(this));
-    Emitter.instance.registerEvent("MATCH", this.matchItem.bind(this));
+    Emitter.instance.registerEvent("MATCH ROW", this.matchItemRow.bind(this));
+    Emitter.instance.registerEvent("MATCH COL", this.matchItemCol.bind(this));
 
     this.posArr = [cc.v2(-165, 65), cc.v2(-55, 65), cc.v2(55, 65), cc.v2(165, 65), cc.v2(-165, -45), cc.v2(-55, -45), cc.v2(55, -45), cc.v2(165, -45), cc.v2(-165, -155), cc.v2(55, -155), cc.v2(-55, -155), cc.v2(165, -155), cc.v2(-165, -265), cc.v2(-55, -265), cc.v2(55, -265), cc.v2(165, -265)];
     this.createTable();
     this.createPreFab();
+    // if (this.newItemLevel.string == 0) {
+    //   this.newItem.color = "#8D8D8C";
+    // }
   },
   start: function start() {},
   update: function update(dt) {
@@ -61,34 +68,48 @@ cc.Class({
     // let itemPos = this.posArr[Math.floor(Math.random() * this.posArr.length)];
     // cc.log(itemPos);
     // this.newItem.position = itemPos;
-    for (var i = 0; i <= 15; i++) {
+    for (var i = 0; i < 16; i++) {
       this.newItem = cc.instantiate(this.itemPrefab);
       this.deckItem.addChild(this.newItem);
-      this.newItemLevel = this.newItem.children[0].getComponent(cc.Label);
-      this.newItemLevel.string = 0;
+      this.newItem.children[0].getComponent(cc.Label).string = 0;
       this.indexArr.push(this.newItem);
       this.newItem.position = this.posArr[i];
     }
+    // cc.log(this.deckItem.children);
     cc.log(this.indexArr);
-    cc.log(this.newItemLevel);
     this.createRandomItem();
     this.createRandomItem();
-    this.goLeft();
   },
   createRandomItem: function createRandomItem() {
     var randomNumber = Math.floor(Math.random() * this.indexArr.length);
     if (this.indexArr[randomNumber].children[0].getComponent(cc.Label).string == 0) {
       this.indexArr[randomNumber].children[0].getComponent(cc.Label).string = 2;
+      this.checkForLose();
     } else this.createRandomItem();
   },
-  matchItem: function matchItem() {
+  matchItemRow: function matchItemRow() {
     for (var i = 0; i < 15; i++) {
       if (this.indexArr[i].children[0].getComponent(cc.Label).string === this.indexArr[i + 1].children[0].getComponent(cc.Label).string) {
         var matchTotal = parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this.indexArr[i + 1].children[0].getComponent(cc.Label).string);
         this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
         this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
+        this.score += matchTotal;
+        this.scoreLabel.string = "Score:\n" + this.score;
       }
     }
+    this.checkForWin();
+  },
+  matchItemCol: function matchItemCol() {
+    for (var i = 0; i < 12; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string === this.indexArr[i + 4].children[0].getComponent(cc.Label).string) {
+        var matchTotal = parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this.indexArr[i + 4].children[0].getComponent(cc.Label).string);
+        this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
+        this.indexArr[i + 4].children[0].getComponent(cc.Label).string = 0;
+        this.score += matchTotal;
+        this.scoreLabel.string = "Score:\n" + this.score;
+      }
+    }
+    this.checkForWin();
   },
   positionCheck: function positionCheck() {
     if (this.item.y <= -(this.limit + 100)) {
@@ -103,19 +124,18 @@ cc.Class({
       this.item.x = this.limit;
     }
   },
-  moveController: function moveController() {},
   goRight: function goRight() {
     // let goRight = cc.moveBy(0.2, -this.limit * 2, 0);
     // this.item.runAction(goRight);
     for (var i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        var totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        var totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        var totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        var totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
-        var row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+        var rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        var rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        var rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        var rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        var rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
-        var filteredRow = row.filter(function (num) {
+        var filteredRow = rows.filter(function (num) {
           return num;
         });
 
@@ -134,16 +154,15 @@ cc.Class({
   goLeft: function goLeft() {
     // let goLeft = cc.moveBy(0.2, this.limit * -2, 0);
     // this.item.runAction(goLeft);
-
     for (var i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        var totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        var totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        var totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        var totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
-        var row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+        var rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        var rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        var rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        var rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        var rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
-        var filteredRow = row.filter(function (num) {
+        var filteredRow = rows.filter(function (num) {
           return num;
         });
 
@@ -160,12 +179,73 @@ cc.Class({
     }
   },
   goUp: function goUp() {
-    var goUp = cc.moveBy(0.2, 0, 330);
-    this.item.runAction(goUp);
+    // let goUp = cc.moveBy(0.2, 0, 330);
+    // this.item.runAction(goUp);
+    for (var i = 0; i < 4; i++) {
+      var colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+      var colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      var colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      var colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      var cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
+
+      var filteredCol = cols.filter(function (num) {
+        return num;
+      });
+
+      var missingCol = 4 - filteredCol.length;
+      var zeros = Array(missingCol).fill(0);
+
+      var newCol = filteredCol.concat(zeros);
+
+      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+    }
   },
   goDown: function goDown() {
-    var goDown = cc.moveBy(0.2, 0, -330);
-    this.item.runAction(goDown);
+    // let goDown = cc.moveBy(0.2, 0, -330);
+    // this.item.runAction(goDown);
+
+    for (var i = 0; i < 4; i++) {
+      var colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+      var colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      var colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      var colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      var cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
+
+      var filteredCol = cols.filter(function (num) {
+        return num;
+      });
+
+      var missingCol = 4 - filteredCol.length;
+      var zeros = Array(missingCol).fill(0);
+
+      var newCol = zeros.concat(filteredCol);
+
+      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+    }
+  },
+  checkForWin: function checkForWin() {
+    for (var i = 0; i < this.indexArr.length; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2048) {
+        cc.log("You Win!");
+      }
+    }
+  },
+  checkForLose: function checkForLose() {
+    var zeros = 0;
+    for (var i = 0; i < this.indexArr.length; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 0) {
+        zeros++;
+      }
+    }
+    if (zeros === 0) {
+      cc.log("You Lose!");
+    }
   }
 });
 

@@ -17,27 +17,48 @@ cc.Class({
   onKeyDown(event) {
     switch (event.keyCode) {
       case cc.macro.KEY.down:
-        this.goDown();
+        this.keyDown();
         break;
       case cc.macro.KEY.up:
-        this.goUp();
+        this.keyUp();
         break;
       case cc.macro.KEY.right:
-        this.goRight();
-        this.matchItem();
-        this.goRight();
-        this.createRandomItem();
+        this.keyRight();
         break;
       case cc.macro.KEY.left:
-        this.goLeft();
-        this.matchItem();
-        this.goLeft();
-        this.createRandomItem();
+        this.keyLeft();
         break;
     }
   },
-  matchItem() {
-    Emitter.instance.emit("MATCH");
+  keyDown() {
+    this.goDown();
+    this.matchItemCol();
+    this.goDown();
+    this.createRandomItem();
+  },
+  keyUp() {
+    this.goUp();
+    this.matchItemCol();
+    this.goUp();
+    this.createRandomItem();
+  },
+  keyRight() {
+    this.goRight();
+    this.matchItemRow();
+    this.goRight();
+    this.createRandomItem();
+  },
+  keyLeft() {
+    this.goLeft();
+    this.matchItemRow();
+    this.goLeft();
+    this.createRandomItem();
+  },
+  matchItemRow() {
+    Emitter.instance.emit("MATCH ROW");
+  },
+  matchItemCol() {
+    Emitter.instance.emit("MATCH COL");
   },
   createRandomItem() {
     Emitter.instance.emit("CREATE RANDOM ITEM");
