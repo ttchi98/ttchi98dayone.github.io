@@ -24,13 +24,24 @@ cc.Class({
         break;
       case cc.macro.KEY.right:
         this.goRight();
+        this.matchItem();
+        this.goRight();
+        this.createRandomItem();
         break;
       case cc.macro.KEY.left:
         this.goLeft();
+        this.matchItem();
+        this.goLeft();
+        this.createRandomItem();
         break;
     }
   },
-
+  matchItem() {
+    Emitter.instance.emit("MATCH");
+  },
+  createRandomItem() {
+    Emitter.instance.emit("CREATE RANDOM ITEM");
+  },
   moveSound() {
     Emitter.instance.emit("MOVE SOUND");
   },

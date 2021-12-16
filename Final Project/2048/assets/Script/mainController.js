@@ -3,7 +3,7 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    isMove: true,
+    canMove: false,
     limit: 165,
     newItem: null,
     item: cc.Node,
@@ -11,8 +11,10 @@ cc.Class({
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
+    newItemLevel: null,
 
     posArr: [],
+    indexArr: [],
   },
 
   // LIFE-CYCLE CALLBACKS:
@@ -21,8 +23,11 @@ cc.Class({
     Emitter.instance = new Emitter();
     Emitter.instance.registerEvent("DOWN", this.goDown.bind(this));
     Emitter.instance.registerEvent("UP", this.goUp.bind(this));
-    Emitter.instance.registerEvent("LEFT", this.goRight.bind(this));
-    Emitter.instance.registerEvent("RIGHT", this.goLeft.bind(this));
+    Emitter.instance.registerEvent("RIGHT", this.goRight.bind(this));
+    Emitter.instance.registerEvent("LEFT", this.goLeft.bind(this));
+    Emitter.instance.registerEvent("CREATE RANDOM ITEM", this.createRandomItem.bind(this));
+    Emitter.instance.registerEvent("MATCH", this.matchItem.bind(this));
+
     this.posArr = [
       cc.v2(-165, 65),
       cc.v2(-55, 65),
@@ -42,6 +47,7 @@ cc.Class({
       cc.v2(165, -265),
     ];
     this.createTable();
+    this.createPreFab();
   },
 
   start() {},
@@ -58,24 +64,47 @@ cc.Class({
     }
   },
   createPreFab() {
-    let itemPos = this.posArr[Math.floor(Math.random() * this.posArr.length)];
-    cc.log(itemPos);
-
-    // for (let i = 0; i <= posArr.length; i++) {
-    //   for (let j = 0; i <= posArr.length; j++) {}
-    // }
-
-    this.newItem = cc.instantiate(this.itemPrefab);
-    this.deckItem.addChild(this.newItem);
-
-    this.newItem.position = itemPos;
+    // this.newItem = cc.instantiate(this.itemPrefab);
+    // this.deckItem.addChild(this.newItem);
+    // let newItemLevel = this.newItem.children[0].getComponent(cc.Label);
+    // newItemLevel.string = 0;
+    // let randomArr = [2, 4];
+    // newItemLevel.string =
+    //   randomArr[Math.floor(Math.random() * randomArr.length)];
+    // let itemPos = this.posArr[Math.floor(Math.random() * this.posArr.length)];
+    // cc.log(itemPos);
+    // this.newItem.position = itemPos;
+    for (let i = 0; i <= 15; i++) {
+      this.newItem = cc.instantiate(this.itemPrefab);
+      this.deckItem.addChild(this.newItem);
+      this.newItemLevel = this.newItem.children[0].getComponent(cc.Label);
+      this.newItemLevel.string = 0;
+      this.indexArr.push(this.newItem);
+      this.newItem.position = this.posArr[i];
+    }
+    cc.log(this.indexArr);
+    cc.log(this.newItemLevel);
+    this.createRandomItem();
+    this.createRandomItem();
+    this.goLeft();
+  },
+  createRandomItem() {
+    let randomNumber = Math.floor(Math.random() * this.indexArr.length);
+    if (this.indexArr[randomNumber].children[0].getComponent(cc.Label).string == 0) {
+      this.indexArr[randomNumber].children[0].getComponent(cc.Label).string = 2;
+    } else this.createRandomItem();
   },
   matchItem() {
-    this.newItem.getComponent(cc.Label);
-    for (let i = 0; i <= 2; i++) {
-      cc.warn(this.newItem.string);
-      if (this.newItem.children[0] == this.newItem.children[1]) {
-        cc.log("Match");
+    for (let i = 0; i < 15; i++) {
+      if (
+        this.indexArr[i].children[0].getComponent(cc.Label).string ===
+        this.indexArr[i + 1].children[0].getComponent(cc.Label).string
+      ) {
+        let matchTotal =
+          parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) +
+          parseInt(this.indexArr[i + 1].children[0].getComponent(cc.Label).string);
+        this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
+        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
       }
     }
   },
@@ -92,29 +121,64 @@ cc.Class({
       this.item.x = this.limit;
     }
   },
-  goDown() {
-    cc.tween(this.item)
-      .by(0.2, { position: cc.v2(0, -330) })
-      .start();
-    this.createPreFab();
-    // this.matchItem();
-  },
-  goUp() {
-    cc.tween(this.item)
-      .by(0.2, { position: cc.v2(0, 330) })
-      .start();
-    this.createPreFab();
-  },
+  moveController() {},
   goRight() {
-    cc.tween(this.item)
-      .by(0.2, { position: cc.v2(-this.limit * 2, 0) })
-      .start();
-    this.createPreFab();
+    // let goRight = cc.moveBy(0.2, -this.limit * 2, 0);
+    // this.item.runAction(goRight);
+    for (let i = 0; i < 16; i++) {
+      if (i % 4 === 0) {
+        let totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        let totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        let totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        let totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        let row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+
+        let filteredRow = row.filter((num) => num);
+
+        let missingRow = 4 - filteredRow.length;
+        let zeros = Array(missingRow).fill(0);
+
+        let newRow = zeros.concat(filteredRow);
+
+        this.indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
+        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
+        this.indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
+        this.indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
+      }
+    }
   },
   goLeft() {
-    cc.tween(this.item)
-      .by(0.2, { position: cc.v2(this.limit * 2, 0) })
-      .start();
-    this.createPreFab();
+    // let goLeft = cc.moveBy(0.2, this.limit * -2, 0);
+    // this.item.runAction(goLeft);
+
+    for (let i = 0; i < 16; i++) {
+      if (i % 4 === 0) {
+        let totalOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
+        let totalTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        let totalThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        let totalFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        let row = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)];
+
+        let filteredRow = row.filter((num) => num);
+
+        let missingRow = 4 - filteredRow.length;
+        let zeros = Array(missingRow).fill(0);
+
+        let newRow = filteredRow.concat(zeros);
+
+        this.indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
+        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
+        this.indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
+        this.indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
+      }
+    }
+  },
+  goUp() {
+    let goUp = cc.moveBy(0.2, 0, 330);
+    this.item.runAction(goUp);
+  },
+  goDown() {
+    let goDown = cc.moveBy(0.2, 0, -330);
+    this.item.runAction(goDown);
   },
 });

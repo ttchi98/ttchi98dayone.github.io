@@ -51,8 +51,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -55,
-      "y": -155,
+      "x": -165,
+      "y": 65,
       "z": 0
     },
     "_scale": {
@@ -135,7 +135,7 @@
   },
   {
     "__type__": "cc.Label",
-    "_name": "",
+    "_name": "label<Label>",
     "_objFlags": 0,
     "node": {
       "__id__": 2
@@ -171,14 +171,14 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "399b9048-13c0-45a3-9f90-55d26af0d06a"
     },
     "fileId": "61flKQQBlEOZtz0Xyih3Dz",
     "sync": false
   },
   {
     "__type__": "cc.Sprite",
-    "_name": "",
+    "_name": "Item<Sprite>",
     "_objFlags": 0,
     "node": {
       "__id__": 1
@@ -214,7 +214,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "399b9048-13c0-45a3-9f90-55d26af0d06a"
     },
     "fileId": "a43zWI9U5Bmq/tUlgaIoZW",
     "sync": false
