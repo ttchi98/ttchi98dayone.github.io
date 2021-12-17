@@ -9,12 +9,14 @@ cc.Class({
     newItem: null,
 
     scoreLabel: cc.Label,
-    bestLabel: cc.Label,
     item: cc.Node,
     table: cc.Node,
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
+
+    gameOverForm: cc.Node,
+    gameOverLabel: cc.Label,
 
     posArr: [],
     indexArr: [],
@@ -31,6 +33,7 @@ cc.Class({
     Emitter.instance.registerEvent("CREATE RANDOM ITEM", this.createRandomItem.bind(this));
     Emitter.instance.registerEvent("MATCH ROW", this.matchItemRow.bind(this));
     Emitter.instance.registerEvent("MATCH COL", this.matchItemCol.bind(this));
+    Emitter.instance.registerEvent("NEW GAME", this.newGameEvent.bind(this));
 
     this.posArr = [
       cc.v2(-165, 65),
@@ -90,6 +93,7 @@ cc.Class({
     }
     // cc.log(this.deckItem.children);
     cc.log(this.indexArr);
+    this.colorCheck();
     this.createRandomItem();
     this.createRandomItem();
   },
@@ -112,9 +116,10 @@ cc.Class({
         this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
         this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
         this.score += matchTotal;
-        this.scoreLabel.string = `Score:\n${this.score}`;
+        this.scoreLabel.string = this.score;
       }
     }
+    this.colorCheck();
     this.checkForWin();
   },
   matchItemCol() {
@@ -126,13 +131,25 @@ cc.Class({
         let matchTotal =
           parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) +
           parseInt(this.indexArr[i + 4].children[0].getComponent(cc.Label).string);
-        this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
-        this.indexArr[i + 4].children[0].getComponent(cc.Label).string = 0;
+        this.indexArr[i].children[0].getComponent(cc.Label).string = 0;
+        this.indexArr[i + 4].children[0].getComponent(cc.Label).string = matchTotal;
         this.score += matchTotal;
-        this.scoreLabel.string = `Score:\n${this.score}`;
+        this.scoreLabel.string = this.score;
       }
     }
+    this.colorCheck();
     this.checkForWin();
+  },
+  colorCheck() {
+    for (let i = 0; i <= 15; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 0) {
+        this.indexArr[i].opacity = 230;
+        this.indexArr[i].children[0].opacity = 230;
+      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2) {
+        this.indexArr[i].opacity = 220;
+        this.indexArr[i].children[0].opacity = 220;
+      }
+    }
   },
   positionCheck() {
     if (this.item.y <= -(this.limit + 100)) {
@@ -159,9 +176,7 @@ cc.Class({
         let rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
         let filteredRow = rows.filter((num) => num);
-
-        let missingRow = 4 - filteredRow.length;
-        let zeros = Array(missingRow).fill(0);
+        let zeros = Array(4 - filteredRow.length).fill(0);
 
         let newRow = zeros.concat(filteredRow);
 
@@ -184,9 +199,7 @@ cc.Class({
         let rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
 
         let filteredRow = rows.filter((num) => num);
-
-        let missingRow = 4 - filteredRow.length;
-        let zeros = Array(missingRow).fill(0);
+        let zeros = Array(4 - filteredRow.length).fill(0);
 
         let newRow = filteredRow.concat(zeros);
 
@@ -208,9 +221,7 @@ cc.Class({
       let cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
 
       let filteredCol = cols.filter((num) => num);
-
-      let missingCol = 4 - filteredCol.length;
-      let zeros = Array(missingCol).fill(0);
+      let zeros = Array(4 - filteredCol.length).fill(0);
 
       let newCol = filteredCol.concat(zeros);
 
@@ -224,17 +235,17 @@ cc.Class({
     // let goDown = cc.moveBy(0.2, 0, -330);
     // this.item.runAction(goDown);
 
+    cc.log("Down");
     for (let i = 0; i < 4; i++) {
       let colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
       let colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
       let colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
       let colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
       let cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
+      cc.log(cols);
 
       let filteredCol = cols.filter((num) => num);
-
-      let missingCol = 4 - filteredCol.length;
-      let zeros = Array(missingCol).fill(0);
+      let zeros = Array(4 - filteredCol.length).fill(0);
 
       let newCol = zeros.concat(filteredCol);
 
@@ -248,7 +259,8 @@ cc.Class({
   checkForWin() {
     for (let i = 0; i < this.indexArr.length; i++) {
       if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2048) {
-        cc.log("You Win!");
+        this.gameOverForm.active = true;
+        this.gameOverLabel.string = "You Win!";
       }
     }
   },
@@ -260,7 +272,16 @@ cc.Class({
       }
     }
     if (zeros === 0) {
-      cc.log("You Lose!");
+      this.gameOverForm.active = true;
+      this.gameOverLabel.string = "Game Over!";
     }
+  },
+  newGameEvent() {
+    this.deckItem.removeAllChildren(this.newItem);
+    this.score = 0;
+    this.scoreLabel.string = this.score;
+    this.indexArr = [];
+    this.createPreFab();
+    this.gameOverForm.active = false;
   },
 });

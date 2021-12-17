@@ -154,14 +154,9 @@
     "meta": 1639452875967,
     "relativePath": "Texture/pause-button.png"
   },
-  "5ccc245f-f2d6-42ea-81a5-288443a6b536": {
-    "asset": 1639455183296,
-    "meta": 1639455189523,
-    "relativePath": "Script/buttonController.js"
-  },
   "f27412f4-2ce0-455a-8463-bdccf245edd3": {
-    "asset": 1639457497014,
-    "meta": 1639457497017,
+    "asset": 1639707611046,
+    "meta": 1639707611057,
     "relativePath": "Prefab/Sprite.prefab"
   },
   "430eccbf-bf2c-4e6e-8c0c-884bbb487f32": {
@@ -525,19 +520,14 @@
     "relativePath": "model/primitives.fbx"
   },
   "399b9048-13c0-45a3-9f90-55d26af0d06a": {
-    "asset": 1639649473518,
-    "meta": 1639649473529,
+    "asset": 1639717017224,
+    "meta": 1639717017236,
     "relativePath": "Prefab/Item.prefab"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1639649475392,
-    "meta": 1639649475399,
+    "asset": 1639738490484,
+    "meta": 1639738490503,
     "relativePath": "Scene/helloworld.fire"
-  },
-  "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
-    "asset": 1639645250154,
-    "meta": 1639645252046,
-    "relativePath": "Script/keyController.js"
   },
   "815802bf-31d7-4723-a5dd-4207ec114dfa": {
     "asset": 1639646160419,
@@ -589,9 +579,24 @@
     "meta": 1639646160445,
     "relativePath": "Font/clear-sans/ClearSans-Thin.ttf"
   },
+  "5ccc245f-f2d6-42ea-81a5-288443a6b536": {
+    "asset": 1639712320690,
+    "meta": 1639712339219,
+    "relativePath": "Script/buttonController.js"
+  },
+  "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
+    "asset": 1639726983028,
+    "meta": 1639726994585,
+    "relativePath": "Script/keyController.js"
+  },
+  "d5dfc2ea-ad5f-4d97-8ded-c9d0f92419cf": {
+    "asset": 1639734067571,
+    "meta": 1639734068251,
+    "relativePath": "Script/colorController.js"
+  },
   "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
-    "asset": 1639649664844,
-    "meta": 1639649666804,
+    "asset": 1639738273631,
+    "meta": 1639738275517,
     "relativePath": "Script/mainController.js"
   }
 }

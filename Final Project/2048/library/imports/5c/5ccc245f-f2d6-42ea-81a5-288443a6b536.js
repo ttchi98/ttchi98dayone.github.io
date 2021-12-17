@@ -22,23 +22,27 @@ cc.Class({
   onLoad: function onLoad() {
     this.musicBtn.node.on("click", this.backgroundSoundEvent, this);
     this.effectBtn.node.on("click", this.effectSoundEvent, this);
+    this.newGameBtn.node.on("click", this.newGameEvent, this);
     this.quitBtn.node.on("click", this.quitEvent, this);
     // this.backgroundSound.play();
     Emitter.instance.registerEvent("MOVE SOUND", this.moveSound.bind(this));
   },
   start: function start() {},
   update: function update(dt) {},
+  moveSound: function moveSound() {
+    this.effectSound.play();
+  },
   backgroundSoundEvent: function backgroundSoundEvent() {
     this.backgroundSound.isPlaying ? this.backgroundSound.pause() : this.backgroundSound.play();
   },
   effectSoundEvent: function effectSoundEvent() {
     this.effectSound.mute == false ? this.effectSound.mute = true : this.effectSound.mute = false;
   },
+  newGameEvent: function newGameEvent() {
+    Emitter.instance.emit("NEW GAME");
+  },
   quitEvent: function quitEvent() {
     cc.game.end();
-  },
-  moveSound: function moveSound() {
-    this.effectSound.play();
   }
 });
 
