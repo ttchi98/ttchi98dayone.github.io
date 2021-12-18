@@ -15,6 +15,7 @@ cc.Class({
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
 
+    tutorialForm: cc.Node,
     gameOverForm: cc.Node,
     gameOverLabel: cc.Label,
 
@@ -34,6 +35,8 @@ cc.Class({
     Emitter.instance.registerEvent("MATCH ROW", this.matchItemRow.bind(this));
     Emitter.instance.registerEvent("MATCH COL", this.matchItemCol.bind(this));
     Emitter.instance.registerEvent("NEW GAME", this.newGameEvent.bind(this));
+    Emitter.instance.registerEvent("TUTORIAL", this.tutorialEvent.bind(this));
+    Emitter.instance.registerEvent("CLOSE TUTORIAL", this.closeTutorialEvent.bind(this));
 
     this.posArr = [
       cc.v2(-165, 65),
@@ -234,15 +237,12 @@ cc.Class({
   goDown() {
     // let goDown = cc.moveBy(0.2, 0, -330);
     // this.item.runAction(goDown);
-
-    cc.log("Down");
     for (let i = 0; i < 4; i++) {
       let colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
       let colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
       let colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
       let colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
       let cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
-      cc.log(cols);
 
       let filteredCol = cols.filter((num) => num);
       let zeros = Array(4 - filteredCol.length).fill(0);
@@ -283,5 +283,11 @@ cc.Class({
     this.indexArr = [];
     this.createPreFab();
     this.gameOverForm.active = false;
+  },
+  tutorialEvent() {
+    this.tutorialForm.active == false ? (this.tutorialForm.active = true) : (this.tutorialForm.active = false);
+  },
+  closeTutorialEvent() {
+    this.tutorialForm.active = false;
   },
 });

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "radius-sprite-splash",
+    "texture": "998322ba-388c-4870-8630-3c4ff75c784c",
+    "atlas": "",
+    "rect": [
+      58,
+      105,
+      461,
+      223
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      577,
+      433
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
