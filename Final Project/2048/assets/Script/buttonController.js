@@ -4,11 +4,13 @@ cc.Class({
 
   properties: {
     tutorialBtn: cc.Button,
+    leaderBoardBtn: cc.Button,
     musicOnBtn: cc.Button,
     musicOffBtn: cc.Button,
     effectOnBtn: cc.Button,
     effectOffBtn: cc.Button,
     closeBtn: cc.Button,
+    closeLeaderBoardBtn: cc.Button,
     newGameBtn: cc.Button,
     quitBtn: cc.Button,
     effectOnNode: cc.Node,
@@ -24,7 +26,9 @@ cc.Class({
 
   onLoad() {
     this.tutorialBtn.node.on("click", this.tutorialEvent, this);
+    this.leaderBoardBtn.node.on("click", this.leaderBoardEvent, this);
     this.closeBtn.node.on("click", this.closeTutorialEvent, this);
+    this.closeLeaderBoardBtn.node.on("click", this.closeLeaderBoardEvent, this);
     this.musicOnBtn.node.on("click", this.musicOnEvent, this);
     this.musicOffBtn.node.on("click", this.musicOffEvent, this);
     this.effectOnBtn.node.on("click", this.effectOnSoundEvent, this);
@@ -40,6 +44,14 @@ cc.Class({
   update(dt) {},
   moveSound() {
     this.effectSound.play();
+  },
+  leaderBoardEvent() {
+    Emitter.instance.emit("LEADER BOARD");
+    this.clickSound.play();
+  },
+  closeLeaderBoardEvent() {
+    Emitter.instance.emit("CLOSE LEADER BOARD");
+    this.clickSound.play();
   },
   tutorialEvent() {
     Emitter.instance.emit("TUTORIAL");

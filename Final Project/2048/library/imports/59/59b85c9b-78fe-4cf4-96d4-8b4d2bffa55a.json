@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "happy-face-removebg-preview",
+    "texture": "0c89fb47-2d69-43b0-a454-28c93715017c",
+    "atlas": "",
+    "rect": [
+      59,
+      86,
+      302,
+      104
+    ],
+    "offset": [
+      6,
+      -9
+    ],
+    "originalSize": [
+      408,
+      258
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

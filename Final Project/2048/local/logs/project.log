@@ -1,352 +1,193 @@
-2021-12-15T09:57:56.608Z - normal: Load ~/.CocosCreator/settings.json
-2021-12-15T09:57:56.693Z - normal: Initializing Asset Database
-2021-12-15T09:57:56.697Z - normal: checking language setting...
-2021-12-15T09:57:56.697Z - normal: Language: en
-2021-12-15T09:57:57.401Z - success: preview server running at http://localhost:7456
-2021-12-15T09:57:57.417Z - success: protocol editor-framework registered
-2021-12-15T09:57:57.417Z - success: protocol app registered
-2021-12-15T09:57:57.417Z - success: protocol theme registered
-2021-12-15T09:57:57.418Z - success: protocol packages registered
-2021-12-15T09:57:57.418Z - success: protocol uuid registerred
-2021-12-15T09:57:57.418Z - success: protocol db registerred
-2021-12-15T09:57:57.418Z - success: protocol thumbnail registerred
-2021-12-15T09:57:57.418Z - success: protocol unpack registerred
-2021-12-15T09:57:57.418Z - success: protocol disable-commonjs registerred
-2021-12-15T09:57:58.889Z - normal: connected!
-2021-12-15T09:57:58.890Z - normal: Check project /Users/fe-thienchi-fresher/finalProject-2048
-2021-12-15T09:57:58.892Z - normal: Initializing project /Users/fe-thienchi-fresher/finalProject-2048
-2021-12-15T09:57:59.266Z - normal: Initializing Cocos2d
-2021-12-15T09:58:00.107Z - normal: Initializing engine extends
-2021-12-15T09:58:00.128Z - success: alipay-adapter loaded
-2021-12-15T09:58:00.133Z - success: asset-db-debugger loaded
-2021-12-15T09:58:00.135Z - success: baidu-adapter loaded
-2021-12-15T09:58:00.136Z - success: color-picker loaded
-2021-12-15T09:58:00.264Z - success: fb-audience-network loaded
-2021-12-15T09:58:00.325Z - success: fb-live-stream loaded
-2021-12-15T09:58:00.329Z - success: google-play-instant loaded
-2021-12-15T09:58:00.340Z - success: huawei-runtime loaded
-2021-12-15T09:58:00.539Z - success: cpk-publish loaded
-2021-12-15T09:58:00.540Z - success: jsb-adapter loaded
-2021-12-15T09:58:00.545Z - success: oppo-runtime loaded
-2021-12-15T09:58:00.550Z - success: package-manager loaded
-2021-12-15T09:58:00.653Z - success: qqplay-adapter loaded
-2021-12-15T09:58:00.655Z - success: runtime-dev-tools loaded
-2021-12-15T09:58:00.682Z - success: sdkbox loaded
-2021-12-15T09:58:00.686Z - success: tester loaded
-2021-12-15T09:58:00.690Z - success: ui-kit-preview-extra loaded
-2021-12-15T09:58:00.693Z - success: ui-kit-preview loaded
-2021-12-15T09:58:00.697Z - success: ui-kit loaded
-2021-12-15T09:58:00.703Z - success: vivo-runtime loaded
-2021-12-15T09:58:00.704Z - success: weapp-adapter loaded
-2021-12-15T09:58:00.705Z - success: xiaomi-adapter loaded
-2021-12-15T09:58:00.707Z - success: alipay-minigame loaded
-2021-12-15T09:58:00.743Z - success: assets loaded
-2021-12-15T09:58:00.746Z - success: builder loaded
-2021-12-15T09:58:00.961Z - success: cocos-services loaded
-2021-12-15T09:58:00.967Z - success: console loaded
-2021-12-15T09:58:00.997Z - success: fb-instant-games loaded
-2021-12-15T09:58:01.001Z - success: game-window loaded
-2021-12-15T09:58:01.002Z - success: google-instant-games loaded
-2021-12-15T09:58:01.007Z - success: hierarchy loaded
-2021-12-15T09:58:01.011Z - success: inspector loaded
-2021-12-15T09:58:01.012Z - success: keystore loaded
-2021-12-15T09:58:01.017Z - success: node-library loaded
-2021-12-15T09:58:01.018Z - success: package-asset loaded
-2021-12-15T09:58:01.020Z - success: preferences loaded
-2021-12-15T09:58:01.023Z - success: project-exporter loaded
-2021-12-15T09:58:01.027Z - success: project-importer loaded
-2021-12-15T09:58:01.031Z - success: project-settings loaded
-2021-12-15T09:58:01.036Z - success: scene loaded
-2021-12-15T09:58:01.037Z - success: simulator-debugger loaded
-2021-12-15T09:58:01.038Z - success: sprite-editor loaded
-2021-12-15T09:58:01.044Z - success: store loaded
-2021-12-15T09:58:01.050Z - success: timeline loaded
-2021-12-15T09:58:01.055Z - success: xiaomi-runtime loaded
-2021-12-15T09:58:03.865Z - info: Cocos Services load base data!
-2021-12-15T09:58:05.984Z - normal: Loading packages
-2021-12-15T09:58:05.991Z - normal: Watching packages
-2021-12-15T09:58:06.093Z - normal: Run Application
-2021-12-16T02:32:56.274Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T02:33:44.647Z - error: Can not find node 332KjGlONBJ7zj4Vj39oGd,a1/3w0hJ1BGbw1Nc3LMkcE,abjHr0sNBOPIncMVFo1Tgy,2aC3oahxpK7rRgCsFHAXjo
-    at Object.addComponent (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/scene.js:1:6208)
-    at HTMLElement.add-component (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:1171)
+2021-12-20T02:16:19.494Z - normal: Load ~/.CocosCreator/settings.json
+2021-12-20T02:16:19.573Z - normal: Initializing Asset Database
+2021-12-20T02:16:19.575Z - normal: checking language setting...
+2021-12-20T02:16:19.575Z - normal: Language: en
+2021-12-20T02:16:20.271Z - success: preview server running at http://localhost:7456
+2021-12-20T02:16:20.285Z - success: protocol editor-framework registered
+2021-12-20T02:16:20.285Z - success: protocol app registered
+2021-12-20T02:16:20.286Z - success: protocol theme registered
+2021-12-20T02:16:20.286Z - success: protocol packages registered
+2021-12-20T02:16:20.286Z - success: protocol uuid registerred
+2021-12-20T02:16:20.286Z - success: protocol db registerred
+2021-12-20T02:16:20.286Z - success: protocol thumbnail registerred
+2021-12-20T02:16:20.286Z - success: protocol unpack registerred
+2021-12-20T02:16:20.286Z - success: protocol disable-commonjs registerred
+2021-12-20T02:16:21.162Z - normal: connected!
+2021-12-20T02:16:21.174Z - normal: Check project /Users/fe-thienchi-fresher/finalProject-2048
+2021-12-20T02:16:21.175Z - normal: Initializing project /Users/fe-thienchi-fresher/finalProject-2048
+2021-12-20T02:16:21.590Z - normal: Initializing Cocos2d
+2021-12-20T02:16:22.248Z - normal: Initializing engine extends
+2021-12-20T02:16:22.280Z - success: alipay-adapter loaded
+2021-12-20T02:16:22.302Z - success: asset-db-debugger loaded
+2021-12-20T02:16:22.303Z - success: baidu-adapter loaded
+2021-12-20T02:16:22.304Z - success: color-picker loaded
+2021-12-20T02:16:22.420Z - success: fb-audience-network loaded
+2021-12-20T02:16:22.466Z - success: fb-live-stream loaded
+2021-12-20T02:16:22.469Z - success: google-play-instant loaded
+2021-12-20T02:16:22.474Z - success: huawei-runtime loaded
+2021-12-20T02:16:22.690Z - success: cpk-publish loaded
+2021-12-20T02:16:22.691Z - success: jsb-adapter loaded
+2021-12-20T02:16:22.716Z - success: oppo-runtime loaded
+2021-12-20T02:16:22.721Z - success: package-manager loaded
+2021-12-20T02:16:22.847Z - success: qqplay-adapter loaded
+2021-12-20T02:16:22.849Z - success: runtime-dev-tools loaded
+2021-12-20T02:16:22.876Z - success: sdkbox loaded
+2021-12-20T02:16:22.883Z - success: tester loaded
+2021-12-20T02:16:22.886Z - success: ui-kit-preview-extra loaded
+2021-12-20T02:16:22.889Z - success: ui-kit-preview loaded
+2021-12-20T02:16:22.893Z - success: ui-kit loaded
+2021-12-20T02:16:22.904Z - success: vivo-runtime loaded
+2021-12-20T02:16:22.905Z - success: weapp-adapter loaded
+2021-12-20T02:16:22.906Z - success: xiaomi-adapter loaded
+2021-12-20T02:16:22.909Z - success: alipay-minigame loaded
+2021-12-20T02:16:22.945Z - success: assets loaded
+2021-12-20T02:16:22.948Z - success: builder loaded
+2021-12-20T02:16:23.231Z - success: cocos-services loaded
+2021-12-20T02:16:23.237Z - success: console loaded
+2021-12-20T02:16:23.272Z - success: fb-instant-games loaded
+2021-12-20T02:16:23.277Z - success: game-window loaded
+2021-12-20T02:16:23.278Z - success: google-instant-games loaded
+2021-12-20T02:16:23.284Z - success: hierarchy loaded
+2021-12-20T02:16:23.288Z - success: inspector loaded
+2021-12-20T02:16:23.289Z - success: keystore loaded
+2021-12-20T02:16:23.295Z - success: node-library loaded
+2021-12-20T02:16:23.297Z - success: package-asset loaded
+2021-12-20T02:16:23.298Z - success: preferences loaded
+2021-12-20T02:16:23.301Z - success: project-exporter loaded
+2021-12-20T02:16:23.306Z - success: project-importer loaded
+2021-12-20T02:16:23.310Z - success: project-settings loaded
+2021-12-20T02:16:23.315Z - success: scene loaded
+2021-12-20T02:16:23.317Z - success: simulator-debugger loaded
+2021-12-20T02:16:23.319Z - success: sprite-editor loaded
+2021-12-20T02:16:23.324Z - success: store loaded
+2021-12-20T02:16:23.331Z - success: timeline loaded
+2021-12-20T02:16:23.336Z - success: xiaomi-runtime loaded
+2021-12-20T02:16:24.481Z - normal: Loading packages
+2021-12-20T02:16:24.486Z - normal: Watching packages
+2021-12-20T02:16:24.585Z - normal: Run Application
+2021-12-20T02:16:26.542Z - info: Cocos Services load base data!
+2021-12-20T07:27:16.898Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "/Users/fe-thienchi-fresher/finalProject-2048/build",
+  "debug": false,
+  "dest": "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "FinalProject",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "separate_engine": false,
+    "subContext": ""
+  },
+  "xxteaKey": "c753ae7f-f3ce-48",
+  "zipCompressJs": true,
+  "project": "/Users/fe-thienchi-fresher/finalProject-2048",
+  "projectName": "FinalProject",
+  "debugBuildWorker": false
+}
+2021-12-20T07:27:16.903Z - normal: Building /Users/fe-thienchi-fresher/finalProject-2048
+2021-12-20T07:27:16.903Z - normal: Destination /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile
+2021-12-20T07:27:17.031Z - normal: Delete /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/subpackages/**/*,/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/**/*
+2021-12-20T07:27:19.064Z - normal: Start building assets
+2021-12-20T07:27:19.064Z - normal: Start spawn build-worker
+2021-12-20T07:27:19.728Z - normal: Finish spawn build-worker
+2021-12-20T07:27:19.728Z - normal: Start init build-worker
+2021-12-20T07:27:22.622Z - normal: Finish init build-worker
+2021-12-20T07:27:22.623Z - normal: Start build-assets in worker
+2021-12-20T07:27:23.141Z - normal: Finish build-assets in worker
+2021-12-20T07:27:23.145Z - normal: Finish building assets
+2021-12-20T07:27:23.163Z - normal: Start building plugin scripts
+2021-12-20T07:27:23.208Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-20T07:27:23.221Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2021-12-20T07:27:23.243Z - normal: Built to "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile" successfully
+2021-12-20T07:43:35.927Z - warn: Script attached to "Deck" is missing or invalid. Detailed information:
+Node path: "Canvas/formBegin/Deck"
+Script UUID: "d5dfc2ea-ad5f-4d97-8ded-c9d0f92419cf"
+Class ID: "d5dfcLqrV9Nl43tydD5JBnP"
+
+2021-12-20T07:43:42.862Z - warn: Script attached to "Deck" is missing or invalid. Detailed information:
+Node path: "Canvas/formBegin/Deck"
+Script UUID: "d5dfc2ea-ad5f-4d97-8ded-c9d0f92419cf"
+Class ID: "d5dfcLqrV9Nl43tydD5JBnP"
+
+2021-12-20T07:44:02.069Z - warn: Script attached to "Deck" is missing or invalid. Detailed information:
+Node path: "Canvas/formBegin/Deck"
+Script UUID: "d5dfc2ea-ad5f-4d97-8ded-c9d0f92419cf"
+Class ID: "d5dfcLqrV9Nl43tydD5JBnP"
+
+2021-12-20T08:03:07.628Z - error: Failed to apply "leaderBoardLabel" because the prefab asset is missing, please save the prefab to a new asset by dragging and drop the node from Node Tree into Assets.
+    at Object.applyPrefab (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:5296)
+    at HTMLElement.apply-prefab (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:2732)
     at Object.e._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1941)
     at EventEmitter.o.on.s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2921)
     at emitMany (events.js:127:13)
     at EventEmitter.emit (events.js:204:7)
-2021-12-16T06:41:21.139Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Invalid number (78:33)
-  76 |       this.deckItem.addChild(this.newItem);
-  77 |       this.newItemLevel = this.newItem.children[0].getComponent(cc.Label);
-> 78 |       this.newItemLevel.string = 012312;
-     |                                  ^
-  79 |       // this.indexArr.push(this.newItemLevel.string);
-  80 |       this.indexArr.push(this.newItem);
-  81 |       this.newItem.position = this.posArr[i];
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.readNumber (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1268:12)
-    at Parser.getTokenFromCode (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1102:21)
-    at Parser.readToken (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:776:19)
-    at Parser.nextToken (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:766:19)
-    at Parser.next (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:691:10)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3366:10)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1906:19)
-    at Parser.pp$1.parseBlockBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2268:21)
-2021-12-16T07:30:19.360Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: TypeError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Duplicate declaration "totalOne"
-  141 |         let newRow = zeros.concat(filteredRow);
-  142 |         cc.log(newRow);
-> 143 |         let totalOne = this.indexArr[i].children[0].getComponent(
-      |             ^
-  144 |           cc.Label
-  145 |         ).string;
-  146 |       }
-    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
-    at Scope.checkBlockScopedCollisions (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:398:27)
-    at Scope.registerBinding (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:592:16)
-    at Scope.registerDeclaration (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:496:14)
-    at Object.BlockScoped (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:244:28)
-    at Object.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
-    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
-    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:44:14)
-    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
-    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
-2021-12-16T07:33:25.451Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: TypeError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Duplicate declaration "totalOne"
-  127 |         cc.log(newRow);
-  128 | 
-> 129 |         let totalOne = (this.indexArr[i].children[0].getComponent(cc.Label).string = newRow[0]);
-      |             ^
-  130 |         let totalOne = (this.indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1]);
-  131 |         let totalOne = (this.indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2]);
-  132 |         let totalOne = (this.indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3]);
-    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
-    at Scope.checkBlockScopedCollisions (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:398:27)
-    at Scope.registerBinding (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:592:16)
-    at Scope.registerDeclaration (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:496:14)
-    at Object.BlockScoped (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/scope/index.js:244:28)
-    at Object.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
-    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
-    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:44:14)
-    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
-    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
-2021-12-16T07:53:17.591Z - error: Window "main" unresponsive: [object Object]
-    at BrowserWindow.nativeWin.on.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/window.js:1:2243)
-    at emitOne (events.js:96:13)
-    at BrowserWindow.emit (events.js:191:7)
-2021-12-16T08:07:40.837Z - error: TypeError: Cannot read property '_texture' of null
-    at cc_Label._activateMaterial (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/components/CCLabel.js:420:64)
-    at cc_Label.set (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/components/CCRenderComponent.js:44:30)
-    at cc_Label.a.set (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at cc_Label.a.set (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at cc_Label.a.set [as sharedMaterials] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at l (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:1837)
-    at d (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:1394)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:6187
-    at f (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:795)
-    at f (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:844)
-2021-12-16T08:07:40.839Z - error: TypeError: Cannot read property '_texture' of null
-    at cc_Label._activateMaterial (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/components/CCLabel.js:420:64)
-    at cc_Label.set (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/components/CCRenderComponent.js:44:30)
-    at cc_Label.a.set (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at cc_Label.a.set (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at cc_Label.a.set [as sharedMaterials] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/asset-watcher.js:1:973)
-    at l (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:1837)
-    at d (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:1394)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:6187
-    at f (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:795)
-    at f (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/prefab.js:1:844)
-2021-12-16T08:08:52.515Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T09:02:09.487Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T09:17:58.766Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T09:38:23.539Z - error: unknown color: 
-    at window.onerror (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/lib/windows/static/script/launch.js:365:24)
-    at Object.e.fire (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at HTMLElement._onInputConfirm (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/input.js:1:2822)
-    at HTMLInputElement.n.addEventListener.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/behaviors/input-state.js:1:906)
-    at HTMLElement._setFocused (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/behaviors/focusable.js:1:999)
-    at Object.e._setFocusElement (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/focus-mgr.js:1:1907)
-    at Object.e._focusNext (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/focus-mgr.js:1:1007)
-    at window.addEventListener.u (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/focus-mgr.js:1:4587)
-2021-12-16T09:38:35.729Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T10:11:13.511Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-16T10:53:19.083Z - normal: Start building with options : {
-  "actualPlatform": "web-desktop",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appBundle": false,
-  "baidugame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "testappid",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "buildPath": "/Users/fe-thienchi-fresher/finalProject-2048/build",
-  "debug": false,
-  "dest": "/Users/fe-thienchi-fresher/finalProject-2048/build/web-desktop",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.helloworld",
-  "platform": "web-desktop",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait",
-    "zip": false
-  },
-  "scenes": [
-    "2d2f792f-a40c-49bb-a189-ed176a246e49"
-  ],
-  "sourceMaps": false,
-  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
-  "template": "link",
-  "title": "FinalProject",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait",
-    "separate_engine": false,
-    "subContext": ""
-  },
-  "xxteaKey": "c753ae7f-f3ce-48",
-  "zipCompressJs": true,
-  "project": "/Users/fe-thienchi-fresher/finalProject-2048",
-  "projectName": "FinalProject",
-  "debugBuildWorker": false
-}
-2021-12-16T10:53:19.088Z - normal: Building /Users/fe-thienchi-fresher/finalProject-2048
-2021-12-16T10:53:19.088Z - normal: Destination /Users/fe-thienchi-fresher/finalProject-2048/build/web-desktop
-2021-12-16T10:53:19.218Z - normal: Delete /Users/fe-thienchi-fresher/finalProject-2048/build/web-desktop/subpackages/**/*,/Users/fe-thienchi-fresher/finalProject-2048/build/web-desktop/**/*
-2021-12-16T10:53:21.050Z - normal: Start building assets
-2021-12-16T10:53:21.050Z - normal: Start spawn build-worker
-2021-12-16T10:53:21.656Z - normal: Finish spawn build-worker
-2021-12-16T10:53:21.656Z - normal: Start init build-worker
-2021-12-16T10:53:24.053Z - normal: Finish init build-worker
-2021-12-16T10:53:24.053Z - normal: Start build-assets in worker
-2021-12-16T10:53:24.384Z - normal: Finish build-assets in worker
-2021-12-16T10:53:24.389Z - normal: Finish building assets
-2021-12-16T10:53:24.402Z - normal: Start building plugin scripts
-2021-12-16T10:53:24.449Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2021-12-16T10:53:24.458Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-desktop/template/index.html
-2021-12-16T10:53:24.476Z - normal: Built to "/Users/fe-thienchi-fresher/finalProject-2048/build/web-desktop" successfully
-2021-12-17T02:18:45.871Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Unexpected token (142:11)
-  140 |      
-  141 |     switch ( this.newItem.children[0].getComponent(cc.Label).string = 0) {
-> 142 |       case :
-      |            ^
-  143 |         
-  144 |         break;
-  145 |       case cc.macro.KEY.up:
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
-    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3750:12)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-    at Parser.pp$1.parseSwitchStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2105:25)
-2021-12-17T02:20:11.041Z - info: Only the prefab node "Sprite" and its child nodes are saved.
-2021-12-17T04:56:57.215Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-17T07:54:44.234Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Unexpected token, expected , (148:18)
-  146 |     }
-  147 |   },
-> 148 |   positionCheck() {
-      |                   ^
-  149 |     if (this.item.y <= -(this.limit + 100)) {
-  150 |       this.item.y = -(this.limit + 100);
-  151 |     }
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
-    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
-    at Parser.pp$3.parseCallExpressionArguments (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3564:12)
-    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3533:31)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-2021-12-17T08:36:18.970Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Invalid left-hand side in assignment expression (203:8)
-  201 |         let newRow = filteredRow.concat(zeros);
-  202 | 
-> 203 |         this.nodeNumber(i) = newRow[0];
-      |         ^
-  204 |         this.nodeNumber(i+1)= newRow[1];
-  205 |         this.nodeNumber(i+2)= newRow[2];
-  206 |         this.nodeNumber(i+3)= newRow[3];
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp$2.toAssignable (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3008:16)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3349:45)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1906:19)
-    at Parser.pp$1.parseBlockBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2268:21)
-    at Parser.pp$1.parseBlock (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2247:8)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1868:19)
-    at Parser.pp$1.parseIfStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2059:26)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1846:19)
-2021-12-17T08:36:42.895Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Invalid left-hand side in assignment expression (203:8)
-  201 |         let newRow = filteredRow.concat(zeros);
-  202 | 
-> 203 |         this.nodeNumber(i) = newRow[0];
-      |         ^
-  204 |         this.nodeNumber(i+1)= newRow[1];
-  205 |         this.nodeNumber(i+2)= newRow[2];
-  206 |         this.nodeNumber(i+3)= newRow[3];
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp$2.toAssignable (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3008:16)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3349:45)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1906:19)
-    at Parser.pp$1.parseBlockBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2268:21)
-    at Parser.pp$1.parseBlock (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2247:8)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1868:19)
-    at Parser.pp$1.parseIfStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2059:26)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1846:19)
-2021-12-17T08:49:07.551Z - failed: [db-task][sync-changes] Failed to import asset /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js, message: Compile error: SyntaxError: /Users/fe-thienchi-fresher/finalProject-2048/assets/Script/mainController.js: Invalid left-hand side in assignment expression (203:8)
-  201 |         let newRow = filteredRow.concat(zeros);
-  202 | 
-> 203 |         this.nodeNumber(i) = newRow[0];
-      |         ^
-  204 |         this.nodeNumber(i+1)= newRow[1];
-  205 |         this.nodeNumber(i+2)= newRow[2];
-  206 |         this.nodeNumber(i+3)= newRow[3];
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp$2.toAssignable (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3008:16)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3349:45)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1906:19)
-    at Parser.pp$1.parseBlockBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2268:21)
-    at Parser.pp$1.parseBlock (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2247:8)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1868:19)
-    at Parser.pp$1.parseIfStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:2059:26)
-    at Parser.pp$1.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1846:19)
-2021-12-17T10:55:21.054Z - normal: Start building with options : {
+2021-12-20T08:30:03.244Z - warn: The Asset used by component "cc.ScrollView" is missing. Detailed information:
+Node path: "Canvas/formLeaderBoard"
+Missing uuid: "3cdbf98a-32c8-4fe9-b301-cd6686af168a"
+
+2021-12-20T08:30:03.246Z - warn: The Asset used by component "cc.ScrollView" is missing. Detailed information:
+Node path: "Canvas/formLeaderBoard"
+Missing uuid: "3cdbf98a-32c8-4fe9-b301-cd6686af168a"
+
+2021-12-20T09:36:17.470Z - info: Only the prefab node "Item" and its child nodes are saved.
+2021-12-20T09:36:20.040Z - info: Only the prefab node "Item" and its child nodes are saved.
+2021-12-20T09:37:39.791Z - info: Only the prefab node "Item" and its child nodes are saved.
+2021-12-20T10:51:17.167Z - info: Only the prefab node "Item" and its child nodes are saved.
+2021-12-20T10:55:23.717Z - info: Only the prefab node "Sprite" and its child nodes are saved.
+2021-12-20T10:56:01.615Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -417,115 +258,18 @@
   "projectName": "FinalProject",
   "debugBuildWorker": false
 }
-2021-12-17T10:55:21.058Z - normal: Building /Users/fe-thienchi-fresher/finalProject-2048
-2021-12-17T10:55:21.058Z - normal: Destination /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile
-2021-12-17T10:55:21.060Z - normal: Delete /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/subpackages/**/*,/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/**/*
-2021-12-17T10:55:23.139Z - normal: Start building assets
-2021-12-17T10:55:23.139Z - normal: Start spawn build-worker
-2021-12-17T10:55:23.800Z - normal: Finish spawn build-worker
-2021-12-17T10:55:23.800Z - normal: Start init build-worker
-2021-12-17T10:55:26.762Z - normal: Finish init build-worker
-2021-12-17T10:55:26.762Z - normal: Start build-assets in worker
-2021-12-17T10:55:28.125Z - normal: Finish build-assets in worker
-2021-12-17T10:55:28.129Z - normal: Finish building assets
-2021-12-17T10:55:28.138Z - normal: Start building plugin scripts
-2021-12-17T10:55:28.182Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2021-12-17T10:55:28.189Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2021-12-17T10:55:28.206Z - normal: Built to "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile" successfully
-2021-12-18T03:32:04.476Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-18T03:32:09.428Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-18T03:32:22.495Z - info: Only the prefab node "Sprite" and its child nodes are saved.
-2021-12-18T03:32:22.719Z - info: Only the prefab node "Sprite" and its child nodes are saved.
-2021-12-18T03:32:23.861Z - info: Only the prefab node "Sprite" and its child nodes are saved.
-2021-12-18T03:33:03.390Z - info: Only the prefab node "Item" and its child nodes are saved.
-2021-12-18T03:33:13.845Z - info: Only the prefab node "Sprite" and its child nodes are saved.
-2021-12-18T04:09:37.957Z - warn: Should not set alpha via 'color', set 'opacity' please.
-2021-12-18T04:09:45.352Z - warn: Should not set alpha via 'color', set 'opacity' please.
-2021-12-18T04:09:47.444Z - warn: Should not set alpha via 'color', set 'opacity' please.
-2021-12-18T04:09:49.517Z - warn: Should not set alpha via 'color', set 'opacity' please.
-2021-12-18T05:02:51.091Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appBundle": false,
-  "baidugame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "testappid",
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "buildPath": "/Users/fe-thienchi-fresher/finalProject-2048/build",
-  "debug": false,
-  "dest": "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.helloworld",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait",
-    "zip": false
-  },
-  "scenes": [
-    "2d2f792f-a40c-49bb-a189-ed176a246e49"
-  ],
-  "sourceMaps": false,
-  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
-  "template": "link",
-  "title": "FinalProject",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait",
-    "separate_engine": false,
-    "subContext": ""
-  },
-  "xxteaKey": "c753ae7f-f3ce-48",
-  "zipCompressJs": true,
-  "project": "/Users/fe-thienchi-fresher/finalProject-2048",
-  "projectName": "FinalProject",
-  "debugBuildWorker": false
-}
-2021-12-18T05:02:51.097Z - normal: Building /Users/fe-thienchi-fresher/finalProject-2048
-2021-12-18T05:02:51.097Z - normal: Destination /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile
-2021-12-18T05:02:51.098Z - normal: Delete /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/subpackages/**/*,/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/**/*
-2021-12-18T05:02:53.173Z - normal: Start building assets
-2021-12-18T05:02:53.173Z - normal: Start spawn build-worker
-2021-12-18T05:02:53.898Z - normal: Finish spawn build-worker
-2021-12-18T05:02:53.898Z - normal: Start init build-worker
-2021-12-18T05:02:56.782Z - normal: Finish init build-worker
-2021-12-18T05:02:56.782Z - normal: Start build-assets in worker
-2021-12-18T05:02:57.251Z - normal: Finish build-assets in worker
-2021-12-18T05:02:57.255Z - normal: Finish building assets
-2021-12-18T05:02:57.266Z - normal: Start building plugin scripts
-2021-12-18T05:02:57.308Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2021-12-18T05:02:57.314Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2021-12-18T05:02:57.330Z - normal: Built to "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile" successfully
+2021-12-20T10:56:01.619Z - normal: Building /Users/fe-thienchi-fresher/finalProject-2048
+2021-12-20T10:56:01.619Z - normal: Destination /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile
+2021-12-20T10:56:01.621Z - normal: Delete /Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/subpackages/**/*,/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile/**/*
+2021-12-20T10:56:03.781Z - normal: Start building assets
+2021-12-20T10:56:03.782Z - normal: Start spawn build-worker
+2021-12-20T10:56:04.472Z - normal: Finish spawn build-worker
+2021-12-20T10:56:04.472Z - normal: Start init build-worker
+2021-12-20T10:56:07.280Z - normal: Finish init build-worker
+2021-12-20T10:56:07.280Z - normal: Start build-assets in worker
+2021-12-20T10:56:07.778Z - normal: Finish build-assets in worker
+2021-12-20T10:56:07.781Z - normal: Finish building assets
+2021-12-20T10:56:07.796Z - normal: Start building plugin scripts
+2021-12-20T10:56:07.841Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2021-12-20T10:56:07.849Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2021-12-20T10:56:07.863Z - normal: Built to "/Users/fe-thienchi-fresher/finalProject-2048/build/web-mobile" successfully

@@ -8,16 +8,20 @@ var Emitter = require("mEmitter");
 cc.Class({
   extends: cc.Component,
 
-  properties: {},
+  properties: {
+    keyMove: true
+  },
 
   // LIFE-CYCLE CALLBACKS:
 
   onLoad: function onLoad() {
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+    Emitter.instance.registerEvent("DISABLE KEY", this.disableKey.bind(this));
   },
   start: function start() {},
   update: function update(dt) {},
   onKeyDown: function onKeyDown(event) {
+    if (!this.keyMove) return;
     switch (event.keyCode) {
       case cc.macro.KEY.down:
         this.keyDown();
@@ -38,24 +42,31 @@ cc.Class({
     this.matchItemCol();
     this.goDown();
     this.createRandomItem();
+    this.colorCheck();
   },
   keyUp: function keyUp() {
     this.goUp();
     this.matchItemCol();
     this.goUp();
     this.createRandomItem();
+    this.colorCheck();
   },
   keyRight: function keyRight() {
     this.goRight();
     this.matchItemRow();
     this.goRight();
     this.createRandomItem();
+    this.colorCheck();
   },
   keyLeft: function keyLeft() {
     this.goLeft();
     this.matchItemRow();
     this.goLeft();
     this.createRandomItem();
+    this.colorCheck();
+  },
+  colorCheck: function colorCheck() {
+    Emitter.instance.emit("COLOR CHECK");
   },
   matchItemRow: function matchItemRow() {
     Emitter.instance.emit("MATCH ROW");
@@ -84,6 +95,9 @@ cc.Class({
   goLeft: function goLeft() {
     Emitter.instance.emit("LEFT");
     this.moveSound();
+  },
+  disableKey: function disableKey(value) {
+    this.keyMove = value;
   }
 });
 
