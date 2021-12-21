@@ -9,7 +9,9 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    keyMove: true
+    keyMove: true,
+    timer: 0,
+    count: 30
   },
 
   // LIFE-CYCLE CALLBACKS:

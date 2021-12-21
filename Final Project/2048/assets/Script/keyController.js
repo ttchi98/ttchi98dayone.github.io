@@ -4,6 +4,8 @@ cc.Class({
 
   properties: {
     keyMove: true,
+    timer: 0,
+    count: 30,
   },
 
   // LIFE-CYCLE CALLBACKS:

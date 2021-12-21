@@ -28,6 +28,7 @@ cc.Class({
     gameOverLabel: cc.Label,
     posArr: [],
     indexArr: [],
+    matchSound: cc.AudioSource,
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad() {
@@ -69,15 +70,12 @@ cc.Class({
     this.colorCheck();
     this.updateLeaderBoard();
 
-    // if (this.newItemLevel.string == 0) {
-    //   this.newItem.color = "#8D8D8C";
-    // }
+    cc.log(cc.sys.localStorage.getItem("best"));
   },
 
   start() {},
 
   update(dt) {
-    this.positionCheck();
     this.timer == 500 ? this.notificationEvent() : this.timer++;
     this.notificationLabel.string = `<color=#ffffff>Best Score is: </c><color=#0fffff>${this.bestLabel.string} </color><color=#ffffff>!!!</c>`;
   },
@@ -98,7 +96,7 @@ cc.Class({
       this.newItem.position = this.posArr[i];
     }
     // cc.log(this.deckItem.children);
-    cc.log(this.indexArr);
+    // cc.log(this.indexArr);
     this.colorCheck();
     this.createRandomItem();
     this.createRandomItem();
@@ -127,9 +125,8 @@ cc.Class({
         this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
         this.score += matchTotal;
         this.scoreLabel.string = this.score;
+        // this.matchSound.play();
       }
-      // let action = cc.sequence(cc.scaleTo(0.5, 1.5), cc.scaleTo(0.5, 1));
-      // this.indexArr[i].runAction(action);
     }
     this.checkForWin();
   },
@@ -146,12 +143,14 @@ cc.Class({
         this.indexArr[i + 4].children[0].getComponent(cc.Label).string = matchTotal;
         this.score += matchTotal;
         this.scoreLabel.string = this.score;
+        // this.matchSound.play();
       }
     }
     this.checkForWin();
   },
   colorCheck() {
-    let grey = new cc.Color(204, 110, 101);
+    let grey = new cc.Color(119, 110, 101);
+    let white = new cc.Color(255, 255, 255);
     let color0 = new cc.Color(204, 193, 179);
     let color2 = new cc.Color(238, 228, 218);
     let color4 = new cc.Color(237, 224, 200);
@@ -165,66 +164,26 @@ cc.Class({
     let color1024 = new cc.Color(237, 196, 62);
     let color2048 = new cc.Color(237, 194, 45);
 
-    for (let i = 0; i <= 15; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 0) {
-        this.indexArr[i].color = color0;
-        this.indexArr[i].children[0].color = color0;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2) {
-        this.indexArr[i].color = color2;
-        this.indexArr[i].children[0].color = grey;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 4) {
-        this.indexArr[i].color = color4;
-        this.indexArr[i].children[0].color = grey;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 8) {
-        this.indexArr[i].color = color8;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 16) {
-        this.indexArr[i].color = color16;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 32) {
-        this.indexArr[i].color = color32;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 64) {
-        this.indexArr[i].color = color64;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 128) {
-        this.indexArr[i].color = color128;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 256) {
-        this.indexArr[i].color = color256;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 512) {
-        this.indexArr[i].color = color512;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 1024) {
-        this.indexArr[i].color = color1024;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      } else if (this.indexArr[i].children[0].getComponent(cc.Label).string == 2048) {
-        this.indexArr[i].color = color2048;
-        this.indexArr[i].children[0].color = cc.Color.WHITE;
-      }
-      // switch (this.indexArr[i].children[0].getComponent(cc.Label).string == value) {
-      //   case 0:
-      //     this.indexArr[i].color = cc.Color.GRAY;
-      //     this.indexArr[i].children[0].color = cc.Color.GRAY;
-      //     break;
-      //   case 2:
-      //     this.indexArr[i].color = "#ffb759";
-      //     break;
-      // }
-    }
+    this.colorNode(0, color0, color0);
+    this.colorNode(2, color2, grey);
+    this.colorNode(4, color4, grey);
+    this.colorNode(8, color8, white);
+    this.colorNode(16, color16, white);
+    this.colorNode(32, color32, white);
+    this.colorNode(64, color64, white);
+    this.colorNode(128, color128, white);
+    this.colorNode(256, color256, white);
+    this.colorNode(512, color512, white);
+    this.colorNode(1024, color1024, white);
+    this.colorNode(2048, color2048, white);
   },
-  positionCheck() {
-    if (this.item.y <= -(this.limit + 100)) {
-      this.item.y = -(this.limit + 100);
-    }
-    if (this.item.y >= this.limit - 100) {
-      this.item.y = this.limit - 100;
-    }
-    if (this.item.x <= -this.limit) {
-      this.item.x = -this.limit;
-    } else if (this.item.x >= this.limit) {
-      this.item.x = this.limit;
+  colorNode(string, value1, value2) {
+    for (let i = 0; i <= 15; i++) {
+      if (this.indexArr[i].children[0].getComponent(cc.Label).string == string) {
+        this.indexArr[i].color = value1;
+        this.indexArr[i].children[0].color = value2;
+        this.indexArr[i].children[0].getComponent(cc.LabelOutline).color = value2;
+      }
     }
   },
   goRight() {
@@ -302,6 +261,7 @@ cc.Class({
         this.best.push(this.scoreLabel.string);
         cc.sys.localStorage.setItem("best", JSON.stringify(this.best));
         this.bestLabel.string = Math.max(...JSON.parse(cc.sys.localStorage.getItem("best")));
+        cc.log(cc.sys.localStorage);
       }
     }
   },
@@ -364,6 +324,8 @@ cc.Class({
     let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, 75, 320));
     this.tutorialForm.runAction(spawnClose);
     this.tutorialFormFlag = false;
+
+    this.tutorialForm.getComponent(cc.PageView).scrollToPage(0, 0.5);
     this.disableKey(true);
   },
   leaderBoardEvent() {
