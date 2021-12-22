@@ -3,11 +3,10 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    limit: 165,
-    score: 0,
+    _score: 0,
     best: [],
-    newItem: null,
-    timer: 0,
+    _newItem: null,
+    _timer: 0,
     notification: cc.Node,
     notificationLabel: cc.RichText,
     scoreLabel: cc.Label,
@@ -21,11 +20,14 @@ cc.Class({
     tutorialFormFlag: false,
     leaderBoardForm: cc.Node,
     leaderBoardFormFlag: false,
+    leaderBoardItemPrefab: cc.Prefab,
     gameOverForm: cc.Node,
     gameOverParticles: cc.Node,
     gameOverSadFace: cc.Node,
     gameOverHappyFace: cc.Node,
     gameOverLabel: cc.Label,
+    gameOverMenu: cc.Node,
+    gameOverEditBox: cc.EditBox,
     posArr: [],
     indexArr: [],
     matchSound: cc.AudioSource,
@@ -46,6 +48,7 @@ cc.Class({
     Emitter.instance.registerEvent("LEADER BOARD", this.leaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("CLOSE LEADER BOARD", this.closeLeaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("COLOR CHECK", this.colorCheck.bind(this));
+    Emitter.instance.registerEvent("PLAY AGAIN", this.playAgainEvent.bind(this));
 
     this.posArr = [
       cc.v2(-165, 65),
@@ -68,7 +71,7 @@ cc.Class({
     this.createTable();
     this.createPreFab();
     this.colorCheck();
-    this.updateLeaderBoard();
+    this.updateBestScore();
 
     cc.log(cc.sys.localStorage.getItem("best"));
   },
@@ -76,7 +79,7 @@ cc.Class({
   start() {},
 
   update(dt) {
-    this.timer == 500 ? this.notificationEvent() : this.timer++;
+    this._timer == 500 ? this.notificationEvent() : this._timer++;
     this.notificationLabel.string = `<color=#ffffff>Best Score is: </c><color=#0fffff>${this.bestLabel.string} </color><color=#ffffff>!!!</c>`;
   },
   createTable() {
@@ -89,14 +92,12 @@ cc.Class({
   },
   createPreFab() {
     for (let i = 0; i < 16; i++) {
-      this.newItem = cc.instantiate(this.itemPrefab);
-      this.deckItem.addChild(this.newItem);
-      this.newItem.children[0].getComponent(cc.Label).string = 0;
-      this.indexArr.push(this.newItem);
-      this.newItem.position = this.posArr[i];
+      this._newItem = cc.instantiate(this.itemPrefab);
+      this.deckItem.addChild(this._newItem);
+      this._newItem.children[0].getComponent(cc.Label).string = 0;
+      this.indexArr.push(this._newItem);
+      this._newItem.position = this.posArr[i];
     }
-    // cc.log(this.deckItem.children);
-    // cc.log(this.indexArr);
     this.colorCheck();
     this.createRandomItem();
     this.createRandomItem();
@@ -123,8 +124,8 @@ cc.Class({
           parseInt(this.indexArr[i + 1].children[0].getComponent(cc.Label).string);
         this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
         this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
-        this.score += matchTotal;
-        this.scoreLabel.string = this.score;
+        this._score += matchTotal;
+        this.scoreLabel.string = this._score;
         // this.matchSound.play();
       }
     }
@@ -141,8 +142,8 @@ cc.Class({
           parseInt(this.indexArr[i + 4].children[0].getComponent(cc.Label).string);
         this.indexArr[i].children[0].getComponent(cc.Label).string = 0;
         this.indexArr[i + 4].children[0].getComponent(cc.Label).string = matchTotal;
-        this.score += matchTotal;
-        this.scoreLabel.string = this.score;
+        this._score += matchTotal;
+        this.scoreLabel.string = this._score;
         // this.matchSound.play();
       }
     }
@@ -285,6 +286,7 @@ cc.Class({
     this.gameOverParticles.active = true;
     this.gameOverHappyFace.active = true;
     this.gameOverSadFace.active = false;
+    this.gameOverMenu.active = true;
     this.gameOverLabel.string = "You Win!";
     this.disableKey(false);
   },
@@ -296,13 +298,14 @@ cc.Class({
     this.gameOverParticles.active = false;
     this.gameOverHappyFace.active = false;
     this.gameOverSadFace.active = true;
+    this.gameOverMenu.active = false;
     this.gameOverLabel.string = "Game Over!";
     this.disableKey(false);
   },
   newGameEvent() {
-    this.deckItem.removeAllChildren(this.newItem);
-    this.score = 0;
-    this.scoreLabel.string = this.score;
+    this.deckItem.removeAllChildren(this._newItem);
+    this._score = 0;
+    this.scoreLabel.string = this._score;
     this.indexArr = [];
     this.createPreFab();
     this.colorCheck();
@@ -345,14 +348,24 @@ cc.Class({
     this.leaderBoardFormFlag = false;
     this.disableKey(true);
   },
-  updateLeaderBoard() {
+  playAgainEvent() {
+    cc.log(this.gameOverEditBox.string, this._score);
+    let newItem = cc.instantiate(this.leaderBoardItemPrefab);
+    this.leaderBoardForm.children[2].children[0].addChild(newItem);
+    let stringLeaderBoard = newItem.getComponent(cc.Label);
+    stringLeaderBoard.string = `______☆☆☆☆☆______ \n ${this.gameOverEditBox.string} : ${this._score}`;
+    this.gameOverEditBox.string = "";
+
+    this.newGameEvent();
+  },
+  updateBestScore() {
     this.bestLabel.string = Math.max(...JSON.parse(cc.sys.localStorage.getItem("best")));
   },
   notificationEvent() {
     this.notification.setPosition(1500, 300);
     let action = cc.moveTo(10, -1500, 300);
     this.notification.runAction(action);
-    this.timer = 0;
+    this._timer = 0;
   },
   disableKey(value) {
     Emitter.instance.emit("DISABLE KEY", value);

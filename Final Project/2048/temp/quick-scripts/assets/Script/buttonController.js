@@ -19,6 +19,7 @@ cc.Class({
     closeLeaderBoardBtn: cc.Button,
     newGameBtn: cc.Button,
     quitBtn: cc.Button,
+    gameOverButton: cc.Button,
     effectOnNode: cc.Node,
     effectOffNode: cc.Node,
     musicOnNode: cc.Node,
@@ -41,8 +42,9 @@ cc.Class({
     this.effectOffBtn.node.on("click", this.effectOffSoundEvent, this);
     this.newGameBtn.node.on("click", this.newGameEvent, this);
     this.quitBtn.node.on("click", this.quitEvent, this);
-    // this.backgroundSound.play();
+    this.gameOverButton.node.on("click", this.playAgainEvent, this);
     Emitter.instance.registerEvent("MOVE SOUND", this.moveSound.bind(this));
+    // this.backgroundSound.play();
   },
   start: function start() {},
   update: function update(dt) {},
@@ -91,6 +93,10 @@ cc.Class({
     this.effectOnNode.active = true;
     this.effectOffNode.active = false;
     this.effectSound.mute = false;
+    this.clickSound.play();
+  },
+  playAgainEvent: function playAgainEvent() {
+    Emitter.instance.emit("PLAY AGAIN");
     this.clickSound.play();
   },
   newGameEvent: function newGameEvent() {
