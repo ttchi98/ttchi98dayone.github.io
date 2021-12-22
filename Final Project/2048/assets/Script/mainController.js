@@ -353,15 +353,15 @@ cc.Class({
       this.tutorialFormFlag = true;
       this.tutorialForm.active = true;
       this.tutorialForm.setScale(0, 0);
-      this.tutorialForm.setPosition(75, 320);
-      let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, 2.5, -50));
+      this.tutorialForm.setPosition(-425, 320);
+      let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.tutorialForm.runAction(spawnOpen);
       this.disableKey(false);
       this.disableTouch(false);
     } else this.closeTutorialEvent();
   },
   closeTutorialEvent() {
-    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, 75, 320));
+    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 320));
     this.tutorialForm.runAction(spawnClose);
     this.tutorialFormFlag = false;
 
@@ -374,15 +374,15 @@ cc.Class({
       this.leaderBoardFormFlag = true;
       this.leaderBoardForm.active = true;
       this.leaderBoardForm.setScale(0, 0);
-      this.leaderBoardForm.setPosition(85, 275);
-      let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, 2.5, -50));
+      this.leaderBoardForm.setPosition(-415, 275);
+      let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.leaderBoardForm.runAction(spawnOpen);
       this.disableKey(false);
       this.disableTouch(false);
     } else this.closeLeaderBoardEvent();
   },
   closeLeaderBoardEvent() {
-    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, 75, 275));
+    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 275));
     this.leaderBoardForm.runAction(spawnClose);
     this.leaderBoardFormFlag = false;
     this.disableKey(true);
