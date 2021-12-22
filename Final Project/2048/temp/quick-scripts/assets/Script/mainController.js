@@ -15,9 +15,13 @@ cc.Class({
     best: [],
     _newItem: null,
     _timer: 0,
+    mainCamera: cc.Node,
+    title: cc.Node,
     notification: cc.Node,
     notificationLabel: cc.RichText,
+    scoreContainer: cc.Node,
     scoreLabel: cc.Label,
+    scoreUpdatePrefab: cc.Prefab,
     bestLabel: cc.Label,
     item: cc.Node,
     table: cc.Node,
@@ -36,9 +40,8 @@ cc.Class({
     gameOverLabel: cc.Label,
     gameOverMenu: cc.Node,
     gameOverEditBox: cc.EditBox,
-    posArr: [],
-    indexArr: [],
-    matchSound: cc.AudioSource
+    _posArr: [],
+    _indexArr: []
   },
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
@@ -57,14 +60,14 @@ cc.Class({
     Emitter.instance.registerEvent("CLOSE LEADER BOARD", this.closeLeaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("COLOR CHECK", this.colorCheck.bind(this));
     Emitter.instance.registerEvent("PLAY AGAIN", this.playAgainEvent.bind(this));
+    Emitter.instance.registerEvent("START GAME", this.startGameEvent.bind(this));
+    Emitter.instance.registerEvent("BACK", this.backEvent.bind(this));
 
-    this.posArr = [cc.v2(-165, 65), cc.v2(-55, 65), cc.v2(55, 65), cc.v2(165, 65), cc.v2(-165, -45), cc.v2(-55, -45), cc.v2(55, -45), cc.v2(165, -45), cc.v2(-165, -155), cc.v2(55, -155), cc.v2(-55, -155), cc.v2(165, -155), cc.v2(-165, -265), cc.v2(-55, -265), cc.v2(55, -265), cc.v2(165, -265)];
+    this._posArr = [cc.v2(-165, 65), cc.v2(-55, 65), cc.v2(55, 65), cc.v2(165, 65), cc.v2(-165, -45), cc.v2(-55, -45), cc.v2(55, -45), cc.v2(165, -45), cc.v2(-165, -155), cc.v2(55, -155), cc.v2(-55, -155), cc.v2(165, -155), cc.v2(-165, -265), cc.v2(-55, -265), cc.v2(55, -265), cc.v2(165, -265)];
     this.createTable();
     this.createPreFab();
     this.colorCheck();
     this.updateBestScore();
-
-    cc.log(cc.sys.localStorage.getItem("best"));
   },
   start: function start() {},
   update: function update(dt) {
@@ -84,49 +87,62 @@ cc.Class({
       this._newItem = cc.instantiate(this.itemPrefab);
       this.deckItem.addChild(this._newItem);
       this._newItem.children[0].getComponent(cc.Label).string = 0;
-      this.indexArr.push(this._newItem);
-      this._newItem.position = this.posArr[i];
+      this._indexArr.push(this._newItem);
+      this._newItem.position = this._posArr[i];
     }
     this.colorCheck();
     this.createRandomItem();
     this.createRandomItem();
   },
   createRandomItem: function createRandomItem() {
-    var randomNumber = Math.floor(Math.random() * this.indexArr.length);
-    if (this.indexArr[randomNumber].children[0].getComponent(cc.Label).string == 0) {
-      this.indexArr[randomNumber].children[0].getComponent(cc.Label).string = 2;
-      this.indexArr[randomNumber].setScale(0.3);
+    var randomNumber = Math.floor(Math.random() * this._indexArr.length);
+    if (this._indexArr[randomNumber].children[0].getComponent(cc.Label).string == 0) {
+      this._indexArr[randomNumber].children[0].getComponent(cc.Label).string = 2;
+      this._indexArr[randomNumber].setScale(0.3);
       var action = cc.scaleTo(0.2, 1);
-      this.indexArr[randomNumber].runAction(action);
+      this._indexArr[randomNumber].runAction(action);
 
       this.checkForLose();
     } else this.createRandomItem();
   },
   matchItemRow: function matchItemRow() {
     for (var i = 0; i < 15; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string === this.indexArr[i + 1].children[0].getComponent(cc.Label).string) {
-        var matchTotal = parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this.indexArr[i + 1].children[0].getComponent(cc.Label).string);
-        this.indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
-        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
+      if (this._indexArr[i].children[0].getComponent(cc.Label).string === this._indexArr[i + 1].children[0].getComponent(cc.Label).string) {
+        var matchTotal = parseInt(this._indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this._indexArr[i + 1].children[0].getComponent(cc.Label).string);
+        this._indexArr[i].children[0].getComponent(cc.Label).string = matchTotal;
+        this._indexArr[i + 1].children[0].getComponent(cc.Label).string = 0;
         this._score += matchTotal;
         this.scoreLabel.string = this._score;
-        // this.matchSound.play();
+        this.scoreUpdate(matchTotal);
       }
     }
     this.checkForWin();
   },
   matchItemCol: function matchItemCol() {
     for (var i = 0; i < 12; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string === this.indexArr[i + 4].children[0].getComponent(cc.Label).string) {
-        var matchTotal = parseInt(this.indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this.indexArr[i + 4].children[0].getComponent(cc.Label).string);
-        this.indexArr[i].children[0].getComponent(cc.Label).string = 0;
-        this.indexArr[i + 4].children[0].getComponent(cc.Label).string = matchTotal;
+      if (this._indexArr[i].children[0].getComponent(cc.Label).string === this._indexArr[i + 4].children[0].getComponent(cc.Label).string) {
+        var matchTotal = parseInt(this._indexArr[i].children[0].getComponent(cc.Label).string) + parseInt(this._indexArr[i + 4].children[0].getComponent(cc.Label).string);
+        this._indexArr[i].children[0].getComponent(cc.Label).string = 0;
+        this._indexArr[i + 4].children[0].getComponent(cc.Label).string = matchTotal;
         this._score += matchTotal;
         this.scoreLabel.string = this._score;
-        // this.matchSound.play();
+        this.scoreUpdate(matchTotal);
       }
     }
     this.checkForWin();
+  },
+  scoreUpdate: function scoreUpdate(value) {
+    if (value != 0) {
+      var updateScore = cc.instantiate(this.scoreUpdatePrefab);
+      this.scoreContainer.addChild(updateScore);
+      updateScore.children[0].getComponent(cc.Label).string = "+" + value;
+      var moveUp = cc.sequence(cc.moveTo(0.5, 0, 50), cc.fadeOut(0.5), cc.delayTime(1), cc.callFunc(function () {
+        updateScore.destroy();
+      }));
+      moveUp.easing(cc.easeQuadraticActionOut());
+      updateScore.runAction(moveUp);
+      Emitter.instance.emit("MATCH SOUND");
+    }
   },
   colorCheck: function colorCheck() {
     var grey = new cc.Color(119, 110, 101);
@@ -159,110 +175,122 @@ cc.Class({
   },
   colorNode: function colorNode(string, value1, value2) {
     for (var i = 0; i <= 15; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string == string) {
-        this.indexArr[i].color = value1;
-        this.indexArr[i].children[0].color = value2;
-        this.indexArr[i].children[0].getComponent(cc.LabelOutline).color = value2;
+      if (this._indexArr[i].children[0].getComponent(cc.Label).string == string) {
+        this._indexArr[i].color = value1;
+        this._indexArr[i].children[0].color = value2;
+        this._indexArr[i].children[0].getComponent(cc.LabelOutline).color = value2;
       }
     }
   },
   goRight: function goRight() {
     for (var i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        var rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        var rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        var rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        var rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        var rowOne = this._indexArr[i].children[0].getComponent(cc.Label).string;
+        var rowTwo = this._indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        var rowThree = this._indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        var rowFour = this._indexArr[i + 3].children[0].getComponent(cc.Label).string;
         var rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
         var filteredRow = rows.filter(function (num) {
           return num;
         });
         var zeros = Array(4 - filteredRow.length).fill(0);
         var newRow = zeros.concat(filteredRow);
-        this.indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
-        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
-        this.indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
-        this.indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
+        this._indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
+        this._indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
+        this._indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
+        this._indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
       }
     }
   },
   goLeft: function goLeft() {
     for (var i = 0; i < 16; i++) {
       if (i % 4 === 0) {
-        var rowOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-        var rowTwo = this.indexArr[i + 1].children[0].getComponent(cc.Label).string;
-        var rowThree = this.indexArr[i + 2].children[0].getComponent(cc.Label).string;
-        var rowFour = this.indexArr[i + 3].children[0].getComponent(cc.Label).string;
+        var rowOne = this._indexArr[i].children[0].getComponent(cc.Label).string;
+        var rowTwo = this._indexArr[i + 1].children[0].getComponent(cc.Label).string;
+        var rowThree = this._indexArr[i + 2].children[0].getComponent(cc.Label).string;
+        var rowFour = this._indexArr[i + 3].children[0].getComponent(cc.Label).string;
         var rows = [parseInt(rowOne), parseInt(rowTwo), parseInt(rowThree), parseInt(rowFour)];
         var filteredRow = rows.filter(function (num) {
           return num;
         });
         var zeros = Array(4 - filteredRow.length).fill(0);
         var newRow = filteredRow.concat(zeros);
-        this.indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
-        this.indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
-        this.indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
-        this.indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
+        this._indexArr[i].children[0].getComponent(cc.Label).string = newRow[0];
+        this._indexArr[i + 1].children[0].getComponent(cc.Label).string = newRow[1];
+        this._indexArr[i + 2].children[0].getComponent(cc.Label).string = newRow[2];
+        this._indexArr[i + 3].children[0].getComponent(cc.Label).string = newRow[3];
       }
     }
   },
   goUp: function goUp() {
     for (var i = 0; i < 4; i++) {
-      var colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-      var colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
-      var colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
-      var colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      var colOne = this._indexArr[i].children[0].getComponent(cc.Label).string;
+      var colTwo = this._indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      var colThree = this._indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      var colFour = this._indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
       var cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
       var filteredCol = cols.filter(function (num) {
         return num;
       });
       var zeros = Array(4 - filteredCol.length).fill(0);
       var newCol = filteredCol.concat(zeros);
-      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
-      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
-      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
-      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+      this._indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this._indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this._indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this._indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
     }
   },
   goDown: function goDown() {
     for (var i = 0; i < 4; i++) {
-      var colOne = this.indexArr[i].children[0].getComponent(cc.Label).string;
-      var colTwo = this.indexArr[i + 4].children[0].getComponent(cc.Label).string;
-      var colThree = this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
-      var colFour = this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
+      var colOne = this._indexArr[i].children[0].getComponent(cc.Label).string;
+      var colTwo = this._indexArr[i + 4].children[0].getComponent(cc.Label).string;
+      var colThree = this._indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string;
+      var colFour = this._indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string;
       var cols = [parseInt(colOne), parseInt(colTwo), parseInt(colThree), parseInt(colFour)];
       var filteredCol = cols.filter(function (num) {
         return num;
       });
       var zeros = Array(4 - filteredCol.length).fill(0);
       var newCol = zeros.concat(filteredCol);
-      this.indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
-      this.indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
-      this.indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
-      this.indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
+      this._indexArr[i].children[0].getComponent(cc.Label).string = newCol[0];
+      this._indexArr[i + 4].children[0].getComponent(cc.Label).string = newCol[1];
+      this._indexArr[i + 4 * 2].children[0].getComponent(cc.Label).string = newCol[2];
+      this._indexArr[i + 4 * 3].children[0].getComponent(cc.Label).string = newCol[3];
     }
   },
   checkForWin: function checkForWin() {
-    for (var i = 0; i < this.indexArr.length; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 64) {
+    for (var i = 0; i < this._indexArr.length; i++) {
+      if (this._indexArr[i].children[0].getComponent(cc.Label).string == 128) {
         this.gameOverWinEvent();
         this.best.push(this.scoreLabel.string);
         cc.sys.localStorage.setItem("best", JSON.stringify(this.best));
         this.bestLabel.string = Math.max.apply(Math, _toConsumableArray(JSON.parse(cc.sys.localStorage.getItem("best"))));
-        cc.log(cc.sys.localStorage);
       }
     }
   },
   checkForLose: function checkForLose() {
     var zeros = 0;
-    for (var i = 0; i < this.indexArr.length; i++) {
-      if (this.indexArr[i].children[0].getComponent(cc.Label).string == 0) {
+    for (var i = 0; i < this._indexArr.length; i++) {
+      if (this._indexArr[i].children[0].getComponent(cc.Label).string == 0) {
         zeros++;
       }
     }
     if (zeros === 0) {
       this.gameOverLoseEvent();
     }
+  },
+  startGameEvent: function startGameEvent() {
+    var startGame = cc.moveTo(0.5, -500, 0);
+    this.mainCamera.runAction(startGame);
+    var moveTitle = cc.spawn(cc.moveTo(0.5, -600, 300), cc.scaleTo(0.5, 0.8));
+    this.title.runAction(moveTitle);
+    this.newGameEvent();
+  },
+  backEvent: function backEvent() {
+    var backToStartGame = cc.moveTo(0.5, 0, 0);
+    this.mainCamera.runAction(backToStartGame);
+    var moveTitle = cc.spawn(cc.moveTo(0.5, 0, 200), cc.scaleTo(0.5, 1));
+    this.title.runAction(moveTitle);
   },
   gameOverWinEvent: function gameOverWinEvent() {
     this.gameOverForm.active = true;
@@ -275,6 +303,7 @@ cc.Class({
     this.gameOverMenu.active = true;
     this.gameOverLabel.string = "You Win!";
     this.disableKey(false);
+    this.disableTouch(false);
   },
   gameOverLoseEvent: function gameOverLoseEvent() {
     this.gameOverForm.active = true;
@@ -287,16 +316,18 @@ cc.Class({
     this.gameOverMenu.active = false;
     this.gameOverLabel.string = "Game Over!";
     this.disableKey(false);
+    this.disableTouch(false);
   },
   newGameEvent: function newGameEvent() {
     this.deckItem.removeAllChildren(this._newItem);
     this._score = 0;
     this.scoreLabel.string = this._score;
-    this.indexArr = [];
+    this._indexArr = [];
     this.createPreFab();
     this.colorCheck();
     this.gameOverForm.active = false;
     this.disableKey(true);
+    this.disableTouch(true);
   },
   tutorialEvent: function tutorialEvent() {
     if (this.tutorialFormFlag == false) {
@@ -307,6 +338,7 @@ cc.Class({
       var spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, 2.5, -50));
       this.tutorialForm.runAction(spawnOpen);
       this.disableKey(false);
+      this.disableTouch(false);
     } else this.closeTutorialEvent();
   },
   closeTutorialEvent: function closeTutorialEvent() {
@@ -316,6 +348,7 @@ cc.Class({
 
     this.tutorialForm.getComponent(cc.PageView).scrollToPage(0, 0.5);
     this.disableKey(true);
+    this.disableTouch(true);
   },
   leaderBoardEvent: function leaderBoardEvent() {
     if (this.leaderBoardFormFlag == false) {
@@ -326,6 +359,7 @@ cc.Class({
       var spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, 2.5, -50));
       this.leaderBoardForm.runAction(spawnOpen);
       this.disableKey(false);
+      this.disableTouch(false);
     } else this.closeLeaderBoardEvent();
   },
   closeLeaderBoardEvent: function closeLeaderBoardEvent() {
@@ -333,9 +367,9 @@ cc.Class({
     this.leaderBoardForm.runAction(spawnClose);
     this.leaderBoardFormFlag = false;
     this.disableKey(true);
+    this.disableTouch(true);
   },
   playAgainEvent: function playAgainEvent() {
-    cc.log(this.gameOverEditBox.string, this._score);
     var newItem = cc.instantiate(this.leaderBoardItemPrefab);
     this.leaderBoardForm.children[2].children[0].addChild(newItem);
     var stringLeaderBoard = newItem.getComponent(cc.Label);
@@ -355,6 +389,9 @@ cc.Class({
   },
   disableKey: function disableKey(value) {
     Emitter.instance.emit("DISABLE KEY", value);
+  },
+  disableTouch: function disableTouch(value) {
+    Emitter.instance.emit("DISABLE TOUCH", value);
   }
 });
 

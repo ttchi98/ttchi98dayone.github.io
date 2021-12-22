@@ -9,6 +9,9 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
+    startBtn: cc.Button,
+    leaderBoardStartBtn: cc.Button,
+    quitStartBtn: cc.Button,
     tutorialBtn: cc.Button,
     leaderBoardBtn: cc.Button,
     musicOnBtn: cc.Button,
@@ -18,7 +21,7 @@ cc.Class({
     closeBtn: cc.Button,
     closeLeaderBoardBtn: cc.Button,
     newGameBtn: cc.Button,
-    quitBtn: cc.Button,
+    backBtn: cc.Button,
     gameOverButton: cc.Button,
     effectOnNode: cc.Node,
     effectOffNode: cc.Node,
@@ -26,12 +29,19 @@ cc.Class({
     musicOffNode: cc.Node,
     backgroundSound: cc.AudioSource,
     effectSound: cc.AudioSource,
-    clickSound: cc.AudioSource
+    clickSound: cc.AudioSource,
+    matchSound: cc.AudioSource
   },
 
   // LIFE-CYCLE CALLBACKS:
 
   onLoad: function onLoad() {
+    //form Start
+    this.startBtn.node.on("click", this.startEvent, this);
+    this.leaderBoardStartBtn.node.on("click", this.leaderBoardEvent, this);
+    this.quitStartBtn.node.on("click", this.quitEvent, this);
+
+    //form Begin
     this.tutorialBtn.node.on("click", this.tutorialEvent, this);
     this.leaderBoardBtn.node.on("click", this.leaderBoardEvent, this);
     this.closeBtn.node.on("click", this.closeTutorialEvent, this);
@@ -41,15 +51,20 @@ cc.Class({
     this.effectOnBtn.node.on("click", this.effectOnSoundEvent, this);
     this.effectOffBtn.node.on("click", this.effectOffSoundEvent, this);
     this.newGameBtn.node.on("click", this.newGameEvent, this);
-    this.quitBtn.node.on("click", this.quitEvent, this);
+    this.backBtn.node.on("click", this.backEvent, this);
     this.gameOverButton.node.on("click", this.playAgainEvent, this);
     Emitter.instance.registerEvent("MOVE SOUND", this.moveSound.bind(this));
-    // this.backgroundSound.play();
+    Emitter.instance.registerEvent("MATCH SOUND", this.matchSoundEvent.bind(this));
   },
   start: function start() {},
   update: function update(dt) {},
   moveSound: function moveSound() {
     this.effectSound.play();
+  },
+  startEvent: function startEvent() {
+    Emitter.instance.emit("START GAME");
+    this.clickSound.play();
+    this.backgroundSound.play();
   },
   leaderBoardEvent: function leaderBoardEvent() {
     Emitter.instance.emit("LEADER BOARD");
@@ -72,7 +87,6 @@ cc.Class({
     this.musicOffNode.active = true;
     this.backgroundSound.pause();
     this.clickSound.play();
-
     // this.backgroundSound.isPlaying ? this.backgroundSound.pause() : this.backgroundSound.play();
   },
   musicOffEvent: function musicOffEvent() {
@@ -85,14 +99,15 @@ cc.Class({
     this.effectOnNode.active = false;
     this.effectOffNode.active = true;
     this.effectSound.mute = true;
+    this.matchSound.mute = true;
     this.clickSound.play();
-
     // this.effectSound.mute == false ? (this.effectSound.mute = true) : this.effectSound.mute = false)
   },
   effectOffSoundEvent: function effectOffSoundEvent() {
     this.effectOnNode.active = true;
     this.effectOffNode.active = false;
     this.effectSound.mute = false;
+    this.matchSound.mute = false;
     this.clickSound.play();
   },
   playAgainEvent: function playAgainEvent() {
@@ -106,6 +121,13 @@ cc.Class({
   quitEvent: function quitEvent() {
     cc.game.end();
     this.clickSound.play();
+  },
+  backEvent: function backEvent() {
+    Emitter.instance.emit("BACK");
+    this.backgroundSound.pause();
+  },
+  matchSoundEvent: function matchSoundEvent() {
+    this.matchSound.play();
   }
 });
 

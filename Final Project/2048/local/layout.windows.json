@@ -47,7 +47,7 @@
                     ],
                     "height": 445,
                     "type": "panel",
-                    "width": 660
+                    "width": 663
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 445,
                     "type": "panel",
-                    "width": 347
+                    "width": 348
                   }
                 ],
                 "height": 445,
                 "type": "dock-h",
-                "width": 1009
+                "width": 1013
               },
               {
                 "active": 0,
@@ -72,12 +72,12 @@
                 ],
                 "height": 405,
                 "type": "panel",
-                "width": 1009
+                "width": 1013
               }
             ],
             "height": 852,
             "type": "dock-v",
-            "width": 1009
+            "width": 1013
           },
           {
             "active": 0,
@@ -87,7 +87,7 @@
             ],
             "height": 852,
             "type": "panel",
-            "width": 399
+            "width": 395
           }
         ],
         "type": "dock-h"
@@ -104,7 +104,7 @@
         "scene"
       ]
     },
-    "window-1640147557194": {}
+    "window-1640169590703": {}
   },
   "panels": {
     "sprite-editor": {

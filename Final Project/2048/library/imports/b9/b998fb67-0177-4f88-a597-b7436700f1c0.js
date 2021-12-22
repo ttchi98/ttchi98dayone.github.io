@@ -25,6 +25,7 @@ cc.Class({
     this.touchNode.on(cc.Node.EventType.TOUCH_END, this.touchEnd, this);
     // this.touchNode.on(cc.Node.EventType.MOUSE_DOWN, this.touchStart, this);
     // this.touchNode.on(cc.Node.EventType.MOUSE_UP, this.touchEnd, this);
+    Emitter.instance.registerEvent("DISABLE TOUCH", this.disableTouch.bind(this));
   },
   start: function start() {},
   update: function update(dt) {},
@@ -35,28 +36,29 @@ cc.Class({
   touchEnd: function touchEnd(event) {
     this._xEnd = event.getLocationX();
     this._yEnd = event.getLocationY();
-    this.isMove();
+    this.touchMove();
   },
-  isMove: function isMove() {
+  touchMove: function touchMove() {
+    if (!this.canTouch) return;
+
     if (this._xStart != null && this._yStart != null && this._xEnd != null && this._yEnd != null) {
       if (Math.abs(this._xEnd - this._xStart) > Math.abs(this._yEnd - this._yStart)) {
         if (this._xEnd > this._xStart) {
-          cc.log("MOVE RIGHT");
           Emitter.instance.emit("KEY RIGHT");
         } else {
-          cc.log("MOVE LEFT");
           Emitter.instance.emit("KEY LEFT");
         }
       } else {
         if (this._yEnd > this._yStart) {
-          cc.log("MOVE UP");
           Emitter.instance.emit("KEY UP");
         } else {
-          cc.log("MOVE DOWN");
           Emitter.instance.emit("KEY DOWN");
         }
       }
     } else cc.error("ERROR!!!");
+  },
+  disableTouch: function disableTouch(value) {
+    this.canTouch = value;
   }
 });
 

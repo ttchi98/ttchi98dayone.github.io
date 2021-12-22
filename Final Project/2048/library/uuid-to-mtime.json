@@ -112,22 +112,22 @@
   "07a0fd6f-f2e4-4b81-a9bf-04e3977c8fd6": {
     "asset": 1638953804152,
     "meta": 1638953836592,
-    "relativePath": "Texture/button-01.png"
+    "relativePath": "Texture/Button/button-01.png"
   },
   "e4a8aceb-5d7d-4970-a77e-852d488a2aa8": {
     "asset": 1638956765061,
     "meta": 1638956845556,
-    "relativePath": "Texture/empty-button.png"
+    "relativePath": "Texture/Button/empty-button.png"
   },
   "63975ce7-12ac-4227-a711-cb610f1114da": {
     "asset": 1638957635932,
     "meta": 1638957635960,
-    "relativePath": "Texture/empty-button-01.png"
+    "relativePath": "Texture/Button/empty-button-01.png"
   },
   "812086ea-9db8-42eb-a116-c7fcb8059bfa": {
     "asset": 1638957635932,
     "meta": 1638957635961,
-    "relativePath": "Texture/music-button-01.png"
+    "relativePath": "Texture/Button/music-button-01.png"
   },
   "c6358cbc-23eb-465a-826d-797bc7b1bcda": {
     "asset": 1640073478298,
@@ -147,7 +147,7 @@
   "c325441e-2c1e-4934-919b-138d92daf061": {
     "asset": 1639452875941,
     "meta": 1639452875967,
-    "relativePath": "Texture/pause-button.png"
+    "relativePath": "Texture/Button/pause-button.png"
   },
   "f27412f4-2ce0-455a-8463-bdccf245edd3": {
     "asset": 1639997723727,
@@ -212,62 +212,62 @@
   "cd7dc6dc-7f0f-4fc5-a44f-3329c00f3e26": {
     "asset": 1639795525008,
     "meta": 1639795525041,
-    "relativePath": "Texture/question-button.png"
+    "relativePath": "Texture/Button/question-button.png"
   },
   "0249ecae-cb95-4cc2-bc58-1abb8dd27186": {
     "asset": 1639795719708,
     "meta": 1639795719727,
-    "relativePath": "Texture/quest-button-02.png"
+    "relativePath": "Texture/Button/quest-button-02.png"
   },
   "6ee0d7d2-168c-4ce8-9d57-ad5738bf802e": {
     "asset": 1639796431600,
     "meta": 1639796362509,
-    "relativePath": "Texture/tutorial"
+    "relativePath": "Texture/Tutorial"
   },
   "6bff938c-d711-4664-9061-9ab1151a2d83": {
     "asset": 1639796362503,
     "meta": 1639796362536,
-    "relativePath": "Texture/tutorial/tutorial-01.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-01.jpeg"
   },
   "e7a8272f-2cd0-4a4f-85a7-49ddea2e446b": {
     "asset": 1639796362503,
     "meta": 1639796362539,
-    "relativePath": "Texture/tutorial/tutorial-02.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-02.jpeg"
   },
   "7d895740-736d-4de9-8462-f5d51f664822": {
     "asset": 1639796362502,
     "meta": 1639796362557,
-    "relativePath": "Texture/tutorial/tutorial-03.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-03.jpeg"
   },
   "3b667f45-b2f7-4ab3-bf57-5432509f12db": {
     "asset": 1639796362502,
     "meta": 1639796362558,
-    "relativePath": "Texture/tutorial/tutorial-04.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-04.jpeg"
   },
   "6d1d5708-5275-4ad9-823f-9f6cf46552ab": {
     "asset": 1639796362502,
     "meta": 1639796362578,
-    "relativePath": "Texture/tutorial/tutorial-05.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-05.jpeg"
   },
   "5a2af435-4c13-48a5-9535-1630f414813b": {
     "asset": 1639796362502,
     "meta": 1639796362581,
-    "relativePath": "Texture/tutorial/tutorial-06.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-06.jpeg"
   },
   "9d83228f-a27c-40f7-89e4-940906a939ee": {
     "asset": 1639796362503,
     "meta": 1639796431633,
-    "relativePath": "Texture/tutorial/tutorial-07.jpeg"
+    "relativePath": "Texture/Tutorial/tutorial-07.jpeg"
   },
   "a66a4910-c40a-4c8d-b23e-093e59dcf29c": {
     "asset": 1639796845879,
     "meta": 1639796845908,
-    "relativePath": "Texture/close-button-01.png"
+    "relativePath": "Texture/Button/close-button-01.png"
   },
   "cbdea65d-cafc-4984-a8b4-3669e0954e99": {
     "asset": 1639797536609,
     "meta": 1639797536651,
-    "relativePath": "Texture/music-button-02.png"
+    "relativePath": "Texture/Button/music-button-02.png"
   },
   "998322ba-388c-4870-8630-3c4ff75c784c": {
     "asset": 1639798214592,
@@ -282,12 +282,12 @@
   "2ab0f51c-c5dc-4338-91bc-ad65bccba7c9": {
     "asset": 1639799634535,
     "meta": 1639799634567,
-    "relativePath": "Texture/effectOn-button.png"
+    "relativePath": "Texture/Button/effectOn-button.png"
   },
   "11fd5b2d-8597-44c0-aa85-57193f6c23bd": {
     "asset": 1639799634535,
     "meta": 1639799634569,
-    "relativePath": "Texture/effectOff-button.png"
+    "relativePath": "Texture/Button/effectOff-button.png"
   },
   "b30dc150-83d8-4efd-bf0f-d546a4c194b0": {
     "asset": 1639803338629,
@@ -315,14 +315,14 @@
     "relativePath": "Texture/happy-face-removebg-preview.png"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1640145354850,
-    "meta": 1640145354859,
+    "asset": 1640169159517,
+    "meta": 1640169159536,
     "relativePath": "Scene/helloworld.fire"
   },
   "ff9d8d2c-7c23-4882-bdc5-0926c8a8031d": {
     "asset": 1639973646728,
     "meta": 1639973646775,
-    "relativePath": "Texture/leaderBoard-button.png"
+    "relativePath": "Texture/Button/leaderBoard-button.png"
   },
   "38400470-3ce0-4a23-817c-56c35db8f18a": {
     "asset": 1639989008684,
@@ -704,24 +704,39 @@
     "meta": 1640142988966,
     "relativePath": "Prefab/headLeaderBoard.prefab"
   },
+  "b998fb67-0177-4f88-a597-b7436700f1c0": {
+    "asset": 1640148624409,
+    "meta": 1640148683056,
+    "relativePath": "Script/touchController.js"
+  },
+  "e2031fd8-bfb3-47ba-8b76-058a98e6d123": {
+    "asset": 1640157676773,
+    "meta": 1640157676828,
+    "relativePath": "Texture/Button/back-button.png"
+  },
+  "f6dc0642-578b-4ebc-9151-d720b2bf0804": {
+    "asset": 1640157685511,
+    "meta": 1640157685512,
+    "relativePath": "Texture/Button"
+  },
+  "00aa086d-349d-4ac6-82bb-a18b3d83a60c": {
+    "asset": 1640160569427,
+    "meta": 1640160569431,
+    "relativePath": "Prefab/ScoreUpdate.prefab"
+  },
+  "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
+    "asset": 1640165901708,
+    "meta": 1640165903438,
+    "relativePath": "Script/keyController.js"
+  },
   "5ccc245f-f2d6-42ea-81a5-288443a6b536": {
-    "asset": 1640144502986,
-    "meta": 1640144583797,
+    "asset": 1640165993516,
+    "meta": 1640165994378,
     "relativePath": "Script/buttonController.js"
   },
   "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
-    "asset": 1640145039020,
-    "meta": 1640145063943,
+    "asset": 1640169578609,
+    "meta": 1640169579588,
     "relativePath": "Script/mainController.js"
-  },
-  "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
-    "asset": 1640147274291,
-    "meta": 1640147306320,
-    "relativePath": "Script/keyController.js"
-  },
-  "b998fb67-0177-4f88-a597-b7436700f1c0": {
-    "asset": 1640147517526,
-    "meta": 1640147518608,
-    "relativePath": "Script/touchController.js"
   }
 }
