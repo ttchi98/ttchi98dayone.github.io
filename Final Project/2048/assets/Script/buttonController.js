@@ -28,6 +28,8 @@ cc.Class({
     effectSound: cc.AudioSource,
     clickSound: cc.AudioSource,
     matchSound: cc.AudioSource,
+    winSound: cc.AudioSource,
+    loseSound: cc.AudioSource,
   },
 
   // LIFE-CYCLE CALLBACKS:
@@ -55,6 +57,8 @@ cc.Class({
     this.gameOverButton.node.on("click", this.playAgainEvent, this);
     Emitter.instance.registerEvent("MOVE SOUND", this.moveSound.bind(this));
     Emitter.instance.registerEvent("MATCH SOUND", this.matchSoundEvent.bind(this));
+    Emitter.instance.registerEvent("WIN SOUND", this.winSoundEvent.bind(this));
+    Emitter.instance.registerEvent("LOSE SOUND", this.loseSoundEvent.bind(this));
   },
 
   start() {},
@@ -110,6 +114,8 @@ cc.Class({
     this.effectSound.mute = true;
     this.matchSound.mute = true;
     this.clickSound.mute = true;
+    this.winSound.mute = true;
+    this.loseSound.mute = true;
     this.clickSound.play();
   },
   effectOffSoundEvent() {
@@ -118,6 +124,8 @@ cc.Class({
     this.effectSound.mute = false;
     this.matchSound.mute = false;
     this.clickSound.mute = false;
+    this.winSound.mute = false;
+    this.loseSound.mute = false;
     this.clickSound.play();
   },
   settingEvent() {
@@ -146,5 +154,11 @@ cc.Class({
   },
   matchSoundEvent() {
     this.matchSound.play();
+  },
+  winSoundEvent() {
+    this.winSound.play();
+  },
+  loseSoundEvent() {
+    this.loseSound.play();
   },
 });

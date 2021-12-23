@@ -322,6 +322,7 @@ cc.Class({
     this.gameOverParticles.active = true;
     this.gameOverMenu.active = true;
     this.gameOverLabel.string = "You Win!";
+    Emitter.instance.emit("WIN SOUND");
     this.disableKey(false);
   },
   gameOverLoseEvent() {
@@ -332,6 +333,7 @@ cc.Class({
     this.gameOverParticles.active = false;
     this.gameOverMenu.active = false;
     this.gameOverLabel.string = "Game Over!";
+    Emitter.instance.emit("LOSE SOUND");
     this.disableKey(false);
   },
   newGameEvent() {
@@ -397,7 +399,7 @@ cc.Class({
     let newItem = cc.instantiate(this.leaderBoardItemPrefab);
     this.leaderBoardForm.children[2].children[0].addChild(newItem);
     let stringLeaderBoard = newItem.getComponent(cc.Label);
-    stringLeaderBoard.string = `______☆☆☆☆☆______ \n ${this.gameOverEditBox.string} : ${this._score}`;
+    stringLeaderBoard.string = `___☆☆☆☆☆___ \n ${this.gameOverEditBox.string} : ${this._score}`;
     this.gameOverEditBox.string = "";
     this.newGameEvent();
   },

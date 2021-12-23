@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "leaderBoard",
+    "texture": "43fd99a9-4151-41c8-bc5a-c9fb369eae08",
+    "atlas": "",
+    "rect": [
+      162,
+      216,
+      876,
+      768
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1200,
+      1200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
