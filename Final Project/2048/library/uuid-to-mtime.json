@@ -315,8 +315,8 @@
     "relativePath": "Texture/happy-face-removebg-preview.png"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1640253458176,
-    "meta": 1640253458189,
+    "asset": 1640255369333,
+    "meta": 1640255369366,
     "relativePath": "Scene/helloworld.fire"
   },
   "ff9d8d2c-7c23-4882-bdc5-0926c8a8031d": {
@@ -775,8 +775,8 @@
     "relativePath": "Script/buttonController.js"
   },
   "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
-    "asset": 1640252626557,
-    "meta": 1640252628251,
+    "asset": 1640255591111,
+    "meta": 1640255593029,
     "relativePath": "Script/mainController.js"
   }
 }
