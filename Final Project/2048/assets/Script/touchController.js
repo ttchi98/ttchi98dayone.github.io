@@ -17,9 +17,8 @@ cc.Class({
   onLoad() {
     this.touchNode.on(cc.Node.EventType.TOUCH_START, this.touchStart, this);
     this.touchNode.on(cc.Node.EventType.TOUCH_END, this.touchEnd, this);
-    // this.touchNode.on(cc.Node.EventType.MOUSE_DOWN, this.touchStart, this);
-    // this.touchNode.on(cc.Node.EventType.MOUSE_UP, this.touchEnd, this);
     Emitter.instance.registerEvent("DISABLE TOUCH", this.disableTouch.bind(this));
+    this.disableTouch(false);
   },
 
   start() {},

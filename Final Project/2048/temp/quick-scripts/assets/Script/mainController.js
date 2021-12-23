@@ -28,6 +28,8 @@ cc.Class({
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
+    settingForm: cc.Node,
+    settingFormFlag: false,
     tutorialForm: cc.Node,
     tutorialFormFlag: false,
     leaderBoardForm: cc.Node,
@@ -35,8 +37,6 @@ cc.Class({
     leaderBoardItemPrefab: cc.Prefab,
     gameOverForm: cc.Node,
     gameOverParticles: cc.Node,
-    gameOverSadFace: cc.Node,
-    gameOverHappyFace: cc.Node,
     gameOverLabel: cc.Label,
     gameOverMenu: cc.Node,
     gameOverEditBox: cc.EditBox,
@@ -56,8 +56,10 @@ cc.Class({
     Emitter.instance.registerEvent("NEW GAME", this.newGameEvent.bind(this));
     Emitter.instance.registerEvent("TUTORIAL", this.tutorialEvent.bind(this));
     Emitter.instance.registerEvent("CLOSE TUTORIAL", this.closeTutorialEvent.bind(this));
-    Emitter.instance.registerEvent("LEADER BOARD", this.leaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("CLOSE LEADER BOARD", this.closeLeaderBoardEvent.bind(this));
+    Emitter.instance.registerEvent("CLOSE SETTING", this.closeSettingEvent.bind(this));
+    Emitter.instance.registerEvent("SETTING", this.settingEvent.bind(this));
+    Emitter.instance.registerEvent("LEADER BOARD", this.leaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("COLOR CHECK", this.colorCheck.bind(this));
     Emitter.instance.registerEvent("PLAY AGAIN", this.playAgainEvent.bind(this));
     Emitter.instance.registerEvent("START GAME", this.startGameEvent.bind(this));
@@ -284,6 +286,7 @@ cc.Class({
     this.mainCamera.runAction(startGame);
     var moveTitle = cc.spawn(cc.moveTo(0.5, -600, 300), cc.scaleTo(0.5, 0.8));
     this.title.runAction(moveTitle);
+    this.gameOverForm.active = false;
     this.newGameEvent();
   },
   backEvent: function backEvent() {
@@ -291,6 +294,7 @@ cc.Class({
     this.mainCamera.runAction(backToStartGame);
     var moveTitle = cc.spawn(cc.moveTo(0.5, 0, 200), cc.scaleTo(0.5, 1));
     this.title.runAction(moveTitle);
+    this.disableKey(false);
   },
   gameOverWinEvent: function gameOverWinEvent() {
     this.gameOverForm.active = true;
@@ -298,12 +302,9 @@ cc.Class({
     var winSpawn = cc.scaleTo(0.5, 1);
     this.gameOverForm.runAction(winSpawn);
     this.gameOverParticles.active = true;
-    this.gameOverHappyFace.active = true;
-    this.gameOverSadFace.active = false;
     this.gameOverMenu.active = true;
     this.gameOverLabel.string = "You Win!";
     this.disableKey(false);
-    this.disableTouch(false);
   },
   gameOverLoseEvent: function gameOverLoseEvent() {
     this.gameOverForm.active = true;
@@ -311,12 +312,9 @@ cc.Class({
     var loseSpawn = cc.scaleTo(0.5, 1);
     this.gameOverForm.runAction(loseSpawn);
     this.gameOverParticles.active = false;
-    this.gameOverHappyFace.active = false;
-    this.gameOverSadFace.active = true;
     this.gameOverMenu.active = false;
     this.gameOverLabel.string = "Game Over!";
     this.disableKey(false);
-    this.disableTouch(false);
   },
   newGameEvent: function newGameEvent() {
     this.deckItem.removeAllChildren(this._newItem);
@@ -327,47 +325,55 @@ cc.Class({
     this.colorCheck();
     this.gameOverForm.active = false;
     this.disableKey(true);
-    this.disableTouch(true);
   },
   tutorialEvent: function tutorialEvent() {
     if (this.tutorialFormFlag == false) {
       this.tutorialFormFlag = true;
       this.tutorialForm.active = true;
       this.tutorialForm.setScale(0, 0);
-      this.tutorialForm.setPosition(-425, 320);
+      this.tutorialForm.setPosition(-425, 280);
       var spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.tutorialForm.runAction(spawnOpen);
       this.disableKey(false);
-      this.disableTouch(false);
     } else this.closeTutorialEvent();
   },
   closeTutorialEvent: function closeTutorialEvent() {
-    var spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 320));
+    var spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 280));
     this.tutorialForm.runAction(spawnClose);
     this.tutorialFormFlag = false;
-
     this.tutorialForm.getComponent(cc.PageView).scrollToPage(0, 0.5);
     this.disableKey(true);
-    this.disableTouch(true);
   },
   leaderBoardEvent: function leaderBoardEvent() {
     if (this.leaderBoardFormFlag == false) {
       this.leaderBoardFormFlag = true;
       this.leaderBoardForm.active = true;
       this.leaderBoardForm.setScale(0, 0);
-      this.leaderBoardForm.setPosition(-415, 275);
+      this.leaderBoardForm.setPosition(-355, 275);
       var spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.leaderBoardForm.runAction(spawnOpen);
       this.disableKey(false);
-      this.disableTouch(false);
     } else this.closeLeaderBoardEvent();
   },
   closeLeaderBoardEvent: function closeLeaderBoardEvent() {
-    var spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 275));
+    var spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -355, 275));
     this.leaderBoardForm.runAction(spawnClose);
     this.leaderBoardFormFlag = false;
     this.disableKey(true);
-    this.disableTouch(true);
+  },
+  settingEvent: function settingEvent() {
+    if (this.settingFormFlag == false) {
+      this.settingFormFlag = true;
+      this.settingForm.active = true;
+      this.settingForm.setScale(0, 0);
+      var spawnOpen = cc.scaleTo(0.5, 1);
+      this.settingForm.runAction(spawnOpen);
+    } else this.closeSettingEvent();
+  },
+  closeSettingEvent: function closeSettingEvent() {
+    var spawnClose = cc.scaleTo(0.5, 0);
+    this.settingForm.runAction(spawnClose);
+    this.settingFormFlag = false;
   },
   playAgainEvent: function playAgainEvent() {
     var newItem = cc.instantiate(this.leaderBoardItemPrefab);
@@ -375,7 +381,6 @@ cc.Class({
     var stringLeaderBoard = newItem.getComponent(cc.Label);
     stringLeaderBoard.string = "______\u2606\u2606\u2606\u2606\u2606______ \n " + this.gameOverEditBox.string + " : " + this._score;
     this.gameOverEditBox.string = "";
-
     this.newGameEvent();
   },
   updateBestScore: function updateBestScore() {
@@ -389,8 +394,6 @@ cc.Class({
   },
   disableKey: function disableKey(value) {
     Emitter.instance.emit("DISABLE KEY", value);
-  },
-  disableTouch: function disableTouch(value) {
     Emitter.instance.emit("DISABLE TOUCH", value);
   }
 });

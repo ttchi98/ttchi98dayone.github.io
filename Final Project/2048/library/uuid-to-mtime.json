@@ -315,8 +315,8 @@
     "relativePath": "Texture/happy-face-removebg-preview.png"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1640170403129,
-    "meta": 1640170403144,
+    "asset": 1640235200706,
+    "meta": 1640235200724,
     "relativePath": "Scene/helloworld.fire"
   },
   "ff9d8d2c-7c23-4882-bdc5-0926c8a8031d": {
@@ -704,11 +704,6 @@
     "meta": 1640142988966,
     "relativePath": "Prefab/headLeaderBoard.prefab"
   },
-  "b998fb67-0177-4f88-a597-b7436700f1c0": {
-    "asset": 1640148624409,
-    "meta": 1640148683056,
-    "relativePath": "Script/touchController.js"
-  },
   "e2031fd8-bfb3-47ba-8b76-058a98e6d123": {
     "asset": 1640157676773,
     "meta": 1640157676828,
@@ -724,19 +719,39 @@
     "meta": 1640160569431,
     "relativePath": "Prefab/ScoreUpdate.prefab"
   },
+  "173c5e27-949c-4bf5-83db-93d74a8c1c13": {
+    "asset": 1640231468740,
+    "meta": 1640231468834,
+    "relativePath": "Texture/Button/pauseMusic-button.png"
+  },
+  "33115fe2-717f-4902-8e3d-88111f0e6634": {
+    "asset": 1640232249701,
+    "meta": 1640232297962,
+    "relativePath": "Texture/slider-01.png"
+  },
+  "14eb6251-1240-45ef-afe9-dc86cb119de9": {
+    "asset": 1640233421718,
+    "meta": 1640233421765,
+    "relativePath": "Texture/handle-02.png"
+  },
   "c1a476e2-2032-4afd-88eb-00cfc0a1afd6": {
-    "asset": 1640165901708,
-    "meta": 1640165903438,
+    "asset": 1640234165526,
+    "meta": 1640234236977,
     "relativePath": "Script/keyController.js"
   },
-  "5ccc245f-f2d6-42ea-81a5-288443a6b536": {
-    "asset": 1640165993516,
-    "meta": 1640165994378,
-    "relativePath": "Script/buttonController.js"
-  },
   "a931e22b-2e02-4fe8-a2f9-3a3658fffcbd": {
-    "asset": 1640170494292,
-    "meta": 1640170495477,
+    "asset": 1640234230963,
+    "meta": 1640234237066,
     "relativePath": "Script/mainController.js"
+  },
+  "b998fb67-0177-4f88-a597-b7436700f1c0": {
+    "asset": 1640234177595,
+    "meta": 1640234237067,
+    "relativePath": "Script/touchController.js"
+  },
+  "5ccc245f-f2d6-42ea-81a5-288443a6b536": {
+    "asset": 1640234458639,
+    "meta": 1640234531189,
+    "relativePath": "Script/buttonController.js"
   }
 }

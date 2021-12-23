@@ -13,9 +13,7 @@ cc.Class({
     timer: 0,
     count: 30
   },
-
   // LIFE-CYCLE CALLBACKS:
-
   onLoad: function onLoad() {
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
     Emitter.instance.registerEvent("DISABLE KEY", this.disableKey.bind(this));
@@ -23,6 +21,7 @@ cc.Class({
     Emitter.instance.registerEvent("KEY UP", this.keyUp.bind(this));
     Emitter.instance.registerEvent("KEY RIGHT", this.keyRight.bind(this));
     Emitter.instance.registerEvent("KEY LEFT", this.keyLeft.bind(this));
+    this.disableKey(false);
   },
   start: function start() {},
   update: function update(dt) {},

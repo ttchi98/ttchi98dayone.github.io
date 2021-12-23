@@ -20,6 +20,8 @@ cc.Class({
     tableChild: cc.Prefab,
     itemPrefab: cc.Prefab,
     deckItem: cc.Node,
+    settingForm: cc.Node,
+    settingFormFlag: false,
     tutorialForm: cc.Node,
     tutorialFormFlag: false,
     leaderBoardForm: cc.Node,
@@ -27,8 +29,6 @@ cc.Class({
     leaderBoardItemPrefab: cc.Prefab,
     gameOverForm: cc.Node,
     gameOverParticles: cc.Node,
-    gameOverSadFace: cc.Node,
-    gameOverHappyFace: cc.Node,
     gameOverLabel: cc.Label,
     gameOverMenu: cc.Node,
     gameOverEditBox: cc.EditBox,
@@ -48,8 +48,10 @@ cc.Class({
     Emitter.instance.registerEvent("NEW GAME", this.newGameEvent.bind(this));
     Emitter.instance.registerEvent("TUTORIAL", this.tutorialEvent.bind(this));
     Emitter.instance.registerEvent("CLOSE TUTORIAL", this.closeTutorialEvent.bind(this));
-    Emitter.instance.registerEvent("LEADER BOARD", this.leaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("CLOSE LEADER BOARD", this.closeLeaderBoardEvent.bind(this));
+    Emitter.instance.registerEvent("CLOSE SETTING", this.closeSettingEvent.bind(this));
+    Emitter.instance.registerEvent("SETTING", this.settingEvent.bind(this));
+    Emitter.instance.registerEvent("LEADER BOARD", this.leaderBoardEvent.bind(this));
     Emitter.instance.registerEvent("COLOR CHECK", this.colorCheck.bind(this));
     Emitter.instance.registerEvent("PLAY AGAIN", this.playAgainEvent.bind(this));
     Emitter.instance.registerEvent("START GAME", this.startGameEvent.bind(this));
@@ -302,6 +304,7 @@ cc.Class({
     this.mainCamera.runAction(startGame);
     let moveTitle = cc.spawn(cc.moveTo(0.5, -600, 300), cc.scaleTo(0.5, 0.8));
     this.title.runAction(moveTitle);
+    this.gameOverForm.active = false;
     this.newGameEvent();
   },
   backEvent() {
@@ -309,20 +312,17 @@ cc.Class({
     this.mainCamera.runAction(backToStartGame);
     let moveTitle = cc.spawn(cc.moveTo(0.5, 0, 200), cc.scaleTo(0.5, 1));
     this.title.runAction(moveTitle);
+    this.disableKey(false);
   },
-
   gameOverWinEvent() {
     this.gameOverForm.active = true;
     this.gameOverForm.setScale(0, 0);
     let winSpawn = cc.scaleTo(0.5, 1);
     this.gameOverForm.runAction(winSpawn);
     this.gameOverParticles.active = true;
-    this.gameOverHappyFace.active = true;
-    this.gameOverSadFace.active = false;
     this.gameOverMenu.active = true;
     this.gameOverLabel.string = "You Win!";
     this.disableKey(false);
-    this.disableTouch(false);
   },
   gameOverLoseEvent() {
     this.gameOverForm.active = true;
@@ -330,12 +330,9 @@ cc.Class({
     let loseSpawn = cc.scaleTo(0.5, 1);
     this.gameOverForm.runAction(loseSpawn);
     this.gameOverParticles.active = false;
-    this.gameOverHappyFace.active = false;
-    this.gameOverSadFace.active = true;
     this.gameOverMenu.active = false;
     this.gameOverLabel.string = "Game Over!";
     this.disableKey(false);
-    this.disableTouch(false);
   },
   newGameEvent() {
     this.deckItem.removeAllChildren(this._newItem);
@@ -346,47 +343,55 @@ cc.Class({
     this.colorCheck();
     this.gameOverForm.active = false;
     this.disableKey(true);
-    this.disableTouch(true);
   },
   tutorialEvent() {
     if (this.tutorialFormFlag == false) {
       this.tutorialFormFlag = true;
       this.tutorialForm.active = true;
       this.tutorialForm.setScale(0, 0);
-      this.tutorialForm.setPosition(-425, 320);
+      this.tutorialForm.setPosition(-425, 280);
       let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.tutorialForm.runAction(spawnOpen);
       this.disableKey(false);
-      this.disableTouch(false);
     } else this.closeTutorialEvent();
   },
   closeTutorialEvent() {
-    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 320));
+    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 280));
     this.tutorialForm.runAction(spawnClose);
     this.tutorialFormFlag = false;
-
     this.tutorialForm.getComponent(cc.PageView).scrollToPage(0, 0.5);
     this.disableKey(true);
-    this.disableTouch(true);
   },
   leaderBoardEvent() {
     if (this.leaderBoardFormFlag == false) {
       this.leaderBoardFormFlag = true;
       this.leaderBoardForm.active = true;
       this.leaderBoardForm.setScale(0, 0);
-      this.leaderBoardForm.setPosition(-415, 275);
+      this.leaderBoardForm.setPosition(-355, 275);
       let spawnOpen = cc.spawn(cc.scaleTo(0.5, 1), cc.moveTo(0.5, -505, -50));
       this.leaderBoardForm.runAction(spawnOpen);
       this.disableKey(false);
-      this.disableTouch(false);
     } else this.closeLeaderBoardEvent();
   },
   closeLeaderBoardEvent() {
-    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -425, 275));
+    let spawnClose = cc.spawn(cc.scaleTo(0.5, 0), cc.moveTo(0.5, -355, 275));
     this.leaderBoardForm.runAction(spawnClose);
     this.leaderBoardFormFlag = false;
     this.disableKey(true);
-    this.disableTouch(true);
+  },
+  settingEvent() {
+    if (this.settingFormFlag == false) {
+      this.settingFormFlag = true;
+      this.settingForm.active = true;
+      this.settingForm.setScale(0, 0);
+      let spawnOpen = cc.scaleTo(0.5, 1);
+      this.settingForm.runAction(spawnOpen);
+    } else this.closeSettingEvent();
+  },
+  closeSettingEvent() {
+    let spawnClose = cc.scaleTo(0.5, 0);
+    this.settingForm.runAction(spawnClose);
+    this.settingFormFlag = false;
   },
   playAgainEvent() {
     let newItem = cc.instantiate(this.leaderBoardItemPrefab);
@@ -394,7 +399,6 @@ cc.Class({
     let stringLeaderBoard = newItem.getComponent(cc.Label);
     stringLeaderBoard.string = `______☆☆☆☆☆______ \n ${this.gameOverEditBox.string} : ${this._score}`;
     this.gameOverEditBox.string = "";
-
     this.newGameEvent();
   },
   updateBestScore() {
@@ -408,8 +412,6 @@ cc.Class({
   },
   disableKey(value) {
     Emitter.instance.emit("DISABLE KEY", value);
-  },
-  disableTouch(value) {
     Emitter.instance.emit("DISABLE TOUCH", value);
   },
 });
